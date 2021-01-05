@@ -1,0 +1,14 @@
+{
+    "name": "smartclinic/medigitus",
+    "description": "All for you health",
+    "type": "project",
+    "license": "commercial",
+    "authors": [
+        {
+            "name": "TsarS",
+            "email": "s.tsarikov@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
