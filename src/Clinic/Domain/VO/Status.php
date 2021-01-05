@@ -7,4 +7,6 @@ namespace Clinic\Domain\VO;
 final class Status
 {
 
+    const ACTIVE = 'активная';
+    const ARCHIVED = 'архив';
 }

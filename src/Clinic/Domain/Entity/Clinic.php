@@ -3,13 +3,18 @@ declare(strict_types=1);
 
 namespace Clinic\Domain\Entity;
 
+use Clinic\Domain\Events\ClinicArchived;
+use Clinic\Domain\Events\ClinicReinstated;
 use Clinic\Domain\Events\ClinicRenamed;
+use Clinic\Domain\Exception\Status\ClinicIsAlreadyArchivedException;
+use Clinic\Domain\Exception\Status\ClinicIsNotArchivedException;
 use Clinic\Domain\VO\Address;
 use Clinic\Domain\VO\Id;
 use Clinic\Domain\VO\Legal;
 use Clinic\Domain\VO\Name;
 use Clinic\Domain\VO\Status;
 use DateTimeImmutable;
+use DomainException;
 
 
 final class Clinic
@@ -67,7 +72,35 @@ final class Clinic
         $this->licences = $licences;
         $this->name = new Name($this->legal->getName());
         $this->date = $date;
+        $this->addStatus(Status::ACTIVE, $this->date);
         $this->recordEvent(new ClinicRenamed($this->id, $this->name->getName()));
+    }
+
+    /**
+     * @param string $newName
+     */
+    public function rename(Name $newName): void
+    {
+        $this->name = $newName;
+        $this->recordEvent(new ClinicRenamed($this->id, $newName->getName()));
+    }
+
+    public function archive(DateTimeImmutable $date): void
+    {
+        if ($this->isArchived()) {
+            throw new ClinicIsAlreadyArchivedException($this->getName()->getName());
+        }
+        $this->addStatus(Status::ARCHIVED, $date);
+        $this->recordEvent(new ClinicArchived($this->id, $date));
+    }
+
+    public function reinstate(DateTimeImmutable $date): void
+    {
+        if (!$this->isArchived()) {
+            throw new ClinicIsNotArchivedException($this->getName()->getName());
+        }
+        $this->addStatus(Status::ACTIVE, $date);
+        $this->recordEvent(new ClinicReinstated($this->id, $date));
     }
 
     /**
@@ -103,15 +136,6 @@ final class Clinic
     }
 
     /**
-     * @param string $newName
-     */
-    public function rename(Name $newName): void
-    {
-        $this->name = $newName;
-        $this->recordEvent(new ClinicRenamed($this->id, $newName->getName()));
-    }
-
-    /**
      * @return Address
      */
     public function getAddress(): Address
@@ -142,18 +166,23 @@ final class Clinic
     {
         return $this->legal;
     }
-    public function isPublish(): bool
+    public function isActive(): bool
     {
         return $this->getCurrentStatus()->isActive();
     }
 
-    public function isExcluded(): bool
+    public function isArchived(): bool
     {
-        return $this->getCurrentStatus()->isExcluded();
+        return $this->getCurrentStatus()->isArchived();
     }
 
     private function getCurrentStatus(): Status
     {
         return end($this->statuses);
+    }
+
+    private function addStatus($value, DateTimeImmutable $date): void
+    {
+        $this->statuses[] = new Status($value, $date);
     }
 }
