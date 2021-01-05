@@ -10,7 +10,6 @@ final class Name
 
     public function __construct(string $name)
   {
-
       $this->name = $name;
   }
 }

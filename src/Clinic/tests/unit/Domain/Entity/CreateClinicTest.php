@@ -4,16 +4,18 @@ declare(strict_types=1);
 namespace Clinic\Tests\Unit\Domain\Entity;
 
 use Clinic\Domain\Entity\Clinic;
+use Clinic\Domain\Events\ClinicRenamed;
 use Clinic\Domain\VO\Address;
 use Clinic\Domain\VO\Id;
 use Clinic\Domain\VO\Legal;
 use Clinic\Domain\VO\Licence;
+use Clinic\Domain\VO\Name;
 use DateTimeImmutable;
 use PHPUnit\Framework\TestCase;
 
 class CreateClinicTest extends TestCase
 {
-    public function test_IsClinicCreated()
+    public function testIsClinicCreated()
     {
 
         $clinic = new Clinic(
@@ -36,9 +38,14 @@ class CreateClinicTest extends TestCase
         $this->assertEquals($legal,$clinic->getLegal());
         $this->assertEquals($address,$clinic->getAddress());
         $this->assertEquals($date,$clinic->getDate());
-
-
-
-
     }
+
+    public function testRenameClinic() {
+        $clinic = (new CreateClinicBuilder())->build();
+        $clinic->rename($newName= new Name('Госпиталь на Яузе'));
+        $this->assertEquals($newName,$clinic->getName());
+        $this->assertNotEmpty($events = $clinic->releaseEvents());
+        $this->assertInstanceOf(ClinicRenamed::class, end($events));
+    }
+
 }
