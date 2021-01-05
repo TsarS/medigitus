@@ -1,6 +1,8 @@
 ### Подготовка ###
-.gitignore
+.`gitignore`
 Добавить в gitignore папку idea
-'.idea'
-https://github.com/github/gitignore/blob/master/Global/JetBrains.gitignore
-### Тестирование ###
+`'.idea'
+`vendor`
+``https://github.com/github/gitignore/blob/master/Global/JetBrains.gitignore
+`### Тестирование ###
+`composer require --dev phpunit/phpunit ^9`
