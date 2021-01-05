@@ -11,12 +11,12 @@
     ],
     "autoload": {
         "psr-4": {
-
+            "Clinic\\": "src/Clinic/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-
+            "Clinic\\": "src/Clinic/tests/"
         }
     },
     "minimum-stability": "dev",
