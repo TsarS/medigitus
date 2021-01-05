@@ -9,6 +9,16 @@
             "email": "s.tsarikov@gmail.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+
+        }
+    },
     "minimum-stability": "dev",
     "require": {}
 }
