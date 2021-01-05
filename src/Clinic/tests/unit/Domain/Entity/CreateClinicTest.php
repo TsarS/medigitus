@@ -38,6 +38,7 @@ class CreateClinicTest extends TestCase
         $this->assertEquals($legal,$clinic->getLegal());
         $this->assertEquals($address,$clinic->getAddress());
         $this->assertEquals($date,$clinic->getDate());
+
     }
 
     public function testRenameClinic() {

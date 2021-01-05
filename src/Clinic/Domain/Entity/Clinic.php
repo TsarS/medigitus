@@ -65,8 +65,9 @@ final class Clinic
         $this->legal = $legal;
         $this->address = $address;
         $this->licences = $licences;
-
+        $this->name = new Name($this->legal->getName());
         $this->date = $date;
+        $this->recordEvent(new ClinicRenamed($this->id, $this->name->getName()));
     }
 
     /**
@@ -107,7 +108,7 @@ final class Clinic
     public function rename(Name $newName): void
     {
         $this->name = $newName;
-        $this->recordEvent(new ClinicRenamed($this->id, $newName));
+        $this->recordEvent(new ClinicRenamed($this->id, $newName->getName()));
     }
 
     /**
