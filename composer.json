@@ -12,13 +12,15 @@
     "autoload": {
         "psr-4": {
             "Clinic\\": "src/Clinic/",
-            "Direction\\": "src/Direction/"
+            "Direction\\": "src/Direction/",
+            "Legal\\": "src/Legal/"
         }
     },
     "autoload-dev": {
         "psr-4": {
             "Clinic\\Tests\\Unit\\": "src/Clinic/tests/unit/",
-            "Direction\\Tests\\Unit\\": "src/Direction/tests/unit/"
+            "Direction\\Tests\\Unit\\": "src/Direction/tests/unit/",
+            "Legal\\Tests\\Unit\\": "src/Legal/tests/unit/"
         }
     },
     "minimum-stability": "dev",
