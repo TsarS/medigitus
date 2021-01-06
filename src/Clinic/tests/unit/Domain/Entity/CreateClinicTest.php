@@ -4,6 +4,7 @@ declare(strict_types=1);
 namespace Clinic\Tests\Unit\Domain\Entity;
 
 use Clinic\Domain\Entity\Clinic;
+use Clinic\Domain\Events\ClinicCreated;
 use Clinic\Domain\Events\ClinicRenamed;
 use Clinic\Domain\VO\Address;
 use Clinic\Domain\VO\Id;
@@ -38,6 +39,8 @@ class CreateClinicTest extends TestCase
         $this->assertEquals($legal,$clinic->getLegal());
         $this->assertEquals($address,$clinic->getAddress());
         $this->assertEquals($date,$clinic->getDate());
+        $this->assertNotEmpty($events = $clinic->releaseEvents());
+        $this->assertInstanceOf(ClinicCreated::class, end($events));
 
     }
 

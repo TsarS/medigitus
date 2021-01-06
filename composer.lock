@@ -2893,12 +2893,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "a90b04b90b4f6b3617986464a4c212ab8b0dd6b3"
+                "reference": "da4c3663721420520b024e5aede66b813019e744"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/a90b04b90b4f6b3617986464a4c212ab8b0dd6b3",
-                "reference": "a90b04b90b4f6b3617986464a4c212ab8b0dd6b3",
+                "url": "https://api.github.com/repos/symfony/console/zipball/da4c3663721420520b024e5aede66b813019e744",
+                "reference": "da4c3663721420520b024e5aede66b813019e744",
                 "shasum": ""
             },
             "require": {
@@ -2979,7 +2979,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-01-05T14:08:22+00:00"
+            "time": "2021-01-05T20:16:44+00:00"
         },
         {
             "name": "symfony/filesystem",

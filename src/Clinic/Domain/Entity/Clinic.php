@@ -4,6 +4,7 @@ declare(strict_types=1);
 namespace Clinic\Domain\Entity;
 
 use Clinic\Domain\Events\ClinicArchived;
+use Clinic\Domain\Events\ClinicCreated;
 use Clinic\Domain\Events\ClinicReinstated;
 use Clinic\Domain\Events\ClinicRenamed;
 use Clinic\Domain\Exception\Status\ClinicIsAlreadyArchivedException;
@@ -73,7 +74,7 @@ final class Clinic
         $this->name = new Name($this->legal->getName());
         $this->date = $date;
         $this->addStatus(Status::ACTIVE, $this->date);
-        $this->recordEvent(new ClinicRenamed($this->id, $this->name->getName()));
+        $this->recordEvent(new ClinicCreated($this->id, $this->name->getName()));
     }
 
     /**
