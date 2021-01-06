@@ -3,17 +3,13 @@ declare(strict_types=1);
 
 namespace Clinic\Domain\Entity;
 
-use Clinic\Domain\Events\ClinicArchived;
+
 use Clinic\Domain\Events\ClinicCreated;
-use Clinic\Domain\Events\ClinicReinstated;
 use Clinic\Domain\Events\ClinicRenamed;
-use Clinic\Domain\Exception\Status\ClinicIsAlreadyArchivedException;
-use Clinic\Domain\Exception\Status\ClinicIsNotArchivedException;
 use Clinic\Domain\VO\Address;
 use Clinic\Domain\VO\Id;
 use Clinic\Domain\VO\Legal;
 use Clinic\Domain\VO\Name;
-use Clinic\Domain\VO\Status;
 use DateTimeImmutable;
 
 
@@ -41,11 +37,6 @@ final class Clinic
      */
     private array $directions;
 
-    /** Название клиники. Берется от юридического лица
-     * Возможно сменить
-     * @var string
-     */
-    private Name $name;
     /**
      * @var string
      */
@@ -58,6 +49,7 @@ final class Clinic
      * @var array
      */
     private array $statuses = [];
+    private string $name;
 
 
     public function __construct(
@@ -72,37 +64,18 @@ final class Clinic
         $this->legal = $legal;
         $this->address = $address;
         $this->directions = $directions;
-        $this->name = new Name($this->legal->getName());
         $this->date = $date;
-        $this->addStatus(Status::ACTIVE, $this->date);
-        $this->recordEvent(new ClinicCreated($this->id, $this->name->getName()));
+        $this->name = (new Name($this->getLegal()->getName()))->getName();
+        $this->recordEvent(new ClinicCreated($this->id, $this->name));
     }
 
     /**
      * @param string $newName
      */
-    public function rename(Name $newName): void
+    public function rename(string $newName): void
     {
         $this->name = $newName;
-        $this->recordEvent(new ClinicRenamed($this->id, $newName->getName()));
-    }
-
-    public function archive(DateTimeImmutable $date): void
-    {
-        if ($this->isArchived()) {
-            throw new ClinicIsAlreadyArchivedException($this->getName()->getName());
-        }
-        $this->addStatus(Status::ARCHIVED, $date);
-        $this->recordEvent(new ClinicArchived($this->id, $date));
-    }
-
-    public function reinstate(DateTimeImmutable $date): void
-    {
-        if (!$this->isArchived()) {
-            throw new ClinicIsNotArchivedException($this->getName()->getName());
-        }
-        $this->addStatus(Status::ACTIVE, $date);
-        $this->recordEvent(new ClinicReinstated($this->id, $date));
+        $this->recordEvent(new ClinicRenamed($this->id, $this->name));
     }
 
     /**
@@ -113,26 +86,15 @@ final class Clinic
         return $this->legal->getCorporateForm();
     }
 
-    /**
-     * @return string
-     */
-    public function getStatus(): string
-    {
-        return $this->status;
-    }
-
-    /**
-     * @return string
-     */
-    public function getName(): Name
-    {
+    public function getName() : string {
         return $this->name;
     }
+
 
     /** Возврщает список лицензий
      * @return array
      */
-    public function geteDirections(): array
+    public function getDirections(): array
     {
         return $this->directions;
     }
@@ -168,23 +130,5 @@ final class Clinic
     {
         return $this->legal;
     }
-    public function isActive(): bool
-    {
-        return $this->getCurrentStatus()->isActive();
-    }
 
-    public function isArchived(): bool
-    {
-        return $this->getCurrentStatus()->isArchived();
-    }
-
-    private function getCurrentStatus(): Status
-    {
-        return end($this->statuses);
-    }
-
-    private function addStatus($value, DateTimeImmutable $date): void
-    {
-        $this->statuses[] = new Status($value, $date);
-    }
 }

@@ -37,16 +37,8 @@ final class Legal
         return $this->name;
     }
 
-    /**
-     * @return string
-     */
-    private function getForm(): string
-    {
-        return $this->form;
-    }
-
     public function getCorporateForm() : string {
         // TODO Сделать проверку формы (частная/государственная)
-        return $this->getForm();
+        return $this->form;
     }
 }

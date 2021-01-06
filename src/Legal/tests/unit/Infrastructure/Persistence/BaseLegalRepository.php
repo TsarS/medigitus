@@ -5,10 +5,11 @@ namespace Legal\tests\unit\Infrastructure\Persistence;
 
 
 
+
+use Legal\Infrastructure\Persistence\Exception\NotFoundLegalException;
 use Legal\Domain\Repository\LegalReadRepository;
 use Legal\Domain\Repository\LegalRepository;
 use Legal\Domain\VO\Id;
-use Legal\Infrastructure\Persistence\Exception\NotFoundLegalException;
 use Legal\tests\unit\Domain\Entity\CreateLegalBuilder;
 use PHPUnit\Framework\TestCase;
 

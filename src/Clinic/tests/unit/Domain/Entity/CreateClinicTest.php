@@ -9,8 +9,6 @@ use Clinic\Domain\Events\ClinicRenamed;
 use Clinic\Domain\VO\Address;
 use Clinic\Domain\VO\Id;
 use Clinic\Domain\VO\Legal;
-use Clinic\Domain\VO\Licence;
-use Clinic\Domain\VO\Name;
 use DateTimeImmutable;
 use PHPUnit\Framework\TestCase;
 
@@ -21,7 +19,7 @@ class CreateClinicTest extends TestCase
 
         $clinic = new Clinic(
             $id = Id::next(),
-            $legal = new Legal('7729695811', 'ООО "Клинический госпиталь на Яузе', 'ООО'),
+            $legal = new Legal('7729695811', 'Общество с ограниченной ответственностью "Клинический госпиталь на Яузе"', 'ООО'),
             $address = new Address(
                 $country = 'Российская Федерация',
                 $post_code = '111033',
@@ -29,10 +27,10 @@ class CreateClinicTest extends TestCase
                 $region = 'Москва',
                 $street = 'Волочаевская',
                 $house = 'д. 15, к.1',
-                $lat = 2.34234234,
-                $lon = 53.24234234
+                $lat = 55.8782557,
+                $lon = 37.65372
             ),
-            [new Licence($number = 'ЛО-77-01-016723',$date = '2018-09-25',['fdgdfg'])],
+            ['Аллергология','Гинекология','Травматология'],
             $date = new DateTimeImmutable()
         );
         $this->assertEquals($id,$clinic->getId());
@@ -46,7 +44,7 @@ class CreateClinicTest extends TestCase
 
     public function testRenameClinic() {
         $clinic = (new CreateClinicBuilder())->build();
-        $clinic->rename($newName= new Name('Госпиталь на Яузе'));
+        $clinic->rename($newName= 'Госпиталь на Яузе');
         $this->assertEquals($newName,$clinic->getName());
         $this->assertNotEmpty($events = $clinic->releaseEvents());
         $this->assertInstanceOf(ClinicRenamed::class, end($events));

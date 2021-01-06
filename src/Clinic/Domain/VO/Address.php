@@ -12,8 +12,8 @@ final class Address
     private string $city;
     private string $street;
     private string $house;
-    private float $lat;
-    private float $lon;
+    private  $lat = 0;
+    private $lon = 0;
 
     public function __construct(
         string $country,
@@ -22,8 +22,8 @@ final class Address
         string $city,
         string $street,
         string $house,
-        float $lat,
-        float $lon
+        $lat = 0,
+        $lon = 0
     )
     {
 
@@ -88,7 +88,7 @@ final class Address
     /**
      * @return int
      */
-    public function getLat(): float
+    public function getLat()
     {
         return $this->lat;
     }
@@ -96,7 +96,7 @@ final class Address
     /**
      * @return int
      */
-    public function getLon(): float
+    public function getLon()
     {
         return $this->lon;
     }

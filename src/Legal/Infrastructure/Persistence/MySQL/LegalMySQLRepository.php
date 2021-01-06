@@ -51,7 +51,7 @@ final class LegalMySQLRepository implements LegalRepository
     public function save(Legal $legal): void
     {
         $stmt = $this->connection;
-        $legal_table = $stmt->prepare("UPDATE `legal` SET id=:id, inn=:inn, ogrn=:ogrn, name=:name, legalForm =:legalForm, country=:country, post_code=:post_code, region=:region, city=:city, street=:street,building=:building, date=:date) VALUES (:id, :inn, :ogrn, :name, :legalForm,:country, :post_code, :region, :city, :street, :building, :date)");
+        $legal_table = $stmt->prepare("UPDATE `legal` SET  inn=:inn, ogrn=:ogrn, name=:name, legalForm =:legalForm, country=:country, post_code=:post_code, region=:region, city=:city, street=:street,building=:building, date=:date WHERE id=:id");
         try {
             $legal_table->execute([
                 ':id' => $legal->getId()->getId(),

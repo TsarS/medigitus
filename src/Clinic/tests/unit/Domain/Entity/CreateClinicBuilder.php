@@ -8,15 +8,10 @@ use Clinic\Domain\Entity\Clinic;
 use Clinic\Domain\VO\Address;
 use Clinic\Domain\VO\Id;
 use Clinic\Domain\VO\Legal;
-use Clinic\Domain\VO\Licence;
 use DateTimeImmutable;
 
 final class CreateClinicBuilder
 {
-    /**
-     * @var Licence[]
-     */
-    private array $licences;
     /**
      * @var Address
      */
@@ -37,7 +32,7 @@ final class CreateClinicBuilder
     public function __construct()
   {
       $this->id = Id::next();
-      $this->legal =new Legal('7729695811', 'ООО "Клинический госпиталь на Яузе', 'ООО');
+      $this->legal =new Legal('7729695811', 'ООО "Клинический госпиталь на Яузе"', 'ООО');
       $this->address = new Address(
           $country = 'Российская Федерация',
           $post_code = '111033',
@@ -45,10 +40,10 @@ final class CreateClinicBuilder
           $region = 'Москва',
           $street = 'Волочаевская',
           $house = 'д. 15, к.1',
-          $lat = 2.34234234,
-          $lon = 53.24234234
+          $lat = 55.8782557,
+          $lon = 37.65372
       );
-      $this->licences = [new Licence($number = 'ЛО-77-01-016723',$date = '2018-09-25',['fdgdfg'])];
+      $this->directions =  ['Аллергология','Гинекология','Трвматология'];
       $this->date = new DateTimeImmutable();
   }
     public function withId(Id $id): self
@@ -69,10 +64,10 @@ final class CreateClinicBuilder
         $clone->address = $address;
         return $clone;
     }
-    public function withLicence(array $licences): self
+    public function withLicence(array $directions): self
     {
         $clone = clone $this;
-        $clone->licenses = $licences;
+        $clone->directions = $directions;
         return $clone;
     }
 
@@ -85,7 +80,7 @@ final class CreateClinicBuilder
             $this->id,
             $this->legal,
             $this->address,
-            $this->licences,
+            $this->directions,
             $this->date
         );
         return $clinic;

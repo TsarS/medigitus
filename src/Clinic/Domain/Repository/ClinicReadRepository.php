@@ -4,6 +4,7 @@ declare(strict_types=1);
 namespace Clinic\Domain\Repository;
 
 
+use Clinic\Domain\Entity\Clinic;
 use Clinic\Domain\VO\Id;
 
 interface ClinicReadRepository
