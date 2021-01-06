@@ -10,11 +10,14 @@ final class Name
 
     public function __construct(string $name)
     {
+        $this->name = $name;
+        /*
         if (strpos($name, '"')) {
             $this->removeQuotes($name);
         } else {
             $this->name = $name;
         }
+        */
     }
 
     /**
@@ -30,7 +33,6 @@ final class Name
         $m = [];
         preg_match('/"([^"]+)"/', $name, $m);
             $this->name = $m[1];
-
     }
 
 

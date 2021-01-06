@@ -49,12 +49,13 @@ final class Clinic
      * @var array
      */
     private array $statuses = [];
-    private string $name;
+    private Name $name;
 
 
     public function __construct(
         Id $id,
         Legal $legal,
+        Name $name,
         Address $address,
         array $directions,
         DateTimeImmutable $date
@@ -65,17 +66,18 @@ final class Clinic
         $this->address = $address;
         $this->directions = $directions;
         $this->date = $date;
-        $this->name = (new Name($this->getLegal()->getName()))->getName();
-        $this->recordEvent(new ClinicCreated($this->id, $this->name));
+        $this->name = $name;
+        $this->recordEvent(new ClinicCreated($this->id, $this->getName()->getName()));
+
     }
 
     /**
-     * @param string $newName
+     * @param Name $newName
      */
-    public function rename(string $newName): void
+    public function rename(Name $newName): void
     {
         $this->name = $newName;
-        $this->recordEvent(new ClinicRenamed($this->id, $this->name));
+        $this->recordEvent(new ClinicRenamed($this->id,  $this->getName()->getName()));
     }
 
     /**
@@ -86,7 +88,7 @@ final class Clinic
         return $this->legal->getCorporateForm();
     }
 
-    public function getName() : string {
+    public function getName() :Name {
         return $this->name;
     }
 

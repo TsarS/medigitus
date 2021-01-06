@@ -8,6 +8,7 @@ use Clinic\Domain\Entity\Clinic;
 use Clinic\Domain\VO\Address;
 use Clinic\Domain\VO\Id;
 use Clinic\Domain\VO\Legal;
+use Clinic\Domain\VO\Name;
 use DateTimeImmutable;
 
 final class CreateClinicBuilder
@@ -28,11 +29,14 @@ final class CreateClinicBuilder
      * @var DateTimeImmutable
      */
     private DateTimeImmutable $date;
+    private Name $name;
+
 
     public function __construct()
   {
       $this->id = Id::next();
-      $this->legal =new Legal('7729695811', 'ООО "Клинический госпиталь на Яузе"', 'ООО');
+      $this->legal =new Legal('7729695811',  'ООО');
+      $this->name = new Name ('Клинический госпиталь на Яузе');
       $this->address = new Address(
           $country = 'Российская Федерация',
           $post_code = '111033',
@@ -58,6 +62,12 @@ final class CreateClinicBuilder
         $clone->legal = $legal;
         return $clone;
     }
+    public function withName(Name $name): self
+    {
+        $clone = clone $this;
+        $clone->name = $name;
+        return $clone;
+    }
     public function withAddress(Address $address): self
     {
         $clone = clone $this;
@@ -79,6 +89,7 @@ final class CreateClinicBuilder
         $clinic = new Clinic(
             $this->id,
             $this->legal,
+            $this->name,
             $this->address,
             $this->directions,
             $this->date

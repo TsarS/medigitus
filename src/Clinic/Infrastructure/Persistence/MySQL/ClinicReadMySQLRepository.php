@@ -9,6 +9,7 @@ use Clinic\Domain\Repository\ClinicReadRepository;
 use Clinic\Domain\VO\Address;
 use Clinic\Domain\VO\Id;
 use Clinic\Domain\VO\Legal;
+use Clinic\Domain\VO\Name;
 use Clinic\Infrastructure\Persistence\Exception\NotFoundClinicException;
 use Clinic\Infrastructure\Persistence\Hydrator;
 use DateTimeImmutable;
@@ -53,9 +54,9 @@ final class ClinicReadMySQLRepository implements ClinicReadRepository
             'id' => new Id($clinic['id']),
             'legal' => new Legal(
                 $clinic['inn'],
-                $clinic['name'],
                 $clinic['legalForm'],
             ),
+            'name' => new Name($clinic['name']),
             'address' => new Address(
                 $clinic['country'],
                 $clinic['post_code'],

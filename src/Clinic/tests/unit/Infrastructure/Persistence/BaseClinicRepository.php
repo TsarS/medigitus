@@ -10,6 +10,7 @@ namespace Clinic\tests\unit\Infrastructure\Persistence;
 use Clinic\Domain\Repository\ClinicReadRepository;
 use Clinic\Domain\Repository\ClinicRepository;
 use Clinic\Domain\VO\Id;
+use Clinic\Domain\VO\Name;
 use Clinic\Infrastructure\Persistence\Exception\NotFoundClinicException;
 use Clinic\tests\unit\Domain\Entity\CreateClinicBuilder;
 use PHPUnit\Framework\TestCase;
@@ -33,6 +34,7 @@ abstract class BaseClinicRepository extends TestCase
 
         $this->assertEquals($clinic->getId(), $found->getId());
         $this->assertEquals($clinic->getLegal(), $found->getLegal());
+        $this->assertEquals($clinic->getName(), $found->getName());
         $this->assertEquals($clinic->getAddress(), $found->getAddress());
     }
     public function testGet(): void
@@ -49,13 +51,12 @@ abstract class BaseClinicRepository extends TestCase
 
         $found = $this->readRepository->get($clinic->getId());
         $this->assertNotNull($found);
-        $found->rename('Переименованный госпиталь');
+        $found->rename($renamedName = new Name('Переименованный госпиталь'));
         $this->repository->save($found);
 
         $renamed = $this->readRepository->get($found->getId());
-        //var_dump($renamed);
         $this->assertNotNull($renamed);
-        $this->assertEquals('Переименованный госпиталь', $renamed->getName());
+        $this->assertEquals($renamedName, $renamed->getName());
     }
     public function testGetNotFound(): void
     {

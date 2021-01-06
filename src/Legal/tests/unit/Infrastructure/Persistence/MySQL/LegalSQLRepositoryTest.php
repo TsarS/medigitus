@@ -21,10 +21,10 @@ final class LegalSQLRepositoryTest extends BaseLegalRepository
             print "Error!: " . $e->getMessage() . "<br/>";
             die();
         }
-     $truncate = $connection->prepare("DELETE FROM legal");
-      $truncate->execute();
+        $truncate = $connection->prepare("DELETE FROM legal");
+        $truncate->execute();
         $hydrator = new Hydrator();
-        $this->repository = new LegalMySQLRepository($connection, $hydrator);
+        $this->repository = new LegalMySQLRepository($connection);
         $this->readRepository = new LegalReadMySQLRepository($connection, $hydrator);
 
     }

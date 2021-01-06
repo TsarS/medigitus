@@ -29,7 +29,7 @@ final class ClinicMySQLRepository implements ClinicRepository
             $clinic_table->execute([
                 ':id' => $clinic->getId()->getId(),
                 ':inn' => $clinic->getLegal()->getInn(),
-                ':name' => $clinic->getName(),
+                ':name' => $clinic->getName()->getName(),
                 ':legalForm' => $clinic->getCorporateForm(),
                 ':country' => $clinic->getAddress()->getCountry(),
                 ':post_code' => $clinic->getAddress()->getPostCode(),
@@ -68,7 +68,7 @@ final class ClinicMySQLRepository implements ClinicRepository
             $clinic_table->execute([
                 ':id' => $clinic->getId()->getId(),
                 ':inn' => $clinic->getLegal()->getInn(),
-                ':name' => $clinic->getName(),
+                ':name' => $clinic->getName()->getName(),
                 ':legalForm' => $clinic->getCorporateForm(),
                 ':country' => $clinic->getAddress()->getCountry(),
                 ':post_code' => $clinic->getAddress()->getPostCode(),

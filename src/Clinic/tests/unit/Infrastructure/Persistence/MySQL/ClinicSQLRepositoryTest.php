@@ -24,8 +24,8 @@ final class ClinicSQLRepositoryTest extends BaseClinicRepository
             print "Error!: " . $e->getMessage() . "<br/>";
             die();
         }
-  //   $truncate = $connection->prepare("DELETE FROM clinic");
-  //    $truncate->execute();
+   $truncate = $connection->prepare("DELETE FROM clinic");
+   $truncate->execute();
         $hydrator = new Hydrator();
         $this->repository = new ClinicMySQLRepository($connection);
         $this->readRepository = new ClinicReadMySQLRepository($connection, $hydrator);
