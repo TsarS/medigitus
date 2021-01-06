@@ -13,19 +13,26 @@
         "psr-4": {
             "Clinic\\": "src/Clinic/",
             "Direction\\": "src/Direction/",
-            "Legal\\": "src/Legal/"
+            "Legal\\": "src/Legal/",
+            "Import\\": "src/Import/"
         }
     },
     "autoload-dev": {
         "psr-4": {
             "Clinic\\Tests\\Unit\\": "src/Clinic/tests/unit/",
             "Direction\\Tests\\Unit\\": "src/Direction/tests/unit/",
-            "Legal\\Tests\\Unit\\": "src/Legal/tests/unit/"
+            "Legal\\Tests\\Unit\\": "src/Legal/tests/unit/",
+            "Import\\Tests\\Unit\\": "src/Import/tests/unit/"
         }
     },
     "minimum-stability": "dev",
     "require": {
-        "ramsey/uuid": "4.1.1"
+        "ramsey/uuid": "4.1.1",
+        "ext-dom": "*",
+        "ext-xmlreader": "*",
+        "ext-simplexml": "*",
+        "ext-pdo": "*"
+
     },
     "require-dev": {
         "phpunit/phpunit": "9.*",

@@ -15,7 +15,7 @@ use Clinic\Domain\VO\Legal;
 use Clinic\Domain\VO\Name;
 use Clinic\Domain\VO\Status;
 use DateTimeImmutable;
-use DomainException;
+
 
 
 final class Clinic
@@ -36,10 +36,10 @@ final class Clinic
      * @var Address
      */
     private Address $address;
-    /** Массив лицензия, принадлежащий данной клинике
+    /** Массив направлений, принадлежащий данной клинике
      * @var array
      */
-    private array $licences;
+    private array $directions;
 
     /** Название клиники. Берется от юридического лица
      * Возможно сменить
@@ -59,18 +59,19 @@ final class Clinic
      */
     private array $statuses = [];
 
+
     public function __construct(
         Id $id,
         Legal $legal,
         Address $address,
-        array $licences,
+        array $directions,
         DateTimeImmutable $date
     )
     {
         $this->id = $id;
         $this->legal = $legal;
         $this->address = $address;
-        $this->licences = $licences;
+        $this->directions = $directions;
         $this->name = new Name($this->legal->getName());
         $this->date = $date;
         $this->addStatus(Status::ACTIVE, $this->date);
@@ -131,9 +132,9 @@ final class Clinic
     /** Возврщает список лицензий
      * @return array
      */
-    public function getLicences(): array
+    public function geteDirections(): array
     {
-        return $this->licences;
+        return $this->directions;
     }
 
     /**
