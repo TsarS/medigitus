@@ -7,6 +7,8 @@ namespace Clinic\Infrastructure\Persistence\MySQL;
 use Clinic\Domain\Entity\Clinic;
 use Clinic\Domain\Repository\ClinicReadRepository;
 use Clinic\Domain\VO\Address;
+use Clinic\Domain\VO\Direction;
+use Clinic\Domain\VO\Directions;
 use Clinic\Domain\VO\Id;
 use Clinic\Domain\VO\Legal;
 use Clinic\Domain\VO\Name;
@@ -35,14 +37,14 @@ final class ClinicReadMySQLRepository implements ClinicReadRepository
     public function get(Id $id): Clinic
     {
         $statement = $this->connection->prepare('SELECT id, inn, name, legalForm, country, post_code, region,city,street,building, lat, lon, date FROM clinic WHERE id = ?');
-        $statement_directions = $this->connection->prepare('SELECT name FROM clinic_directions WHERE clinic_id = ?');
+        $statement_directions = $this->connection->prepare('SELECT name,ambulance,surgery FROM clinic_directions WHERE clinic_id = ?');
         $statement->bindValue(1, $id->getId());
         $statement_directions->bindValue(1, $id->getId());
         $statement->execute();
         $statement_directions->execute();
 
         $clinic = $statement->fetch();
-        $clinic_directions = $statement_directions->fetchAll(PDO::FETCH_COLUMN);
+        $clinic_directions = $statement_directions->fetchAll(PDO::FETCH_ASSOC);
         if (!$clinic) {
             throw new NotFoundClinicException($id->getId());
         }
@@ -67,7 +69,13 @@ final class ClinicReadMySQLRepository implements ClinicReadRepository
                 $clinic['lat'],
                 $clinic['lon']
             ),
-            'directions' => array_map($clinic_directions['name'],$clinic_directions),
+            'directions' => new Directions(array_map(function ($direction) {
+                return new Direction(
+                    $direction['name'],
+                    $direction['ambulance'],
+                    $direction['surgery']
+                );
+            },$clinic_directions)),
             'date' => new DateTimeImmutable($clinic['date']),
         ]);
 

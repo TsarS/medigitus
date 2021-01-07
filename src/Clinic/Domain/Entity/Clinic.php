@@ -7,6 +7,7 @@ namespace Clinic\Domain\Entity;
 use Clinic\Domain\Events\ClinicCreated;
 use Clinic\Domain\Events\ClinicRenamed;
 use Clinic\Domain\VO\Address;
+use Clinic\Domain\VO\Directions;
 use Clinic\Domain\VO\Id;
 use Clinic\Domain\VO\Legal;
 use Clinic\Domain\VO\Name;
@@ -33,9 +34,9 @@ final class Clinic
      */
     private Address $address;
     /** Массив направлений, принадлежащий данной клинике
-     * @var array
+     * @var Directions
      */
-    private array $directions;
+    private Directions $directions;
 
     /**
      * @var string
@@ -64,7 +65,7 @@ final class Clinic
         $this->id = $id;
         $this->legal = $legal;
         $this->address = $address;
-        $this->directions = $directions;
+        $this->directions = new Directions($directions);
         $this->date = $date;
         $this->name = $name;
         $this->recordEvent(new ClinicCreated($this->id));
@@ -100,7 +101,7 @@ final class Clinic
      */
     public function getDirections(): array
     {
-        return $this->directions;
+        return $this->directions->getAll();
     }
 
     /**

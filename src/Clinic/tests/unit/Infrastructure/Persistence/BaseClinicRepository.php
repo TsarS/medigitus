@@ -43,7 +43,7 @@ abstract class BaseClinicRepository extends TestCase
         $found = $this->readRepository->get($clinic->getId());
         $this->assertNotNull($found);
         $this->assertEquals($clinic->getId(), $found->getId());
-        $this->assertEquals($clinic->getDirections(), $found->getDirections());
+       $this->assertEquals($clinic->getDirections(), $found->getDirections());
     }
     public function testRenameRepository(): void
     {

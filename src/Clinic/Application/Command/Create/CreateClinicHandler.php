@@ -68,7 +68,7 @@ final class CreateClinicHandler implements CommandHandlerInterface
                 $command->getLat(),
                 $command->getLon()
             ),
-            [],
+            $command->getDirections(),
             new DateTimeImmutable()
         );
         $this->repository->add($clinic);

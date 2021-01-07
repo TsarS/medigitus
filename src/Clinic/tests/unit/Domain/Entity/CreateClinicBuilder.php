@@ -6,6 +6,7 @@ namespace Clinic\tests\unit\Domain\Entity;
 
 use Clinic\Domain\Entity\Clinic;
 use Clinic\Domain\VO\Address;
+use Clinic\Domain\VO\Direction;
 use Clinic\Domain\VO\Id;
 use Clinic\Domain\VO\Legal;
 use Clinic\Domain\VO\Name;
@@ -30,6 +31,10 @@ final class CreateClinicBuilder
      */
     private DateTimeImmutable $date;
     private Name $name;
+    /**
+     * @var Direction[]
+     */
+    private array $directions;
 
 
     public function __construct()
@@ -47,7 +52,10 @@ final class CreateClinicBuilder
           $lat = 55.8782557,
           $lon = 37.65372
       );
-      $this->directions =  ['Аллергология','Гинекология','Трвматология'];
+      $this->directions = [
+          new Direction('Аллергология',1,0),
+          new Direction('Травматология',1,0)
+      ];
       $this->date = new DateTimeImmutable();
   }
     public function withId(Id $id): self
@@ -74,7 +82,7 @@ final class CreateClinicBuilder
         $clone->address = $address;
         return $clone;
     }
-    public function withLicence(array $directions): self
+    public function withDirections(array $directions): self
     {
         $clone = clone $this;
         $clone->directions = $directions;

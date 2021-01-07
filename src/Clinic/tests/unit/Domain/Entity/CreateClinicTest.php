@@ -7,6 +7,7 @@ use Clinic\Domain\Entity\Clinic;
 use Clinic\Domain\Events\ClinicCreated;
 use Clinic\Domain\Events\ClinicRenamed;
 use Clinic\Domain\VO\Address;
+use Clinic\Domain\VO\Direction;
 use Clinic\Domain\VO\Id;
 use Clinic\Domain\VO\Legal;
 use Clinic\Domain\VO\Name;
@@ -32,7 +33,10 @@ class CreateClinicTest extends TestCase
                 $lat = 55.8782557,
                 $lon = 37.65372
             ),
-            ['Аллергология','Гинекология','Травматология'],
+            [
+                new Direction('Аллергология',1,0),
+                new Direction('Травматология',0,1)
+            ],
             $date = new DateTimeImmutable()
         );
         $this->assertEquals($id,$clinic->getId());
