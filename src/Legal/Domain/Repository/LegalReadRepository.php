@@ -9,5 +9,7 @@ use Legal\Domain\VO\Id;
 
 interface LegalReadRepository
 {
-  public function get(Id $id): Legal;
+    public function get(Id $id): Legal;
+
+    public function existsByInn($inn): bool;
 }

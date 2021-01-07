@@ -8,6 +8,7 @@ use DateTimeImmutable;
 use Legal\Application\Command\CommandHandlerInterface;
 use Legal\Application\Command\CommandInterface;
 use Legal\Domain\Entity\Legal;
+use Legal\Domain\Repository\LegalReadRepository;
 use Legal\Domain\Repository\LegalRepository;
 use Legal\Domain\VO\Address;
 use Legal\Domain\VO\Id;
@@ -22,40 +23,41 @@ final class CreateLegalHandler implements CommandHandlerInterface
      * @var LegalRepository
      */
     private LegalRepository $repository;
+    /**
+     * @var LegalReadRepository
+     */
+    private LegalReadRepository $readRepository;
 
     public function __construct(
-      LegalRepository $repository
-  )
-  {
-      $this->repository = $repository;
-  }
+        LegalRepository $repository,
+        LegalReadRepository $readRepository
+    )
+    {
+        $this->repository = $repository;
+        $this->readRepository = $readRepository;
+    }
 
     public function __invoke(CommandInterface $command)
     {
-        $legal = new Legal(
-            Id::next(),
-            $inn = new Inn($command->getInn()),
-            $ogrn = new Ogrn($command->getOgrn()),
-            $name = new Name($command->getName()),
-            $legalForm = new LegalForm($command->getLegalForm()),
-            $address = new Address(
-                $command->getCountry(),
-                $command->getPostCode(),
-                $command->getRegion(),
-                $command->getCity(),
-                $command->getStreet(),
-                $command->getBuilding()
-            ),
-            $date = new DateTimeImmutable()
-        );
-        $this->repository->add($legal);
+        if (!$this->readRepository->existsByInn($command->getInn())) {
+            $legal = new Legal(
+                Id::next(),
+                $inn = new Inn($command->getInn()),
+                $ogrn = new Ogrn($command->getOgrn()),
+                $name = new Name($command->getName()),
+                $legalForm = new LegalForm($command->getLegalForm()),
+                $address = new Address(
+                    $command->getCountry(),
+                    $command->getPostCode(),
+                    $command->getRegion(),
+                    $command->getCity(),
+                    $command->getStreet(),
+                    $command->getBuilding()
+                ),
+                $date = new DateTimeImmutable()
+            );
+            $this->repository->add($legal);
+        } else return false;
     }
 
-    /**
-     * @return LegalRepository
-     */
-    public function getRepository(): LegalRepository
-    {
-        return $this->repository;
-    }
 }

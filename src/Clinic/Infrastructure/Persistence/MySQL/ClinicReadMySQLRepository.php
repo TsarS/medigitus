@@ -73,4 +73,19 @@ final class ClinicReadMySQLRepository implements ClinicReadRepository
 
     }
 
+    public function ifExistByInnAndAddress($inn, $post_code, $city, $street,$building): bool
+    {
+        $statement = $this->connection->prepare('SELECT inn,post_code,city,street,building FROM clinic WHERE inn = :inn AND post_code=:post_code AND  city=:city AND street=:street AND building=:building');
+        $statement->execute([
+                ':inn' => $inn,
+                ':post_code' =>$post_code,
+                ':city' => $city,
+                ':street' => $street,
+                ':building' => $building
+
+            ]);
+        if($statement->rowCount() > 0){
+            return true;
+        } else return false;
+    }
 }

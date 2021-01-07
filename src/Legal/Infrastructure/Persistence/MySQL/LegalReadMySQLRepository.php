@@ -63,5 +63,21 @@ final class LegalReadMySQLRepository implements LegalReadRepository
             'date' => new DateTimeImmutable($legal['date']),
         ]);
     }
+    public function existsByInn($inn): bool
+    {
+        $statement = $this->connection->prepare("SELECT inn FROM legal WHERE (inn=:inn)");
+        $statement->execute(
+            [':inn' => $inn]
+        );
+      //  $check = $statement->fetchColumn();
+        if($statement->rowCount() > 0){
+           return true;
+        } else return false;
+
+      /*  if (isset($check) && !empty($check) && $check>0){
+            return true;
+        } else return false;
+      */
+    }
 
 }
