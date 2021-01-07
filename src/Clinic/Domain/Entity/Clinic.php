@@ -67,17 +67,19 @@ final class Clinic
         $this->directions = $directions;
         $this->date = $date;
         $this->name = $name;
-        $this->recordEvent(new ClinicCreated($this->id, $this->getName()->getName()));
+        $this->recordEvent(new ClinicCreated($this->id));
 
     }
-
+   public function addDirection($directions): void {
+     $this->directions = $directions;
+   }
     /**
      * @param Name $newName
      */
     public function rename(Name $newName): void
     {
         $this->name = $newName;
-        $this->recordEvent(new ClinicRenamed($this->id,  $this->getName()->getName()));
+        $this->recordEvent(new ClinicRenamed($this->id));
     }
 
     /**

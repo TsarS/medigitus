@@ -6,6 +6,7 @@ namespace Clinic\Application\Command\Create;
 
 use Clinic\Application\Command\CommandHandlerInterface;
 use Clinic\Application\Command\CommandInterface;
+use Clinic\Application\Event\Create\ClinicEventDispatcher;
 use Clinic\Domain\Entity\Clinic;
 use Clinic\Domain\Repository\ClinicReadRepository;
 use Clinic\Domain\Repository\ClinicRepository;
@@ -25,14 +26,20 @@ final class CreateClinicHandler implements CommandHandlerInterface
      * @var ClinicReadRepository
      */
     private ClinicReadRepository $readRepository;
+    /**
+     * @var ClinicEventDispatcher
+     */
+    private ClinicEventDispatcher $dispatcher;
 
     public function __construct(
         ClinicRepository $repository,
-        ClinicReadRepository $readRepository
+        ClinicReadRepository $readRepository,
+        ClinicEventDispatcher $dispatcher
     )
     {
         $this->repository = $repository;
         $this->readRepository = $readRepository;
+        $this->dispatcher = $dispatcher;
     }
 
     public function __invoke(CommandInterface $command)
@@ -65,6 +72,7 @@ final class CreateClinicHandler implements CommandHandlerInterface
             new DateTimeImmutable()
         );
         $this->repository->add($clinic);
+        $this->dispatcher->dispatch($clinic->releaseEvents());
     } else return;
     }
 }

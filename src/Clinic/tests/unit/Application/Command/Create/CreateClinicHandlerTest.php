@@ -6,6 +6,7 @@ namespace Application\Command\Create;
 
 use Clinic\Application\Command\Create\CreateClinicCommand;
 use Clinic\Application\Command\Create\CreateClinicHandler;
+use Clinic\Application\Event\Create\ClinicEventDispatcher;
 use Clinic\Infrastructure\Persistence\Hydrator;
 use Clinic\Infrastructure\Persistence\MySQL\ClinicMySQLRepository;
 use Clinic\Infrastructure\Persistence\MySQL\ClinicReadMySQLRepository;
@@ -26,7 +27,8 @@ final class CreateClinicHandlerTest extends TestCase
         $hydrator = new Hydrator();
         $repository = new ClinicMySQLRepository($connection);
         $readRepository = new ClinicReadMySQLRepository($connection, $hydrator);
-        $handler = new CreateClinicHandler($repository, $readRepository);
+        $dispatcher = new ClinicEventDispatcher();
+        $handler = new CreateClinicHandler($repository, $readRepository, $dispatcher);
         $command = new CreateClinicCommand(
             '7729695811',
             'Частная',
@@ -40,7 +42,7 @@ final class CreateClinicHandlerTest extends TestCase
             '23',
             '23',
             []);
-        $handler = new CreateClinicHandler($repository,$readRepository);
+        $handler = new CreateClinicHandler($repository,$readRepository, $dispatcher);
         $handler->__invoke($command);
         $this->assertTrue($readRepository->ifExistByInnAndAddress(
             $command->getInn(),

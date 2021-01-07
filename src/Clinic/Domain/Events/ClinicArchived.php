@@ -13,11 +13,11 @@ final class ClinicArchived
      * @var Id
      */
     private Id $id;
-    private DateTimeImmutable $date;
 
-    public function __construct(Id $id, DateTimeImmutable $date) {
+
+    public function __construct(Id $id) {
 
         $this->id = $id;
-        $this->date = $date;
+
     }
 }

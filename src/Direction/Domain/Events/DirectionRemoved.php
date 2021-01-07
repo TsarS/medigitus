@@ -6,7 +6,7 @@ namespace Direction\Domain\Events;
 
 use Direction\Domain\VO\Id;
 
-final class DirectionRenamed
+final class DirectionRemoved
 {
     /**
      * @var Id
@@ -15,7 +15,7 @@ final class DirectionRenamed
 
 
     public function __construct(Id $id)
-    {
-        $this->id = $id;
-    }
+  {
+      $this->id = $id;
+  }
 }

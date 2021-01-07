@@ -9,7 +9,15 @@ use DateTimeImmutable;
 
 final class ClinicReinstated
 {
-  public function __construct(Id $id, DateTimeImmutable $dateTimeImmutable)
+    /**
+     * @var Id
+     */
+    private Id $id;
+    private DateTimeImmutable $dateTimeImmutable;
+
+    public function __construct(Id $id, DateTimeImmutable $dateTimeImmutable)
   {
+      $this->id = $id;
+      $this->dateTimeImmutable = $dateTimeImmutable;
   }
 }

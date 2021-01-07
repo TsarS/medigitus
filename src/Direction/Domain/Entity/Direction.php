@@ -7,6 +7,7 @@ namespace Direction\Domain\Entity;
 
 use DateTimeImmutable;
 use Direction\Domain\Events\DirectionCreated;
+use Direction\Domain\Events\DirectionRemoved;
 use Direction\Domain\Events\DirectionRenamed;
 use Direction\Domain\VO\Id;
 
@@ -30,7 +31,7 @@ final class Direction implements AggregateRoot
         $this->id = $id;
         $this->name = $name;
         $this->date = $date;
-        $this->recordEvent(new DirectionCreated($this->id, $this->name));
+        $this->recordEvent(new DirectionCreated($this->id));
     }
 
 
@@ -39,7 +40,7 @@ final class Direction implements AggregateRoot
      */
     public function remove(): void
     {
-        $this->recordEvent(new DirectionRenamed($this->id, $this->name));
+        $this->recordEvent(new DirectionRemoved($this->id));
     }
 
     /** Переименовывает название направления
@@ -47,7 +48,7 @@ final class Direction implements AggregateRoot
      */
     public function rename(string $newName): void {
         $this->name = $newName;
-        $this->recordEvent(new DirectionRenamed($this->id, $this->name));
+        $this->recordEvent(new DirectionRenamed($this->id));
     }
 
 

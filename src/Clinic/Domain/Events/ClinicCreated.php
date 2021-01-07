@@ -12,11 +12,8 @@ final class ClinicCreated
      * @var Id
      */
     private Id $id;
-    private string $name;
 
-    public function __construct(Id $id, string $name) {
-
+    public function __construct(Id $id) {
         $this->id = $id;
-        $this->name = $name;
     }
 }
