@@ -46,18 +46,11 @@ final class CreateLegalHandler implements CommandHandlerInterface
                 $ogrn = new Ogrn($command->getOgrn()),
                 $name = new Name($command->getName()),
                 $legalForm = new LegalForm($command->getLegalForm()),
-                $address = new Address(
-                    $command->getCountry(),
-                    $command->getPostCode(),
-                    $command->getRegion(),
-                    $command->getCity(),
-                    $command->getStreet(),
-                    $command->getBuilding()
-                ),
+                $address = $command->getAddress(),
                 $date = new DateTimeImmutable()
             );
             $this->repository->add($legal);
-        } else return false;
+        } else return;
     }
 
 }

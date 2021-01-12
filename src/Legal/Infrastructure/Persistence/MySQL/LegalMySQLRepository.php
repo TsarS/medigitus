@@ -21,24 +21,11 @@ final class LegalMySQLRepository implements LegalRepository
     public function add($legal): void
     {
         $stmt = $this->connection;
-        $legal_table = $stmt->prepare("INSERT INTO `legal` (`id`, `inn`, `ogrn`,`name`,`legalForm`,`country`, `post_code`, `region`, `city`, `street`,`building`, `date`) VALUES (:id, :inn, :ogrn, :name, :legalForm,:country, :post_code, :region, :city, :street, :building, :date)");
+        $legal_table = $stmt->prepare("INSERT INTO `legal` (`id`, `inn`, `ogrn`,`name`,`legalForm`,`address`, `date`) VALUES (:id, :inn, :ogrn, :name, :legalForm,:address, :date)");
 
         $stmt->beginTransaction();
         try {
-            $legal_table->execute([
-                ':id' => $legal->getId()->getId(),
-                ':inn' => $legal->getInn()->getInn(),
-                ':ogrn' => $legal->getOgrn()->getOgrn(),
-                ':name' => $legal->getName()->getName(),
-                ':legalForm' => $legal->getLegalForm()->getLegalForm(),
-                ':country' => $legal->getAddress()->getCountry(),
-                ':post_code' => $legal->getAddress()->getPostCode(),
-                ':region' => $legal->getAddress()->getRegion(),
-                ':city' => $legal->getAddress()->getCity(),
-                ':street' => $legal->getAddress()->getStreet(),
-                ':building' => $legal->getAddress()->getBuilding(),
-                ':date' => $legal->getDate()->format('Y-m-d H:i:s')
-            ]);
+            $legal_table->execute(self::getExtractedData($legal));
 
             $stmt->commit();
         } catch (Exception $e) {
@@ -51,22 +38,9 @@ final class LegalMySQLRepository implements LegalRepository
     public function save(Legal $legal): void
     {
         $stmt = $this->connection;
-        $legal_table = $stmt->prepare("UPDATE `legal` SET  inn=:inn, ogrn=:ogrn, name=:name, legalForm =:legalForm, country=:country, post_code=:post_code, region=:region, city=:city, street=:street,building=:building, date=:date WHERE id=:id");
+        $legal_table = $stmt->prepare("UPDATE `legal` SET  inn=:inn, ogrn=:ogrn, name=:name, legalForm =:legalForm, address=:address, date=:date WHERE id=:id");
         try {
-            $legal_table->execute([
-                ':id' => $legal->getId()->getId(),
-                ':inn' => $legal->getInn()->getInn(),
-                ':ogrn' => $legal->getOgrn()->getOgrn(),
-                ':name' => $legal->getName()->getName(),
-                ':legalForm' => $legal->getLegalForm()->getLegalForm(),
-                ':country' => $legal->getAddress()->getCountry(),
-                ':post_code' => $legal->getAddress()->getPostCode(),
-                ':region' => $legal->getAddress()->getRegion(),
-                ':city' => $legal->getAddress()->getCity(),
-                ':street' => $legal->getAddress()->getStreet(),
-                ':building' => $legal->getAddress()->getBuilding(),
-                ':date' => $legal->getDate()->format('Y-m-d H:i:s')
-            ]);
+            $legal_table->execute(self::getExtractedData($legal));
 
             $stmt->commit();
         } catch (Exception $e) {
@@ -74,5 +48,15 @@ final class LegalMySQLRepository implements LegalRepository
             echo $e->getMessage();
         }
     }
-
+   private static function getExtractedData(Legal $legal) : array {
+        return [
+            ':id' => $legal->getId()->getId(),
+            ':inn' => $legal->getInn()->getInn(),
+            ':ogrn' => $legal->getOgrn()->getOgrn(),
+            ':name' => $legal->getName()->getName(),
+            ':legalForm' => $legal->getLegalForm()->getLegalForm(),
+            ':address' => $legal->getAddress(),
+            ':date' => $legal->getDate()->format('Y-m-d H:i:s')
+        ];
+   }
 }

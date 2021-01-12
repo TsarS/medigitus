@@ -9,7 +9,9 @@ use Clinic\Application\Command\CommandInterface;
 use Clinic\Application\Event\Create\ClinicEventDispatcher;
 use Clinic\Domain\Repository\ClinicReadRepository;
 use Clinic\Domain\Repository\ClinicRepository;
+use Clinic\Domain\VO\Direction;
 use Clinic\Domain\VO\Id;
+
 
 final class ChangeDirectionHandler implements CommandHandlerInterface
 {
@@ -40,7 +42,7 @@ final class ChangeDirectionHandler implements CommandHandlerInterface
     public function __invoke(CommandInterface $command)
     {
         $clinic = $this->readRepository->get(new ID($command->getId()));
-        $clinic->addDirection(new Direction($command->getDirection()));
+        $clinic->addDirection(new Direction($command->getDirection(), 1,1));
         $this->repository->save($clinic);
         $this->dispatcher->dispatch($clinic->releaseEvents());
     }

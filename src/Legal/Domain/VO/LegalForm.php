@@ -18,16 +18,7 @@ final class LegalForm
         if (empty($legalForm)) {
             throw new EmptyLegalFormException($legalForm);
         }
-        if ($legalForm === null) {
-            $legalForm = 'Нет';
-            throw new EmptyLegalFormException($legalForm);
-        }
-        /*
 
-          if (!$this->validate($legalForm)) {
-              throw new NoValidLegalFormException($legalForm);
-          }
-        */
         $this->legalForm = $legalForm;
     }
     /**

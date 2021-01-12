@@ -47,9 +47,12 @@ class Ogrn
         if (empty($ogrn)) {
             throw new EmptyOgrnException($ogrn);
         }
-        if (!$this->validate($ogrn)) {
+      /*
+       *  if (!$this->validate($ogrn)) {
             throw new NoValiOgrnException($ogrn);
         }
+       *
+       */
 
         $this->ogrn = $ogrn;
     }

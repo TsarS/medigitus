@@ -6,6 +6,8 @@ namespace Clinic\Domain\VO;
 
 final class Direction
 {
+    const PRESENT = 1;
+    const NOT_PRESENT = 0;
     private string $name;
     private int $ambulance;
     private int $surgery;
@@ -30,7 +32,7 @@ final class Direction
     }
 
     /**
-     * @return bool
+     * @return int
      */
     public function isAmbulance():int
     {
@@ -38,7 +40,7 @@ final class Direction
     }
 
     /**
-     * @return bool
+     * @return int
      */
     public function isSurgery(): int
     {

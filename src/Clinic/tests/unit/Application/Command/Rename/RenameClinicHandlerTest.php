@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Application\Command\Create;
+namespace Application\Command\Rename;
 
 
 use Clinic\Application\Command\Rename\RenameClinicCommand;

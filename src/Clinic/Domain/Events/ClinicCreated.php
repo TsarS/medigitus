@@ -16,4 +16,12 @@ final class ClinicCreated
     public function __construct(Id $id) {
         $this->id = $id;
     }
+
+    /**
+     * @return Id
+     */
+    public function getId(): Id
+    {
+        return $this->id;
+    }
 }

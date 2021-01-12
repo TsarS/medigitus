@@ -28,8 +28,8 @@ final class ClinicSQLRepositoryTest extends BaseClinicRepository
         }
         $connection->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
         $connection->setAttribute(PDO::ATTR_STRINGIFY_FETCHES, false);
-        // $truncate = $connection->prepare("DELETE FROM clinic");
-        // $truncate->execute();
+       $truncate = $connection->prepare("DELETE FROM clinic");
+         $truncate->execute();
 
         $hydrator = new Hydrator();
         $this->repository = new ClinicMySQLRepository($connection);

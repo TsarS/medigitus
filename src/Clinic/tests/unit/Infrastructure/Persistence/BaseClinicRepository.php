@@ -20,11 +20,11 @@ abstract class BaseClinicRepository extends TestCase
     /**
      * @var ClinicRepository
      */
-    protected $repository;
+    protected ClinicRepository $repository;
     /**
      * @var ClinicReadRepository
      */
-    protected $readRepository;
+    protected ClinicReadRepository $readRepository;
 
     public function testAdd(): void
     {

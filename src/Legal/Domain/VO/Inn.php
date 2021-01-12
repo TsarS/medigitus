@@ -20,7 +20,7 @@ final class Inn
         if (!in_array($inn_length = strlen($inn), [10, 12])) {
             throw new NoValidLengthInnException($inn);
         }
-        $this->isInnValid($inn);
+   $this->isInnValid($inn);
 
         $this->inn = $inn;
     }
@@ -33,6 +33,8 @@ final class Inn
      * @param string $inn
      * @return void
      */
+
+
     private function isInnValid(string $inn): void {
         $controlArray = [2, 4, 10, 3, 5, 9, 4, 6, 8];
         $givenInn = $inn;
@@ -46,6 +48,6 @@ final class Inn
                 throw new NoValidInnException($givenInn);
             }
         }
-
     }
+
 }

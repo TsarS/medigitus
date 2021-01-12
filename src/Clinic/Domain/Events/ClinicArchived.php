@@ -20,4 +20,12 @@ final class ClinicArchived
         $this->id = $id;
 
     }
+
+    /**
+     * @return Id
+     */
+    public function getId(): Id
+    {
+        return $this->id;
+    }
 }

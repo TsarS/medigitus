@@ -44,10 +44,10 @@ final class Direction implements AggregateRoot
     }
 
     /** Переименовывает название направления
-     * @param string $newName
+     * @param string $name
      */
-    public function rename(string $newName): void {
-        $this->name = $newName;
+    public function rename(string $name): void {
+        $this->name = $name;
         $this->recordEvent(new DirectionRenamed($this->id));
     }
 

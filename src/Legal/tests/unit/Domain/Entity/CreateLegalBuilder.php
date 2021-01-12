@@ -6,7 +6,6 @@ namespace Legal\tests\unit\Domain\Entity;
 
 use DateTimeImmutable;
 use Legal\Domain\Entity\Legal;
-use Legal\Domain\VO\Address;
 use Legal\Domain\VO\Id;
 use Legal\Domain\VO\Inn;
 use Legal\Domain\VO\LegalForm;
@@ -16,6 +15,27 @@ use Legal\Domain\VO\Ogrn;
 final class CreateLegalBuilder
 {
     private $id;
+    /**
+     * @var Inn
+     */
+    private Inn $inn;
+    /**
+     * @var LegalForm
+     */
+    private LegalForm $legalForm;
+    /**
+     * @var string
+     */
+    private string $postAddress;
+    /**
+     * @var Name
+     */
+    private Name $name;
+    /**
+     * @var Ogrn
+     */
+    private Ogrn $ogrn;
+    private DateTimeImmutable $date;
 
     public function __construct() {
         $this->id = Id::next();
@@ -23,7 +43,7 @@ final class CreateLegalBuilder
         $this->ogrn = new Ogrn('1117746919597');
         $this->name = new Name('Общество с ограниченной ответственностью "Клинический госпиталь на Яузе"');
         $this->legalForm = new LegalForm('Общество с ограниченной ответственностью');
-        $this->postAddress = new Address('Российская Федерация','111033', 'г.Москва', 'Москва', 'Волочаевская','15к1');
+        $this->postAddress = 'Российская Федерация';
         $this->date = new DateTimeImmutable();
     }
     public function withId(Id $id): self
@@ -56,7 +76,7 @@ final class CreateLegalBuilder
         $clone->legalForm = $legalForm;
         return $clone;
     }
-    public function withAddress(Address $postAddress): self
+    public function withAddress(string $postAddress): self
     {
         $clone = clone $this;
         $clone->postAddress = $postAddress;

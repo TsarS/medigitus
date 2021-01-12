@@ -19,13 +19,13 @@ abstract class BaseDirectionRepository extends TestCase
     /**
      * @var DirectionRepository
      */
-    protected $repository;
+    protected DirectionRepository $repository;
     /**
      * @var DirectionReadRepository
      */
-    protected $readRepository;
+    protected DirectionReadRepository $readRepository;
 
-    public function testAdd(): void
+    public function testAddToRepository(): void
     {
         $direction = new Direction(
             $id = Id::next(),
@@ -39,7 +39,7 @@ abstract class BaseDirectionRepository extends TestCase
         $this->assertEquals($direction->getName(), $found->getName());
 
     }
-    public function testGet(): void
+    public function testGetFromRepository(): void
     {
         $direction = new Direction(
             $id = Id::next(),
@@ -51,10 +51,26 @@ abstract class BaseDirectionRepository extends TestCase
         $this->assertNotNull($found);
         $this->assertEquals($direction->getId(), $direction->getId());
     }
-    public function testGetNotFound(): void
+    public function testGetNotFoundInRepository(): void
     {
         $this->expectException(NotFoundDirectionException::class);
         $this->readRepository->get(new Id(uniqid()));
+    }
+    public function testRenameInRepository(): void
+    {
+        $direction = new Direction(
+            $id = Id::next(),
+            $name = 'Офтальмология',
+            $date = new DateTimeImmutable()
+        );
+        $this->repository->add($direction);
+        $found = $this->readRepository->get($direction->getId());
+        $this->assertNotNull($found);
+        $found->rename($renamedName = 'Переименованное название');
+        $this->repository->save($found);
+        $renamed = $this->readRepository->get($found->getId());
+        $this->assertNotNull($renamed);
+        $this->assertEquals($renamedName, $renamed->getName());
     }
 
 

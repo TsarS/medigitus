@@ -48,6 +48,7 @@ class CreateClinicTest extends TestCase
         $this->assertNotEmpty($events = $clinic->releaseEvents());
         $this->assertInstanceOf(ClinicCreated::class, end($events));
 
+
     }
 
     public function testRenameClinic() {

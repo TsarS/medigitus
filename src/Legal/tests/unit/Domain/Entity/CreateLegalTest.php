@@ -41,7 +41,7 @@ final class CreateLegalTest extends TestCase
             $ogrn = new Ogrn('1117746919597'),
             $name = new Name('Общество с ограниченной ответственностью "Клинический госпиталь на Яузе"'),
             $legalForm = new LegalForm('Общество с ограниченной ответственностью'),
-            $address = new Address('Российская Федерация', '111033', 'г. Москва', 'Москва', 'Волочаевская','15к1'),
+            $address = 'Российская Федерация,111033, Москва, Волочаевская 15 к.1',
             $date = new DateTimeImmutable()
         );
         $this->assertEquals($id, $legal->getId(),'Проверяем, что возвращается ID');
@@ -92,6 +92,8 @@ final class CreateLegalTest extends TestCase
     /**
      * Проверка на правильность контрольной суммы ИНН
      */
+
+    /*
     public function testWithWrongControlSummInn(): void
     {
         $this->expectException(NoValidInnException::class);
@@ -137,12 +139,12 @@ final class CreateLegalTest extends TestCase
     /**
      * Проверка валидности ОГРН
      */
-    public function testNoValidOgrn(): void
+  /*  public function testNoValidOgrn(): void
     {
         $this->expectException(NoValiOgrnException::class);
         (new CreateLegalBuilder())->withOgrn(new Ogrn('dsfds'))->build();
     }
-
+*/
     //////// LegalForm ////////
     /**
      * Проверка наличия формы собственности
@@ -182,8 +184,12 @@ final class CreateLegalTest extends TestCase
     }
 
     /////// Address /////
-
-
+    public function testReturnFullAddress(): void {
+        $fullAddress = '111033, г.Москва, Москва, Волочаевская, 15к1';
+        $legal =  (new CreateLegalBuilder())->withAddress($fullAddress)->build();
+        $this->assertStringContainsString($fullAddress, $legal->getAddress());
+    }
+/*
     public function testWithEmptyPostCode(): void
     {
         $this->expectException(AddressMustHavePostCodeException::class);
@@ -244,5 +250,6 @@ final class CreateLegalTest extends TestCase
         $legal =  (new CreateLegalBuilder())->build();
         $this->assertStringContainsString($fullAddress, $legal->getAddress()->getFullAddress());
     }
+*/
 
 }

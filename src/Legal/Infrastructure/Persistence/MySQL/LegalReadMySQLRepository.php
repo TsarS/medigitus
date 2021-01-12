@@ -20,9 +20,9 @@ use PDO;
 final class LegalReadMySQLRepository implements LegalReadRepository
 {
     /**
-     * @var
+     * @var PDO
      */
-    private $connection;
+    private PDO $connection;
     /**
      * @var Hydrator
      */
@@ -37,7 +37,7 @@ final class LegalReadMySQLRepository implements LegalReadRepository
     public function get(Id $id): Legal
     {
 
-        $statement = $this->connection->prepare('SELECT id, inn, ogrn, name, legalForm, country, post_code, region,city,street,building, date FROM legal WHERE id = ?');
+        $statement = $this->connection->prepare('SELECT id, inn, ogrn, name, legalForm, address, date FROM legal WHERE id = ?');
         $statement->bindValue(1, $id->getId());
         $statement->execute();
 
@@ -52,14 +52,7 @@ final class LegalReadMySQLRepository implements LegalReadRepository
             'ogrn' => new Ogrn($legal['ogrn']),
             'name' => new Name($legal['name']),
             'legalForm' => new LegalForm($legal['legalForm']),
-            'address' => new Address(
-                $legal['country'],
-                $legal['post_code'],
-                $legal['region'],
-                $legal['city'],
-                $legal['street'],
-                $legal['building']
-            ),
+            'address' => $legal['address'],
             'date' => new DateTimeImmutable($legal['date']),
         ]);
     }

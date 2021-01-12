@@ -38,9 +38,9 @@ final class Legal implements AggregateRoot
      */
     private LegalForm $legalForm;
     /**
-     * @var Address
+     * @var string
      */
-    private Address $address;
+    private string $address;
     private DateTimeImmutable $date;
 
     public function __construct(
@@ -49,7 +49,7 @@ final class Legal implements AggregateRoot
      Ogrn $ogrn,
      Name $name,
      LegalForm $legalForm,
-     Address $address,
+     string $address,
      DateTimeImmutable $date
  )
  {
@@ -104,9 +104,9 @@ final class Legal implements AggregateRoot
     }
 
     /**
-     * @return Address
+     * @return string
      */
-    public function getAddress(): Address
+    public function getAddress(): string
     {
         return $this->address;
     }
@@ -118,6 +118,8 @@ final class Legal implements AggregateRoot
     {
         return $this->date;
     }
+
+
     public function getStateOrPrivate() {
         return $this->legalForm->getPrivateOrState();
     }

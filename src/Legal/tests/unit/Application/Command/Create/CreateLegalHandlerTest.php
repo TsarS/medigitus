@@ -41,12 +41,7 @@ final class CreateLegalHandlerTest extends TestCase
             $ogrn = '1117746919597',
             $name = 'Для теста Хендлера',
             $legalForm = 'Общество с ограниченной ответственностью',
-            $country = 'Российская Федерация',
-            $post_code = '111033',
-            $region = 'г.Москва',
-            $city = 'Москва',
-            $street = 'Волочаевская',
-            $building = '15к1'
+            $address = 'Российская Федерация'
         );
         try {
             $connection = new PDO('mysql:host=localhost;dbname=rating_test', 'root', 'root');

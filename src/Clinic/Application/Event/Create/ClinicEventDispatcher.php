@@ -12,7 +12,7 @@ final class ClinicEventDispatcher implements EventDispatcher
     public function dispatch(array $events): void
     {
         foreach ($events as $event) {
-           var_dump($event);
+            file_put_contents("file.txt",get_class($event), FILE_APPEND);
         }
     }
 }

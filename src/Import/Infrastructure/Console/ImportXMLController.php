@@ -6,27 +6,33 @@ namespace Import\Infrastructure\Console;
 
 use DOMDocument;
 use Exception;
+use PDO;
 use RuntimeException;
 use XMLReader;
 
 final class ImportXMLController
 {
-    private $file;
-    private $connection;
+    /**
+     * @var
+     */
+    private string $file;
+    private PDO $connection;
+    private PDO $statement;
 
     public function __construct($connection, $file)
     {
 
         $this->file = $file;
         $this->connection = $connection;
+        $this->statement = $this->connection;
     }
 
     public function importXML()
     {
-        $stmt = $this->connection;
-        $sql_table_legal = $stmt->prepare("INSERT INTO licences (inn, ogrn, full_name_licensee, number, date, termination, date_termination, information_suspension_resumption, information_cancellation, activity_type) VALUES (:inn, :ogrn, :full_name_licensee, :number, :date, :termination, :date_termination, :information_suspension_resumption, :information_cancellation, :activity_type)");
-        $sql_table_address = $stmt->prepare("INSERT INTO licences_post_address (inn, address) VALUES (:inn, :address)");
-        $sql_table_works = $stmt->prepare("INSERT INTO licences_works (address_id, work) VALUES (:address_id, :work)");
+        $this->statement->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $sql_table_legal = $this->statement->prepare("INSERT INTO licences (inn, ogrn, full_name_licensee, form, address,number, date, termination, date_termination, information_suspension_resumption, information_cancellation, activity_type) VALUES (:inn, :ogrn, :full_name_licensee,:form, :address, :number, :date, :termination, :date_termination, :information_suspension_resumption, :information_cancellation, :activity_type)");
+        $sql_table_address = $this->statement->prepare("INSERT INTO licences_post_address (inn, address) VALUES (:inn, :address)");
+        $sql_table_works = $this->statement->prepare("INSERT INTO licences_works (address_id, work) VALUES (:address_id, :work)");
         $doc = new DOMDocument;
         $reader = new XMLReader();
 
@@ -42,6 +48,8 @@ final class ImportXMLController
                             ':inn' => $inn,
                             ':ogrn' => $node->ogrn,
                             ':full_name_licensee' => $node->full_name_licensee,
+                            ':form' => $node->form,
+                            ':address' => $node->address,
                             ':number' => $node->number,
                             ':date' => $node->date,
                             ':activity_type' => $node->activity_type,
@@ -82,5 +90,14 @@ final class ImportXMLController
         }
 
 
+    }
+
+    private function tableExists($dbh, $id)
+    {
+        $results = $dbh->query("SHOW TABLES LIKE '$id'");
+        if(!$results) {
+            die(print_r($dbh->errorInfo(), TRUE));
+        }
+        if($results->rowCount()>0){echo 'table exists';}
     }
 }

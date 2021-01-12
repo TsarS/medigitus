@@ -12,49 +12,47 @@ use PDO;
 final class DirectionMySQLRepository implements DirectionRepository
 {
     private PDO $connection;
-
+    private PDO $statement;
     public function __construct(PDO $connection)
     {
         $this->connection = $connection;
+        $this->statement = $this->connection;
+        $this->statement->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     }
 
     public function add(Direction $direction): void
     {
-        $stmt = $this->connection;
-        $direction_table = $stmt->prepare("INSERT INTO `direction` (`id`,`name`, `date`) VALUES (:id, :name, :date)");
 
-        $stmt->beginTransaction();
         try {
-            $direction_table->execute([
-                ':id' => $direction->getId()->getId(),
-                ':name' => $direction->getName(),
-                ':date' => $direction->getDate()->format('Y-m-d H:i:s')
-            ]);
+            $this->statement->beginTransaction();
+            $direction_table = $this->statement->prepare("INSERT INTO `direction` (`id`,`name`, `date`) VALUES (:id, :name, :date)");
+            $direction_table->execute(self::getExtractedData($direction));
 
-            $stmt->commit();
+            $this->statement->commit();
         } catch (Exception $e) {
-            $stmt->rollback();
+            $this->statement->rollback();
             echo $e->getMessage();
         }
     }
 
 
-    public function save(Direction $direction): void
-    {
-        $stmt = $this->connection;
-        $direction_table = $stmt->prepare("UPDATE direction SET name=:name, date=:date WHERE id=:id");
+    public function save(Direction $direction): void {
         try {
-            $direction_table->execute([
-                ':id' => $direction->getId()->getId(),
-                ':name' => $direction->getName(),
-                ':date' => $direction->getDate()->format('Y-m-d H:i:s')
-            ]);
-
-            $stmt->commit();
+            $this->statement->beginTransaction();
+            $direction_table = $this->statement->prepare("UPDATE direction SET name=:name, date=:date WHERE id=:id");
+            $direction_table->execute(self::getExtractedData($direction));
+            $this->statement->commit();
         } catch (Exception $e) {
-            $stmt->rollback();
+            $this->statement->rollback();
             echo $e->getMessage();
         }
+    }
+    private static function getExtractedData(Direction $direction) : array {
+        return [
+            ':id' => $direction->getId()->getId(),
+            ':name' => $direction->getName(),
+            ':date' => $direction->getDate()->format('Y-m-d H:i:s')
+        ];
     }
 
 }
