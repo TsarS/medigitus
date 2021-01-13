@@ -59,7 +59,6 @@ final class ImportXMLController
                                     'address' => (string)$item->address
                                 ]);
                                 $last_id = $this->connection->lastInsertId();
-                                print_r('last_id='.$last_id.'/n');
                             } catch (Exception $e) {
                                 echo $e->getMessage();
                             }

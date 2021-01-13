@@ -24,7 +24,6 @@ final class LicenseMySQLRepository implements LicenseRepository
 
     public function add(License $license)
     {
-
         try {
             $this->statement->beginTransaction();
             $legal_table = $this->statement->prepare("INSERT INTO `license_address` (`id`, `inn`, `address`,`created_date`) VALUES (:id, :inn, :address, :created_at)");

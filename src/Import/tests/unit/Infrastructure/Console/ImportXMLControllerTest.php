@@ -29,7 +29,7 @@ final class ImportXMLControllerTest extends TestCase
         }
         $truncate = $this->connection->prepare("DELETE FROM import_legal");
         $truncate->execute();
-        $this->file = dirname(__DIR__) . '/../../_fixtures/licences_import_test.xml';
+        $this->file = dirname(__DIR__) . '/../../_fixtures/licences_import_test_long.xml';
         $this->import = new ImportXMLController($this->connection, $this->file);
         $this->import->importXML();
         $this->inn = '2221243213';

@@ -11,6 +11,8 @@ use Import\Domain\Entity\License;
 use Import\Domain\Repository\LicenseReadRepository;
 use Import\Domain\Repository\LicenseRepository;
 use Import\Domain\VO\Id;
+use Import\Domain\VO\Work;
+
 
 final class CreateLicenseHandler implements CommandHandlerInterface
 {
@@ -52,7 +54,7 @@ final class CreateLicenseHandler implements CommandHandlerInterface
 
         $clinic = $this->readRepository->getByAddress($address);
         foreach ($works as $work) {
-            $clinic->addWork($work["work"]);
+            $clinic->addWork(new Work($work["work"],$work["number"],$work["date"],$work["activity_type"]));
         }
 
     }

@@ -6,15 +6,14 @@ namespace Import\Domain\Entity;
 
 use DateTimeImmutable;
 use Import\Domain\VO\Id;
+use Import\Domain\VO\Work;
+use Import\Domain\VO\Works;
 
 final class License
 {
     private string $inn;
     private string $post_address;
-    private array $works;
-    private string $number;
-    private string $license_date;
-    private string $license_type;
+    private Works $works;
     /**
      * @var Id
      */
@@ -31,14 +30,14 @@ final class License
     {
         $this->inn = $inn;
         $this->post_address = $post_address;
-        $this->works = $works;
+        $this->works = new Works($works);
         $this->id = $id;
         $this->created_date = $created_date;
     }
 
-    public function addWork($work)
+    public function addWork(Work $work)
     {
-        print_r('addWork'.$work);
+       $this->works->add($work);
     }
 
     /**
@@ -58,9 +57,9 @@ final class License
     }
 
     /**
-     * @return array
+     * @return Works
      */
-    public function getWorks(): array
+    public function getWorks(): Works
     {
         return $this->works;
     }

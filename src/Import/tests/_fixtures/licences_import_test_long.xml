@@ -1,0 +1,1783 @@
+<?xml version="1.0" encoding="utf-8"?>
+<licenses_list>
+    <licenses>
+        <name>Министерство здравоохранения Ростовской области</name>
+        <activity_type>Медицинская деятельность</activity_type>
+        <full_name_licensee>Общество с ограниченной ответственностью &quot;Ритм-Юг&quot;</full_name_licensee>
+        <abbreviated_name_licensee>ООО &quot;Ритм-Юг&quot;</abbreviated_name_licensee>
+        <brand_name_licensee></brand_name_licensee>
+        <form>Общество с ограниченной ответственностью</form>
+        <address_region>Ростовская область</address_region>
+        <address>347709, Россия, Ростовская область, Кагальницкий район, станица Кировская, ул. Дворцовая, 2</address>
+        <ogrn>1146188001651</ogrn>
+        <inn>6113022711</inn>
+        <work_address_list>
+            <address_place>
+                <address>Россия, Ростовская область, Кагальницкий район, станица Кировская, ул. Дворцовая, 2</address>
+                <index>0</index>
+                <region>Ростовская область</region>
+                <city>Кировская</city>
+                <street>ул. Дворцовая, 2</street>
+                <code_fias>8009eea5-6279-4955-881d-bb9a69234f63</code_fias>
+                <works>
+                    <work>100. При оказании первичной, в том числе доврачебной, врачебной и специализированной,
+                        медико-санитарной помощи организуются и выполняются следующие работы (услуги):
+                    </work>
+                    <work>100.1. при оказании первичной доврачебной медико-санитарной помощи в амбулаторных условиях
+                        по:
+                    </work>
+                    <work>100.1.2. анестезиологии и реаниматологии</work>
+                    <work>100.1.10. лабораторной диагностике</work>
+                    <work>100.1.15. медицинской статистике</work>
+                    <work>100.1.16. медицинскому массажу</work>
+                    <work>100.1.24. сестринскому делу</work>
+                    <work>100.1.25. сестринскому делу в косметологии</work>
+                    <work>100.1.26. сестринскому делу в педиатрии</work>
+                    <work>100.1.27. стоматологии</work>
+                    <work>100.1.30. физиотерапии</work>
+                    <work>100.1.31. функциональной диагностике</work>
+                    <work>100.2. при оказании первичной врачебной медико-санитарной помощи в амбулаторных условиях по:
+                    </work>
+                    <work>100.2.4. организации здравоохранения и общественному здоровью</work>
+                    <work>100.2.5. педиатрии</work>
+                    <work>100.2.6. терапии</work>
+                    <work>100.3. при оказании первичной врачебной медико-санитарной помощи в условиях дневного
+                        стационара по:
+                    </work>
+                    <work>100.3.1. клинической лабораторной диагностике</work>
+                    <work>100.3.2. неотложной медицинской помощи</work>
+                    <work>100.3.3. общей врачебной практике (семейной медицине)</work>
+                    <work>100.3.4. организации здравоохранения и общественному здоровью</work>
+                    <work>100.3.5. педиатрии</work>
+                    <work>100.3.6. терапии</work>
+                    <work>100.4. при оказании первичной специализированной медико-санитарной помощи в амбулаторных
+                        условиях по:
+                    </work>
+                    <work>100.4.2. акушерству и гинекологии (за исключением использования вспомогательных репродуктивных
+                        технологий и искусственного прерывания беременности)
+                    </work>
+                    <work>100.4.11. гастроэнтерологии</work>
+                    <work>100.4.18. дерматовенерологии</work>
+                    <work>100.4.28. кардиологии</work>
+                    <work>100.4.29. клинической лабораторной диагностике</work>
+                    <work>100.4.32. колопроктологии</work>
+                    <work>100.4.33. косметологии</work>
+                    <work>100.4.41. неврологии</work>
+                    <work>100.4.45. онкологии</work>
+                    <work>100.4.46. организации здравоохранения и общественному здоровью</work>
+                    <work>100.4.47. ортодонтии</work>
+                    <work>100.4.49. оториноларингологии (за исключением кохлеарной имплантации)</work>
+                    <work>100.4.50. офтальмологии</work>
+                    <work>100.4.55. психиатрии</work>
+                    <work>100.4.66. стоматологии детской</work>
+                    <work>100.4.67. стоматологии общей практики</work>
+                    <work>100.4.68. стоматологии ортопедической</work>
+                    <work>100.4.74. травматологии и ортопедии</work>
+                    <work>100.4.76. ультразвуковой диагностике</work>
+                    <work>100.4.78. урологии</work>
+                    <work>100.4.81. функциональной диагностике</work>
+                    <work>100.4.82. хирургии</work>
+                    <work>100.4.84. эндокринологии</work>
+                    <work>100.4.85. эндоскопии</work>
+                    <work>100.5. при оказании первичной специализированной медико-санитарной помощи в условиях дневного
+                        стационара по:
+                    </work>
+                    <work>100.5.2. акушерству и гинекологии (за исключением использования вспомогательных репродуктивных
+                        технологий и искусственного прерывания беременности)
+                    </work>
+                    <work>100.5.7. анестезиологии и реаниматологии</work>
+                    <work>100.5.11. гастроэнтерологии</work>
+                    <work>100.5.16. дерматовенерологии</work>
+                    <work>100.5.26. кардиологии</work>
+                    <work>100.5.27. клинической лабораторной диагностике</work>
+                    <work>100.5.30. колопроктологии</work>
+                    <work>100.5.37. медицинской статистике</work>
+                    <work>100.5.38. неврологии</work>
+                    <work>100.5.43. организации здравоохранения и общественному здоровью</work>
+                    <work>100.5.45. оториноларингологии (за исключением кохлеарной имплантации)</work>
+                    <work>100.5.46. офтальмологии</work>
+                    <work>100.5.49. психиатрии</work>
+                    <work>100.5.50. психиатрии-наркологии</work>
+                    <work>100.5.62. травматологии и ортопедии</work>
+                    <work>100.5.65. ультразвуковой диагностике</work>
+                    <work>100.5.67. урологии</work>
+                    <work>100.5.68. физиотерапии</work>
+                    <work>100.5.70. функциональной диагностике</work>
+                    <work>100.5.71. хирургии</work>
+                    <work>100.5.74. эндокринологии</work>
+                    <work>105. При проведении медицинских осмотров, медицинских освидетельствований и медицинских
+                        экспертиз организуются и выполняются следующие работы (услуги):
+                    </work>
+                    <work>105.1. при проведении медицинских осмотров по:</work>
+                    <work>105.1.1. медицинским осмотрам (предварительным, периодическим)</work>
+                    <work>105.1.3. медицинским осмотрам (предрейсовым, послерейсовым)</work>
+                    <work>105.1.5. медицинским осмотрам профилактическим</work>
+                    <work>105.2. при проведении медицинских освидетельствований:</work>
+                    <work>105.2.4. медицинскому освидетельствованию на наличие медицинских противопоказаний к управлению
+                        транспортным средством
+                    </work>
+                    <work>105.2.5. медицинскому освидетельствованию на наличие медицинских противопоказаний к владению
+                        оружием
+                    </work>
+                    <work>105.2.6. медицинскому освидетельствованию на состояние опьянения (алкогольного, наркотического
+                        или иного токсического)
+                    </work>
+                    <work>105.3. при проведении медицинских экспертиз по:</work>
+                    <work>105.3.10. экспертизе профессиональной пригодности</work>
+                    <work>105.3.11. экспертизе временной нетрудоспособности</work>
+                </works>
+            </address_place>
+            <address_place>
+                <address>000000, Ростовская область, г. Ростов-на-Дону, ул. Нансена, №135/11</address>
+                <index>0</index>
+                <region>Ростовская область</region>
+                <city>Ростов-на-Дону</city>
+                <street>ул. Нансена, №135/11</street>
+                <code_fias></code_fias>
+                <works>
+                    <work>100. При оказании первичной, в том числе доврачебной, врачебной и специализированной,
+                        медико-санитарной помощи организуются и выполняются следующие работы (услуги):
+                    </work>
+                    <work>100.1. при оказании первичной доврачебной медико-санитарной помощи в амбулаторных условиях
+                        по:
+                    </work>
+                    <work>100.1.25. сестринскому делу в косметологии</work>
+                    <work>100.4. при оказании первичной специализированной медико-санитарной помощи в амбулаторных
+                        условиях по:
+                    </work>
+                    <work>100.4.33. косметологии</work>
+                    <work>100.4.46. организации здравоохранения и общественному здоровью</work>
+                </works>
+            </address_place>
+        </work_address_list>
+        <number>ЛО-61-01-007957</number>
+        <date>04.12.2020</date>
+        <number_orders>3003</number_orders>
+        <date_order>04.12.2020</date_order>
+        <date_register>04.12.2020</date_register>
+        <number_duplicate></number_duplicate>
+        <date_duplicate></date_duplicate>
+        <termination></termination>
+        <date_termination></date_termination>
+        <information></information>
+        <information_regulations></information_regulations>
+        <information_suspension_resumption></information_suspension_resumption>
+        <information_cancellation></information_cancellation>
+        <information_reissuing></information_reissuing>
+    </licenses>
+    <licenses>
+        <name>Комитет по здравоохранению Ленинградской области</name>
+        <activity_type>Медицинская деятельность</activity_type>
+        <full_name_licensee>Ленинградское областное государственное бюджетное учреждение &quot;Кингисеппский социально -
+            реабилитационный центр для несовершеннолетних &quot;
+        </full_name_licensee>
+        <abbreviated_name_licensee>ЛОГБУ &quot;Кингисеппский СРЦ&quot;</abbreviated_name_licensee>
+        <brand_name_licensee></brand_name_licensee>
+        <form>Муниципальное учреждение</form>
+        <address_region>Ленинградская область</address_region>
+        <address>188480, Россия, Ленинградская область, Кингисеппский район, Кингисепп, проспект Карла Маркса, д. 20
+        </address>
+        <ogrn>1024701427673</ogrn>
+        <inn>4707019268</inn>
+        <work_address_list>
+            <address_place>
+                <address>188480, Ленинградская область, Кингисеппский район, г. Кингисепп, проспект Карла Маркса, дом
+                    20, Лит. А, первый этаж, помещения №24,27,28,36,38,39,40,42,43,44,46
+                </address>
+                <index>188480</index>
+                <region>Ленинградская область</region>
+                <city>Кингисепп</city>
+                <street>проспект Карла Маркса, дом 20, Лит. А, первый этаж, помещения
+                    №24,27,28,36,38,39,40,42,43,44,46
+                </street>
+                <code_fias>f85bdbf7-33b1-4ca3-aa6e-fadcf629b412</code_fias>
+                <works>
+                    <work>100. При оказании первичной, в том числе доврачебной, врачебной и специализированной,
+                        медико-санитарной помощи организуются и выполняются следующие работы (услуги):
+                    </work>
+                    <work>100.1. при оказании первичной доврачебной медико-санитарной помощи в амбулаторных условиях
+                        по:
+                    </work>
+                    <work>100.1.11. лечебной физкультуре</work>
+                    <work>100.1.16. медицинскому массажу</work>
+                    <work>100.1.26. сестринскому делу в педиатрии</work>
+                    <work>100.1.30. физиотерапии</work>
+                    <work>100.2. при оказании первичной врачебной медико-санитарной помощи в амбулаторных условиях по:
+                    </work>
+                    <work>100.2.5. педиатрии</work>
+                </works>
+            </address_place>
+        </work_address_list>
+        <number>ЛО-47-01-002371</number>
+        <date>01.12.2020</date>
+        <number_orders>1684-р</number_orders>
+        <date_order>01.12.2020</date_order>
+        <date_register>01.12.2020</date_register>
+        <number_duplicate></number_duplicate>
+        <date_duplicate></date_duplicate>
+        <termination></termination>
+        <date_termination></date_termination>
+        <information></information>
+        <information_regulations></information_regulations>
+        <information_suspension_resumption></information_suspension_resumption>
+        <information_cancellation></information_cancellation>
+        <information_reissuing></information_reissuing>
+    </licenses>
+    <licenses>
+        <name>Департамент здравоохранения Владимирской области</name>
+        <activity_type>Медицинская деятельность</activity_type>
+        <full_name_licensee>Общество с ограниченной ответственностью &quot;Ядерные медицинские технологии&quot;
+        </full_name_licensee>
+        <abbreviated_name_licensee>ООО &quot;ЯМТ&quot;</abbreviated_name_licensee>
+        <brand_name_licensee></brand_name_licensee>
+        <form>Общество с ограниченной ответственностью</form>
+        <address_region>Москва</address_region>
+        <address>119415, Россия, г. Москва, улица Лобачевского, дом 42, корпус 4, эт 6 пом XI ком 71</address>
+        <ogrn>1187746566886</ogrn>
+        <inn>9729272496</inn>
+        <work_address_list>
+            <address_place>
+                <address>600023, Владимирская область, г. Владимир, Судогодское шоссе, д.39ж</address>
+                <index>600023</index>
+                <region>Владимирская область</region>
+                <city>Владимир</city>
+                <street>Судогодское шоссе, д.39ж</street>
+                <code_fias>004efb0f-5387-4082-82b6-b579a2744fe6</code_fias>
+                <works>
+                    <work>100. При оказании первичной, в том числе доврачебной, врачебной и специализированной,
+                        медико-санитарной помощи организуются и выполняются следующие работы (услуги):
+                    </work>
+                    <work>100.1. при оказании первичной доврачебной медико-санитарной помощи в амбулаторных условиях
+                        по:
+                    </work>
+                    <work>100.1.21. организации сестринского дела</work>
+                    <work>100.1.23. рентгенологии</work>
+                    <work>100.1.24. сестринскому делу</work>
+                    <work>100.4. при оказании первичной специализированной медико-санитарной помощи в амбулаторных
+                        условиях по:
+                    </work>
+                    <work>100.4.45. онкологии</work>
+                    <work>100.4.46. организации здравоохранения и общественному здоровью</work>
+                    <work>100.4.59. радиологии</work>
+                    <work>100.4.61. рентгенологии</work>
+                </works>
+            </address_place>
+        </work_address_list>
+        <number>ЛО-33-01-003155</number>
+        <date>04.12.2020</date>
+        <number_orders>993-лиц</number_orders>
+        <date_order>04.12.2020</date_order>
+        <date_register>04.12.2020</date_register>
+        <number_duplicate></number_duplicate>
+        <date_duplicate></date_duplicate>
+        <termination></termination>
+        <date_termination></date_termination>
+        <information></information>
+        <information_regulations></information_regulations>
+        <information_suspension_resumption></information_suspension_resumption>
+        <information_cancellation></information_cancellation>
+        <information_reissuing></information_reissuing>
+    </licenses>
+    <licenses>
+        <name>Министерство здравоохранения Тульской области</name>
+        <activity_type>Медицинская деятельность</activity_type>
+        <full_name_licensee>Общество с ограниченной ответственностью &quot;Учебный центр &quot;Старт&quot;
+        </full_name_licensee>
+        <abbreviated_name_licensee>Ооо &quot;Уц &quot;Старт&quot;</abbreviated_name_licensee>
+        <brand_name_licensee></brand_name_licensee>
+        <form>Общество с ограниченной ответственностью</form>
+        <address_region>Тульская область</address_region>
+        <address>301659, Тульская область, Новомосковский район, Новомосковск, ул. Московская д.7</address>
+        <ogrn>1177154029711</ogrn>
+        <inn>7116155447</inn>
+        <work_address_list>
+            <address_place>
+                <address>301664, Тульская область, Новомосковский район, Новомосковск, ул. Мсковская, д7</address>
+                <index>301664</index>
+                <region>Тульская область</region>
+                <city>Новомосковск</city>
+                <street>ул. Мсковская, д7</street>
+                <code_fias>76a7d6ea-d3da-4ad3-80ab-a907ee9f97a2</code_fias>
+                <works>
+                    <work>100. При оказании первичной, в том числе доврачебной, врачебной и специализированной,
+                        медико-санитарной помощи организуются и выполняются следующие работы (услуги):
+                    </work>
+                    <work>100.1. при оказании первичной доврачебной медико-санитарной помощи в амбулаторных условиях
+                        по:
+                    </work>
+                    <work>100.1.12. лечебному делу</work>
+                    <work>100.1.16. медицинскому массажу</work>
+                    <work>100.1.24. сестринскому делу</work>
+                    <work>100.1.25. сестринскому делу в косметологии</work>
+                    <work>105. При проведении медицинских осмотров, медицинских освидетельствований и медицинских
+                        экспертиз организуются и выполняются следующие работы (услуги):
+                    </work>
+                    <work>105.1. при проведении медицинских осмотров по:</work>
+                    <work>105.1.3. медицинским осмотрам (предрейсовым, послерейсовым)</work>
+                </works>
+            </address_place>
+        </work_address_list>
+        <number>ЛО-71-01-002314</number>
+        <date>30.11.2020</date>
+        <number_orders>400-ЛО</number_orders>
+        <date_order>30.11.2020</date_order>
+        <date_register>30.11.2020</date_register>
+        <number_duplicate></number_duplicate>
+        <date_duplicate></date_duplicate>
+        <termination></termination>
+        <date_termination></date_termination>
+        <information></information>
+        <information_regulations></information_regulations>
+        <information_suspension_resumption></information_suspension_resumption>
+        <information_cancellation></information_cancellation>
+        <information_reissuing></information_reissuing>
+    </licenses>
+    <licenses>
+        <name>Комитет по здравоохранению Ленинградской области</name>
+        <activity_type>Медицинская деятельность</activity_type>
+        <full_name_licensee>Государственное бюджетное учреждение Ленинградской области &quot;Центр патриотических,
+            добровольческих, учебных и досуговых программ &quot;Молодежный&quot;
+        </full_name_licensee>
+        <abbreviated_name_licensee>ГБУ ЛО &quot;Центр &quot;Молодежный&quot;</abbreviated_name_licensee>
+        <brand_name_licensee></brand_name_licensee>
+        <form>Бюджетное учреждение</form>
+        <address_region>Ленинградская область</address_region>
+        <address>188679, Россия, Ленинградская область, Всеволожский район, д. Кошкино, здание 1</address>
+        <ogrn>1034700555779</ogrn>
+        <inn>4703066820</inn>
+        <work_address_list>
+            <address_place>
+                <address>188679, Ленинградская область, Всеволожский район, пгт. им. Морозова, дер. Кошкино, детский
+                    оздоровительный лагерь &quot;Ветерок&quot;, здание спального корпуса &quot;Олимп&quot; Лит. В,
+                    помещения №№ 20-34 на первом этаже.
+                </address>
+                <index>188679</index>
+                <region>Ленинградская область</region>
+                <city>им. Морозова</city>
+                <street>дер. Кошкино, детский оздоровительный лагерь &quot;Ветерок&quot;, здание спального корпуса
+                    &quot;Олимп&quot; Лит. В, помещения №№ 20-34 на первом этаже.
+                </street>
+                <code_fias>9fab02a9-75ef-4d3e-b0fa-8d8133713288</code_fias>
+                <works>
+                    <work>100. При оказании первичной, в том числе доврачебной, врачебной и специализированной,
+                        медико-санитарной помощи организуются и выполняются следующие работы (услуги):
+                    </work>
+                    <work>100.1. при оказании первичной доврачебной медико-санитарной помощи в амбулаторных условиях
+                        по:
+                    </work>
+                    <work>100.1.26. сестринскому делу в педиатрии</work>
+                    <work>100.2. при оказании первичной врачебной медико-санитарной помощи в амбулаторных условиях по:
+                    </work>
+                    <work>100.2.5. педиатрии</work>
+                </works>
+            </address_place>
+        </work_address_list>
+        <number>ЛО-47-01-002372</number>
+        <date>02.12.2020</date>
+        <number_orders>1688-р</number_orders>
+        <date_order>02.12.2020</date_order>
+        <date_register>02.12.2020</date_register>
+        <number_duplicate></number_duplicate>
+        <date_duplicate></date_duplicate>
+        <termination></termination>
+        <date_termination></date_termination>
+        <information></information>
+        <information_regulations></information_regulations>
+        <information_suspension_resumption></information_suspension_resumption>
+        <information_cancellation></information_cancellation>
+        <information_reissuing></information_reissuing>
+    </licenses>
+
+    <licenses>
+        <name>Территориальный орган Росздравнадзора по Владимирской области</name>
+        <activity_type>Медицинская деятельность</activity_type>
+        <full_name_licensee>Общество с ограниченной ответственностью &quot;Клиника медицинских экспертиз&quot;
+        </full_name_licensee>
+        <abbreviated_name_licensee>ООО &quot;Клиника медицинских экспертиз&quot;</abbreviated_name_licensee>
+        <brand_name_licensee></brand_name_licensee>
+        <form>Общество с ограниченной ответственностью</form>
+        <address_region>Владимирская область</address_region>
+        <address>600020, Россия, Владимирская область, г. Владимир, ул. Большая Нижегородская, д. 71Г</address>
+        <ogrn>1093340002557</ogrn>
+        <inn>3329056612</inn>
+        <work_address_list>
+            <address_place>
+                <address>600020, Владимирская область, г. Владимир, ул. Большая Московская, д. 79</address>
+                <index>600020</index>
+                <region>Владимирская область</region>
+                <city>Владимир</city>
+                <street>ул. Большая Московская, д. 79</street>
+                <code_fias>09aa15fd-02ad-4625-a2a8-15e9cbe3b3ed</code_fias>
+                <works>
+                    <work>101. При оказании специализированной, в том числе высокотехнологичной, медицинской помощи
+                        организуются и выполняются следующие работы (услуги):
+                    </work>
+                    <work>101.4. при оказании высокотехнологичной медицинской помощи в стационарных условиях по:</work>
+                    <work>101.4.27. травматологии и ортопедии</work>
+                    <work>101.4.33. челюстно-лицевой хирургии</work>
+                </works>
+            </address_place>
+        </work_address_list>
+        <number>ФС-33-01-001229</number>
+        <date>04.12.2020</date>
+        <number_orders>П33-160/20</number_orders>
+        <date_order>04.12.2020</date_order>
+        <date_register>04.12.2020</date_register>
+        <number_duplicate></number_duplicate>
+        <date_duplicate></date_duplicate>
+        <termination></termination>
+        <date_termination></date_termination>
+        <information></information>
+        <information_regulations></information_regulations>
+        <information_suspension_resumption></information_suspension_resumption>
+        <information_cancellation></information_cancellation>
+        <information_reissuing></information_reissuing>
+    </licenses>
+    <licenses>
+        <name>Министерство здравоохранения Калужской области</name>
+        <activity_type>Медицинская деятельность</activity_type>
+        <full_name_licensee>Общество с ограниченной ответственностью &quot;Эс класс клиник калуга&quot;
+        </full_name_licensee>
+        <abbreviated_name_licensee>ООО «Эс Класс Клиник Калуга»</abbreviated_name_licensee>
+        <brand_name_licensee></brand_name_licensee>
+        <form>Общество с ограниченной ответственностью</form>
+        <address_region>Калужская область</address_region>
+        <address>248000, Россия, Калужская область, г. Калуга, ул. Кутузова, д. 15</address>
+        <ogrn>1144027002646</ogrn>
+        <inn>4027119949</inn>
+        <work_address_list>
+            <address_place>
+                <address>248000, Калужская область, г. Калуга, ул.Кутузова, д.19</address>
+                <index>248000</index>
+                <region>Калужская область</region>
+                <city>Калуга</city>
+                <street>ул.Кутузова, д.19</street>
+                <code_fias>10ea49fe-ff29-48ae-9208-31b0675ff846</code_fias>
+                <works>
+                    <work>100. При оказании первичной, в том числе доврачебной, врачебной и специализированной,
+                        медико-санитарной помощи организуются и выполняются следующие работы (услуги):
+                    </work>
+                    <work>100.1. при оказании первичной доврачебной медико-санитарной помощи в амбулаторных условиях
+                        по:
+                    </work>
+                    <work>100.1.2. анестезиологии и реаниматологии</work>
+                    <work>100.1.19. операционному делу</work>
+                    <work>100.1.24. сестринскому делу</work>
+                    <work>100.1.30. физиотерапии</work>
+                    <work>100.4. при оказании первичной специализированной медико-санитарной помощи в амбулаторных
+                        условиях по:
+                    </work>
+                    <work>100.4.2. акушерству и гинекологии (за исключением использования вспомогательных репродуктивных
+                        технологий и искусственного прерывания беременности)
+                    </work>
+                    <work>100.4.4. акушерству и гинекологии (искусственному прерыванию беременности)</work>
+                    <work>100.4.7. анестезиологии и реаниматологии</work>
+                    <work>100.4.32. колопроктологии</work>
+                    <work>100.4.46. организации здравоохранения и общественному здоровью</work>
+                    <work>100.4.76. ультразвуковой диагностике</work>
+                    <work>100.4.78. урологии</work>
+                    <work>100.4.82. хирургии</work>
+                    <work>100.4.85. эндоскопии</work>
+                    <work>100.5. при оказании первичной специализированной медико-санитарной помощи в условиях дневного
+                        стационара по:
+                    </work>
+                    <work>100.5.2. акушерству и гинекологии (за исключением использования вспомогательных репродуктивных
+                        технологий и искусственного прерывания беременности)
+                    </work>
+                    <work>100.5.4. акушерству и гинекологии (искусственному прерыванию беременности)</work>
+                    <work>100.5.7. анестезиологии и реаниматологии</work>
+                    <work>100.5.30. колопроктологии</work>
+                    <work>100.5.43. организации здравоохранения и общественному здоровью</work>
+                    <work>100.5.65. ультразвуковой диагностике</work>
+                    <work>100.5.67. урологии</work>
+                    <work>100.5.71. хирургии</work>
+                    <work>100.5.75. эндоскопии</work>
+                    <work>105. При проведении медицинских осмотров, медицинских освидетельствований и медицинских
+                        экспертиз организуются и выполняются следующие работы (услуги):
+                    </work>
+                    <work>105.3. при проведении медицинских экспертиз по:</work>
+                    <work>105.3.11. экспертизе временной нетрудоспособности</work>
+                </works>
+            </address_place>
+            <address_place>
+                <address>248000, Калужская область, г. Калуга, ул. Кутузова, д. 15</address>
+                <index>248000</index>
+                <region>Калужская область</region>
+                <city>Калуга</city>
+                <street>ул. Кутузова, д. 15</street>
+                <code_fias>39f124ea-922b-4343-b01d-810cc46efa6c</code_fias>
+                <works>
+                    <work>100. При оказании первичной, в том числе доврачебной, врачебной и специализированной,
+                        медико-санитарной помощи организуются и выполняются следующие работы (услуги):
+                    </work>
+                    <work>100.1. при оказании первичной доврачебной медико-санитарной помощи в амбулаторных условиях
+                        по:
+                    </work>
+                    <work>100.1.2. анестезиологии и реаниматологии</work>
+                    <work>100.1.12. лечебному делу</work>
+                    <work>100.1.21. организации сестринского дела</work>
+                    <work>100.1.24. сестринскому делу</work>
+                    <work>100.1.30. физиотерапии</work>
+                    <work>100.4. при оказании первичной специализированной медико-санитарной помощи в амбулаторных
+                        условиях по:
+                    </work>
+                    <work>100.4.2. акушерству и гинекологии (за исключением использования вспомогательных репродуктивных
+                        технологий и искусственного прерывания беременности)
+                    </work>
+                    <work>100.4.4. акушерству и гинекологии (искусственному прерыванию беременности)</work>
+                    <work>100.4.7. анестезиологии и реаниматологии</work>
+                    <work>100.4.32. колопроктологии</work>
+                    <work>100.4.46. организации здравоохранения и общественному здоровью</work>
+                    <work>100.4.76. ультразвуковой диагностике</work>
+                    <work>100.4.78. урологии</work>
+                    <work>100.4.82. хирургии</work>
+                    <work>100.4.85. эндоскопии</work>
+                    <work>100.5. при оказании первичной специализированной медико-санитарной помощи в условиях дневного
+                        стационара по:
+                    </work>
+                    <work>100.5.2. акушерству и гинекологии (за исключением использования вспомогательных репродуктивных
+                        технологий и искусственного прерывания беременности)
+                    </work>
+                    <work>100.5.4. акушерству и гинекологии (искусственному прерыванию беременности)</work>
+                    <work>100.5.7. анестезиологии и реаниматологии</work>
+                    <work>100.5.30. колопроктологии</work>
+                    <work>100.5.43. организации здравоохранения и общественному здоровью</work>
+                    <work>100.5.65. ультразвуковой диагностике</work>
+                    <work>100.5.67. урологии</work>
+                    <work>100.5.71. хирургии</work>
+                    <work>100.5.75. эндоскопии</work>
+                    <work>105. При проведении медицинских осмотров, медицинских освидетельствований и медицинских
+                        экспертиз организуются и выполняются следующие работы (услуги):
+                    </work>
+                    <work>105.3. при проведении медицинских экспертиз по:</work>
+                    <work>105.3.9. экспертизе качества медицинской помощи</work>
+                </works>
+            </address_place>
+        </work_address_list>
+        <number>ЛО-40-01-001898</number>
+        <date>01.12.2020</date>
+        <number_orders>1433</number_orders>
+        <date_order>01.12.2020</date_order>
+        <date_register>01.12.2020</date_register>
+        <number_duplicate></number_duplicate>
+        <date_duplicate></date_duplicate>
+        <termination></termination>
+        <date_termination></date_termination>
+        <information></information>
+        <information_regulations></information_regulations>
+        <information_suspension_resumption></information_suspension_resumption>
+        <information_cancellation></information_cancellation>
+        <information_reissuing></information_reissuing>
+    </licenses>
+    <licenses>
+        <name>Территориальный орган Росздравнадзора по г. Москве и Московской области</name>
+        <activity_type>Медицинская деятельность</activity_type>
+        <full_name_licensee>Федеральное казенное учреждение здравоохранения &quot;Санаторий &quot;Зеленая роща&quot;
+            Министерства внутренних дел Российской Федерации&quot;
+        </full_name_licensee>
+        <abbreviated_name_licensee>ФКУЗ &quot;Санаторий &quot;Зеленая роща&quot; МВД России&quot;
+        </abbreviated_name_licensee>
+        <brand_name_licensee></brand_name_licensee>
+        <form>Федеральное казенное учреждение</form>
+        <address_region>Московская область</address_region>
+        <address>142046, Россия, Московская область, г. Домодедово, территория &quot;Зеленая роща-Сонино&quot;</address>
+        <ogrn>1025001280754</ogrn>
+        <inn>5009004418</inn>
+        <work_address_list>
+            <address_place>
+                <address>142046, Московская область, г.о. Домодедово, территория &quot;Зеленая роща-Сонино&quot;, стр.
+                    1
+                </address>
+                <index>142046</index>
+                <region>Московская область</region>
+                <city>г.о. Домодедово</city>
+                <street>территория &quot;Зеленая роща-Сонино&quot;, стр. 1</street>
+                <code_fias></code_fias>
+                <works>
+                    <work>104. При оказании медицинской помощи при санаторно-курортном лечении организуются и
+                        выполняются работы (услуги) по:
+                    </work>
+                    <work>104.15. диетологии</work>
+                    <work>104.22. лечебной физкультуре и спортивной медицине</work>
+                    <work>104.26. медицинскому массажу</work>
+                    <work>104.27. неврологии</work>
+                    <work>104.30. организации здравоохранения и общественному здоровью</work>
+                    <work>104.43. стоматологии</work>
+                    <work>104.49. терапии</work>
+                    <work>104.54. физиотерапии</work>
+                    <work>104.56. функциональной диагностике</work>
+                    <work>105. При проведении медицинских осмотров, медицинских освидетельствований и медицинских
+                        экспертиз организуются и выполняются следующие работы (услуги):
+                    </work>
+                    <work>105.1. при проведении медицинских осмотров по:</work>
+                    <work>105.1.3. медицинским осмотрам (предрейсовым, послерейсовым)</work>
+                    <work>105.3. при проведении медицинских экспертиз по:</work>
+                    <work>105.3.11. экспертизе временной нетрудоспособности</work>
+                </works>
+            </address_place>
+        </work_address_list>
+        <number>ФС-50-01-002470</number>
+        <date>04.12.2020</date>
+        <number_orders>1556/20</number_orders>
+        <date_order>04.12.2020</date_order>
+        <date_register>04.12.2020</date_register>
+        <number_duplicate></number_duplicate>
+        <date_duplicate></date_duplicate>
+        <termination></termination>
+        <date_termination></date_termination>
+        <information></information>
+        <information_regulations></information_regulations>
+        <information_suspension_resumption></information_suspension_resumption>
+        <information_cancellation></information_cancellation>
+        <information_reissuing></information_reissuing>
+    </licenses>
+    <licenses>
+        <name>Министерство здравоохранения Алтайского края</name>
+        <activity_type>Медицинская деятельность</activity_type>
+        <full_name_licensee>Индивидуальный предприниматель &quot;Шипунов Сергей Александрович&quot;</full_name_licensee>
+        <abbreviated_name_licensee></abbreviated_name_licensee>
+        <brand_name_licensee></brand_name_licensee>
+        <form>Индивидуальный предприниматель</form>
+        <address_region></address_region>
+        <address></address>
+        <ogrn>313220917600024</ogrn>
+        <inn>225101660498</inn>
+        <work_address_list>
+            <address_place>
+                <address>658340, Алтайский край, Краснощековский район, с. Краснощеково, ул. Ленина, д. 66</address>
+                <index>658340</index>
+                <region>Алтайский край</region>
+                <city>Краснощеково</city>
+                <street>ул. Ленина, д. 66</street>
+                <code_fias>8c4a07ae-09bd-4249-8b3a-287d0f45978f</code_fias>
+                <works>
+                    <work>100. При оказании первичной, в том числе доврачебной, врачебной и специализированной,
+                        медико-санитарной помощи организуются и выполняются следующие работы (услуги):
+                    </work>
+                    <work>100.4. при оказании первичной специализированной медико-санитарной помощи в амбулаторных
+                        условиях по:
+                    </work>
+                    <work>100.4.68. стоматологии ортопедической</work>
+                </works>
+            </address_place>
+        </work_address_list>
+        <number>ЛО-22-01-005792</number>
+        <date>04.12.2020</date>
+        <number_orders>737 ОЛ</number_orders>
+        <date_order>04.12.2020</date_order>
+        <date_register>04.12.2020</date_register>
+        <number_duplicate></number_duplicate>
+        <date_duplicate></date_duplicate>
+        <termination></termination>
+        <date_termination></date_termination>
+        <information></information>
+        <information_regulations></information_regulations>
+        <information_suspension_resumption></information_suspension_resumption>
+        <information_cancellation></information_cancellation>
+        <information_reissuing></information_reissuing>
+    </licenses>
+    <licenses>
+        <name>Министерство здравоохранения Алтайского края</name>
+        <activity_type>Медицинская деятельность</activity_type>
+        <full_name_licensee>Общество с ограниченной ответственностью &quot;КЛИНИКА НОРМА&quot;</full_name_licensee>
+        <abbreviated_name_licensee>ООО &quot;КЛИНИКА НОРМА&quot;</abbreviated_name_licensee>
+        <brand_name_licensee>ООО &quot;КЛИНИКА НОРМА&quot;</brand_name_licensee>
+        <form>Общество с ограниченной ответственностью</form>
+        <address_region>Алтайский край</address_region>
+        <address>656039, Россия, Алтайский край, г. Барнаул, ул. Телефонная, д. 165</address>
+        <ogrn>1192225008568</ogrn>
+        <inn>2221243213</inn>
+        <work_address_list>
+            <address_place>
+                <address>656039, Алтайский край, г. Барнаул, ул. Телефонная, д. 165</address>
+                <index>656039</index>
+                <region>Алтайский край</region>
+                <city>Барнаул</city>
+                <street>ул. Телефонная, д. 165</street>
+                <code_fias>59f905bf-7d31-4ef6-8bfc-cb5b28046408</code_fias>
+                <works>
+                    <work>100. При оказании первичной, в том числе доврачебной, врачебной и специализированной,
+                        медико-санитарной помощи организуются и выполняются следующие работы (услуги):
+                    </work>
+                    <work>100.1. при оказании первичной доврачебной медико-санитарной помощи в амбулаторных условиях
+                        по:
+                    </work>
+                    <work>100.1.2. анестезиологии и реаниматологии</work>
+                    <work>100.1.19. операционному делу</work>
+                    <work>100.1.24. сестринскому делу</work>
+                    <work>100.4. при оказании первичной специализированной медико-санитарной помощи в амбулаторных
+                        условиях по:
+                    </work>
+                    <work>100.4.2. акушерству и гинекологии (за исключением использования вспомогательных репродуктивных
+                        технологий и искусственного прерывания беременности)
+                    </work>
+                    <work>100.4.4. акушерству и гинекологии (искусственному прерыванию беременности)</work>
+                    <work>100.4.7. анестезиологии и реаниматологии</work>
+                    <work>100.4.32. колопроктологии</work>
+                    <work>100.4.33. косметологии</work>
+                    <work>100.4.45. онкологии</work>
+                    <work>100.4.46. организации здравоохранения и общественному здоровью</work>
+                    <work>100.4.49. оториноларингологии (за исключением кохлеарной имплантации)</work>
+                    <work>100.4.53. пластической хирургии</work>
+                    <work>100.4.65. сердечно-сосудистой хирургии</work>
+                    <work>100.4.76. ультразвуковой диагностике</work>
+                    <work>100.4.78. урологии</work>
+                    <work>100.4.82. хирургии</work>
+                    <work>100.5. при оказании первичной специализированной медико-санитарной помощи в условиях дневного
+                        стационара по:
+                    </work>
+                    <work>100.5.2. акушерству и гинекологии (за исключением использования вспомогательных репродуктивных
+                        технологий и искусственного прерывания беременности)
+                    </work>
+                    <work>100.5.4. акушерству и гинекологии (искусственному прерыванию беременности)</work>
+                    <work>100.5.7. анестезиологии и реаниматологии</work>
+                    <work>100.5.30. колопроктологии</work>
+                    <work>100.5.42. онкологии</work>
+                    <work>100.5.43. организации здравоохранения и общественному здоровью</work>
+                    <work>100.5.45. оториноларингологии (за исключением кохлеарной имплантации)</work>
+                    <work>100.5.56. сердечно-сосудистой хирургии</work>
+                    <work>100.5.65. ультразвуковой диагностике</work>
+                    <work>100.5.67. урологии</work>
+                    <work>100.5.71. хирургии</work>
+                    <work>105. При проведении медицинских осмотров, медицинских освидетельствований и медицинских
+                        экспертиз организуются и выполняются следующие работы (услуги):
+                    </work>
+                    <work>105.3. при проведении медицинских экспертиз по:</work>
+                    <work>105.3.9. экспертизе качества медицинской помощи</work>
+                    <work>105.3.11. экспертизе временной нетрудоспособности</work>
+                </works>
+            </address_place>
+        </work_address_list>
+        <number>ЛО-22-01-005791</number>
+        <date>04.12.2020</date>
+        <number_orders>737 ОЛ</number_orders>
+        <date_order>04.12.2020</date_order>
+        <date_register>04.12.2020</date_register>
+        <number_duplicate></number_duplicate>
+        <date_duplicate></date_duplicate>
+        <termination></termination>
+        <date_termination></date_termination>
+        <information></information>
+        <information_regulations></information_regulations>
+        <information_suspension_resumption></information_suspension_resumption>
+        <information_cancellation></information_cancellation>
+        <information_reissuing></information_reissuing>
+    </licenses>
+    <licenses>
+        <name>Министерство здравоохранения Алтайского края</name>
+        <activity_type>Медицинская деятельность</activity_type>
+        <full_name_licensee>Общество с ограниченной ответственностью &quot;СТОМАТОЛОГИЧЕСКАЯ КЛИНИКА ПОЛАРНО&quot;
+        </full_name_licensee>
+        <abbreviated_name_licensee>ООО &quot;СТОМАТОЛОГИЧЕСКАЯ КЛИНИКА ПОЛАРНО&quot;</abbreviated_name_licensee>
+        <brand_name_licensee>ООО &quot;СТОМАТОЛОГИЧЕСКАЯ КЛИНИКА ПОЛАРНО&quot;</brand_name_licensee>
+        <form>Общество с ограниченной ответственностью</form>
+        <address_region>Алтайский край</address_region>
+        <address>656067, Россия, Алтайский край, г. Барнаул, тракт Павловский, д. 299, пом. Н4</address>
+        <ogrn>1202200024487</ogrn>
+        <inn>2222886810</inn>
+        <work_address_list>
+            <address_place>
+                <address>656067, Алтайский край, г. Барнаул, тракт Павловский, д. 299, пом. Н4</address>
+                <index>656067</index>
+                <region>Алтайский край</region>
+                <city>Барнаул</city>
+                <street>тракт Павловский, д. 299, пом. Н4</street>
+                <code_fias>aaffa55d-d75d-4a3c-a236-c700d6c608e5</code_fias>
+                <works>
+                    <work>100. При оказании первичной, в том числе доврачебной, врачебной и специализированной,
+                        медико-санитарной помощи организуются и выполняются следующие работы (услуги):
+                    </work>
+                    <work>100.1. при оказании первичной доврачебной медико-санитарной помощи в амбулаторных условиях
+                        по:
+                    </work>
+                    <work>100.1.24. сестринскому делу</work>
+                    <work>100.4. при оказании первичной специализированной медико-санитарной помощи в амбулаторных
+                        условиях по:
+                    </work>
+                    <work>100.4.46. организации здравоохранения и общественному здоровью</work>
+                    <work>100.4.47. ортодонтии</work>
+                    <work>100.4.66. стоматологии детской</work>
+                    <work>100.4.67. стоматологии общей практики</work>
+                    <work>100.4.68. стоматологии ортопедической</work>
+                    <work>100.4.69. стоматологии терапевтической</work>
+                    <work>100.4.70. стоматологии хирургической</work>
+                </works>
+            </address_place>
+        </work_address_list>
+        <number>ЛО-22-01-005789</number>
+        <date>04.12.2020</date>
+        <number_orders>736 ОЛ</number_orders>
+        <date_order>04.12.2020</date_order>
+        <date_register>04.12.2020</date_register>
+        <number_duplicate></number_duplicate>
+        <date_duplicate></date_duplicate>
+        <termination></termination>
+        <date_termination></date_termination>
+        <information></information>
+        <information_regulations></information_regulations>
+        <information_suspension_resumption></information_suspension_resumption>
+        <information_cancellation></information_cancellation>
+        <information_reissuing></information_reissuing>
+    </licenses>
+    <licenses>
+        <name>Министерство здравоохранения Алтайского края</name>
+        <activity_type>Медицинская деятельность</activity_type>
+        <full_name_licensee>Общество с ограниченной ответственностью Стоматологическая клиника &quot;Диамант&quot;
+        </full_name_licensee>
+        <abbreviated_name_licensee>ООО &quot;Диамант&quot;</abbreviated_name_licensee>
+        <brand_name_licensee>ООО &quot;Диамант&quot;</brand_name_licensee>
+        <form>Общество с ограниченной ответственностью</form>
+        <address_region>Алтайский край</address_region>
+        <address>659322, Россия, Алтайский край, г. Бийск, ул. Александра Радищева, д. 6, кв. 27</address>
+        <ogrn>1202200025840</ogrn>
+        <inn>2204092405</inn>
+        <work_address_list>
+            <address_place>
+                <address>659316, Алтайский край, г. Бийск, ул. Ленинградская, д. 36, пом. Н-7</address>
+                <index>659316</index>
+                <region>Алтайский край</region>
+                <city>Бийск</city>
+                <street>ул. Ленинградская, д. 36, пом. Н-7</street>
+                <code_fias>cafb7169-7616-4f73-9dd9-a5ae19233856</code_fias>
+                <works>
+                    <work>100. При оказании первичной, в том числе доврачебной, врачебной и специализированной,
+                        медико-санитарной помощи организуются и выполняются следующие работы (услуги):
+                    </work>
+                    <work>100.1. при оказании первичной доврачебной медико-санитарной помощи в амбулаторных условиях
+                        по:
+                    </work>
+                    <work>100.1.24. сестринскому делу</work>
+                    <work>100.1.27. стоматологии</work>
+                    <work>100.4. при оказании первичной специализированной медико-санитарной помощи в амбулаторных
+                        условиях по:
+                    </work>
+                    <work>100.4.46. организации здравоохранения и общественному здоровью</work>
+                    <work>100.4.67. стоматологии общей практики</work>
+                    <work>100.4.68. стоматологии ортопедической</work>
+                    <work>100.4.69. стоматологии терапевтической</work>
+                </works>
+            </address_place>
+        </work_address_list>
+        <number>ЛО-22-01-005788</number>
+        <date>04.12.2020</date>
+        <number_orders>736 ОЛ</number_orders>
+        <date_order>04.12.2020</date_order>
+        <date_register>04.12.2020</date_register>
+        <number_duplicate></number_duplicate>
+        <date_duplicate></date_duplicate>
+        <termination></termination>
+        <date_termination></date_termination>
+        <information></information>
+        <information_regulations></information_regulations>
+        <information_suspension_resumption></information_suspension_resumption>
+        <information_cancellation></information_cancellation>
+        <information_reissuing></information_reissuing>
+    </licenses>
+    <licenses>
+        <name>Комитет по здравоохранению Ленинградской области</name>
+        <activity_type>Медицинская деятельность</activity_type>
+        <full_name_licensee>Государственное бюджетное учреждение Ленинградской области &quot;Центр патриотических,
+            добровольческих, учебных и досуговых программ &quot;Молодежный&quot;
+        </full_name_licensee>
+        <abbreviated_name_licensee>ГБУ ЛО &quot;Центр &quot;Молодежный&quot;</abbreviated_name_licensee>
+        <brand_name_licensee></brand_name_licensee>
+        <form>Бюджетное учреждение</form>
+        <address_region>Ленинградская область</address_region>
+        <address>188679, Россия, Ленинградская область, Всеволожский район, д. Кошкино, здание 1</address>
+        <ogrn>1034700555779</ogrn>
+        <inn>4703066820</inn>
+        <work_address_list>
+            <address_place>
+                <address>188679, Ленинградская область, Всеволожский район, пгт. им. Морозова, дер. Кошкино, детский
+                    оздоровительный лагерь &quot;Ветерок&quot;, здание спального корпуса &quot;Олимп&quot; Лит. В,
+                    помещения №№ 20-34 на первом этаже.
+                </address>
+                <index>188679</index>
+                <region>Ленинградская область</region>
+                <city>им. Морозова</city>
+                <street>дер. Кошкино, детский оздоровительный лагерь &quot;Ветерок&quot;, здание спального корпуса
+                    &quot;Олимп&quot; Лит. В, помещения №№ 20-34 на первом этаже.
+                </street>
+                <code_fias>9fab02a9-75ef-4d3e-b0fa-8d8133713288</code_fias>
+                <works>
+                    <work>100. При оказании первичной, в том числе доврачебной, врачебной и специализированной,
+                        медико-санитарной помощи организуются и выполняются следующие работы (услуги):
+                    </work>
+                    <work>100.1. при оказании первичной доврачебной медико-санитарной помощи в амбулаторных условиях
+                        по:
+                    </work>
+                    <work>100.1.26. сестринскому делу в педиатрии</work>
+                    <work>100.2. при оказании первичной врачебной медико-санитарной помощи в амбулаторных условиях по:
+                    </work>
+                    <work>100.2.5. педиатрии</work>
+                </works>
+            </address_place>
+        </work_address_list>
+        <number>ЛО-47-01-002372</number>
+        <date>02.12.2020</date>
+        <number_orders>1688-р</number_orders>
+        <date_order>02.12.2020</date_order>
+        <date_register>02.12.2020</date_register>
+        <number_duplicate></number_duplicate>
+        <date_duplicate></date_duplicate>
+        <termination></termination>
+        <date_termination></date_termination>
+        <information></information>
+        <information_regulations></information_regulations>
+        <information_suspension_resumption></information_suspension_resumption>
+        <information_cancellation></information_cancellation>
+        <information_reissuing></information_reissuing>
+    </licenses>
+    <licenses>
+        <name>Министерство здравоохранения Калужской области</name>
+        <activity_type>Медицинская деятельность</activity_type>
+        <full_name_licensee>Общество с ограниченной ответственностью &quot;Эс класс клиник калуга&quot;
+        </full_name_licensee>
+        <abbreviated_name_licensee>ООО «Эс Класс Клиник Калуга»</abbreviated_name_licensee>
+        <brand_name_licensee></brand_name_licensee>
+        <form>Общество с ограниченной ответственностью</form>
+        <address_region>Калужская область</address_region>
+        <address>248000, Россия, Калужская область, г. Калуга, ул. Кутузова, д. 15</address>
+        <ogrn>1144027002646</ogrn>
+        <inn>4027119949</inn>
+        <work_address_list>
+            <address_place>
+                <address>248000, Калужская область, г. Калуга, ул.Кутузова, д.19</address>
+                <index>248000</index>
+                <region>Калужская область</region>
+                <city>Калуга</city>
+                <street>ул.Кутузова, д.19</street>
+                <code_fias>10ea49fe-ff29-48ae-9208-31b0675ff846</code_fias>
+                <works>
+                    <work>100. При оказании первичной, в том числе доврачебной, врачебной и специализированной,
+                        медико-санитарной помощи организуются и выполняются следующие работы (услуги):
+                    </work>
+                    <work>100.1. при оказании первичной доврачебной медико-санитарной помощи в амбулаторных условиях
+                        по:
+                    </work>
+                    <work>100.1.2. анестезиологии и реаниматологии</work>
+                    <work>100.1.19. операционному делу</work>
+                    <work>100.1.24. сестринскому делу</work>
+                    <work>100.1.30. физиотерапии</work>
+                    <work>100.4. при оказании первичной специализированной медико-санитарной помощи в амбулаторных
+                        условиях по:
+                    </work>
+                    <work>100.4.2. акушерству и гинекологии (за исключением использования вспомогательных репродуктивных
+                        технологий и искусственного прерывания беременности)
+                    </work>
+                    <work>100.4.4. акушерству и гинекологии (искусственному прерыванию беременности)</work>
+                    <work>100.4.7. анестезиологии и реаниматологии</work>
+                    <work>100.4.32. колопроктологии</work>
+                    <work>100.4.46. организации здравоохранения и общественному здоровью</work>
+                    <work>100.4.76. ультразвуковой диагностике</work>
+                    <work>100.4.78. урологии</work>
+                    <work>100.4.82. хирургии</work>
+                    <work>100.4.85. эндоскопии</work>
+                    <work>100.5. при оказании первичной специализированной медико-санитарной помощи в условиях дневного
+                        стационара по:
+                    </work>
+                    <work>100.5.2. акушерству и гинекологии (за исключением использования вспомогательных репродуктивных
+                        технологий и искусственного прерывания беременности)
+                    </work>
+                    <work>100.5.4. акушерству и гинекологии (искусственному прерыванию беременности)</work>
+                    <work>100.5.7. анестезиологии и реаниматологии</work>
+                    <work>100.5.30. колопроктологии</work>
+                    <work>100.5.43. организации здравоохранения и общественному здоровью</work>
+                    <work>100.5.65. ультразвуковой диагностике</work>
+                    <work>100.5.67. урологии</work>
+                    <work>100.5.71. хирургии</work>
+                    <work>100.5.75. эндоскопии</work>
+                    <work>105. При проведении медицинских осмотров, медицинских освидетельствований и медицинских
+                        экспертиз организуются и выполняются следующие работы (услуги):
+                    </work>
+                    <work>105.3. при проведении медицинских экспертиз по:</work>
+                    <work>105.3.11. экспертизе временной нетрудоспособности</work>
+                </works>
+            </address_place>
+            <address_place>
+                <address>248000, Калужская область, г. Калуга, ул. Кутузова, д. 15</address>
+                <index>248000</index>
+                <region>Калужская область</region>
+                <city>Калуга</city>
+                <street>ул. Кутузова, д. 15</street>
+                <code_fias>39f124ea-922b-4343-b01d-810cc46efa6c</code_fias>
+                <works>
+                    <work>100. При оказании первичной, в том числе доврачебной, врачебной и специализированной,
+                        медико-санитарной помощи организуются и выполняются следующие работы (услуги):
+                    </work>
+                    <work>100.1. при оказании первичной доврачебной медико-санитарной помощи в амбулаторных условиях
+                        по:
+                    </work>
+                    <work>100.1.2. анестезиологии и реаниматологии</work>
+                    <work>100.1.12. лечебному делу</work>
+                    <work>100.1.21. организации сестринского дела</work>
+                    <work>100.1.24. сестринскому делу</work>
+                    <work>100.1.30. физиотерапии</work>
+                    <work>100.4. при оказании первичной специализированной медико-санитарной помощи в амбулаторных
+                        условиях по:
+                    </work>
+                    <work>100.4.2. акушерству и гинекологии (за исключением использования вспомогательных репродуктивных
+                        технологий и искусственного прерывания беременности)
+                    </work>
+                    <work>100.4.4. акушерству и гинекологии (искусственному прерыванию беременности)</work>
+                    <work>100.4.7. анестезиологии и реаниматологии</work>
+                    <work>100.4.32. колопроктологии</work>
+                    <work>100.4.46. организации здравоохранения и общественному здоровью</work>
+                    <work>100.4.76. ультразвуковой диагностике</work>
+                    <work>100.4.78. урологии</work>
+                    <work>100.4.82. хирургии</work>
+                    <work>100.4.85. эндоскопии</work>
+                    <work>100.5. при оказании первичной специализированной медико-санитарной помощи в условиях дневного
+                        стационара по:
+                    </work>
+                    <work>100.5.2. акушерству и гинекологии (за исключением использования вспомогательных репродуктивных
+                        технологий и искусственного прерывания беременности)
+                    </work>
+                    <work>100.5.4. акушерству и гинекологии (искусственному прерыванию беременности)</work>
+                    <work>100.5.7. анестезиологии и реаниматологии</work>
+                    <work>100.5.30. колопроктологии</work>
+                    <work>100.5.43. организации здравоохранения и общественному здоровью</work>
+                    <work>100.5.65. ультразвуковой диагностике</work>
+                    <work>100.5.67. урологии</work>
+                    <work>100.5.71. хирургии</work>
+                    <work>100.5.75. эндоскопии</work>
+                    <work>105. При проведении медицинских осмотров, медицинских освидетельствований и медицинских
+                        экспертиз организуются и выполняются следующие работы (услуги):
+                    </work>
+                    <work>105.3. при проведении медицинских экспертиз по:</work>
+                    <work>105.3.9. экспертизе качества медицинской помощи</work>
+                </works>
+            </address_place>
+        </work_address_list>
+        <number>ЛО-40-01-001898</number>
+        <date>01.12.2020</date>
+        <number_orders>1433</number_orders>
+        <date_order>01.12.2020</date_order>
+        <date_register>01.12.2020</date_register>
+        <number_duplicate></number_duplicate>
+        <date_duplicate></date_duplicate>
+        <termination></termination>
+        <date_termination></date_termination>
+        <information></information>
+        <information_regulations></information_regulations>
+        <information_suspension_resumption></information_suspension_resumption>
+        <information_cancellation></information_cancellation>
+        <information_reissuing></information_reissuing>
+    </licenses>
+    <licenses>
+        <name>Территориальный орган Росздравнадзора по г. Москве и Московской области</name>
+        <activity_type>Медицинская деятельность</activity_type>
+        <full_name_licensee>Федеральное казенное учреждение здравоохранения &quot;Санаторий &quot;Зеленая роща&quot;
+            Министерства внутренних дел Российской Федерации&quot;
+        </full_name_licensee>
+        <abbreviated_name_licensee>ФКУЗ &quot;Санаторий &quot;Зеленая роща&quot; МВД России&quot;
+        </abbreviated_name_licensee>
+        <brand_name_licensee></brand_name_licensee>
+        <form>Федеральное казенное учреждение</form>
+        <address_region>Московская область</address_region>
+        <address>142046, Россия, Московская область, г. Домодедово, территория &quot;Зеленая роща-Сонино&quot;</address>
+        <ogrn>1025001280754</ogrn>
+        <inn>5009004418</inn>
+        <work_address_list>
+            <address_place>
+                <address>142046, Московская область, г.о. Домодедово, территория &quot;Зеленая роща-Сонино&quot;, стр.
+                    1
+                </address>
+                <index>142046</index>
+                <region>Московская область</region>
+                <city>г.о. Домодедово</city>
+                <street>территория &quot;Зеленая роща-Сонино&quot;, стр. 1</street>
+                <code_fias></code_fias>
+                <works>
+                    <work>104. При оказании медицинской помощи при санаторно-курортном лечении организуются и
+                        выполняются работы (услуги) по:
+                    </work>
+                    <work>104.15. диетологии</work>
+                    <work>104.22. лечебной физкультуре и спортивной медицине</work>
+                    <work>104.26. медицинскому массажу</work>
+                    <work>104.27. неврологии</work>
+                    <work>104.30. организации здравоохранения и общественному здоровью</work>
+                    <work>104.43. стоматологии</work>
+                    <work>104.49. терапии</work>
+                    <work>104.54. физиотерапии</work>
+                    <work>104.56. функциональной диагностике</work>
+                    <work>105. При проведении медицинских осмотров, медицинских освидетельствований и медицинских
+                        экспертиз организуются и выполняются следующие работы (услуги):
+                    </work>
+                    <work>105.1. при проведении медицинских осмотров по:</work>
+                    <work>105.1.3. медицинским осмотрам (предрейсовым, послерейсовым)</work>
+                    <work>105.3. при проведении медицинских экспертиз по:</work>
+                    <work>105.3.11. экспертизе временной нетрудоспособности</work>
+                </works>
+            </address_place>
+        </work_address_list>
+        <number>ФС-50-01-002470</number>
+        <date>04.12.2020</date>
+        <number_orders>1556/20</number_orders>
+        <date_order>04.12.2020</date_order>
+        <date_register>04.12.2020</date_register>
+        <number_duplicate></number_duplicate>
+        <date_duplicate></date_duplicate>
+        <termination></termination>
+        <date_termination></date_termination>
+        <information></information>
+        <information_regulations></information_regulations>
+        <information_suspension_resumption></information_suspension_resumption>
+        <information_cancellation></information_cancellation>
+        <information_reissuing></information_reissuing>
+    </licenses>
+    <licenses>
+        <name>Министерство здравоохранения Алтайского края</name>
+        <activity_type>Медицинская деятельность</activity_type>
+        <full_name_licensee>Индивидуальный предприниматель &quot;Шипунов Сергей Александрович&quot;</full_name_licensee>
+        <abbreviated_name_licensee></abbreviated_name_licensee>
+        <brand_name_licensee></brand_name_licensee>
+        <form>Индивидуальный предприниматель</form>
+        <address_region></address_region>
+        <address></address>
+        <ogrn>313220917600024</ogrn>
+        <inn>225101660498</inn>
+        <work_address_list>
+            <address_place>
+                <address>658340, Алтайский край, Краснощековский район, с. Краснощеково, ул. Ленина, д. 66</address>
+                <index>658340</index>
+                <region>Алтайский край</region>
+                <city>Краснощеково</city>
+                <street>ул. Ленина, д. 66</street>
+                <code_fias>8c4a07ae-09bd-4249-8b3a-287d0f45978f</code_fias>
+                <works>
+                    <work>100. При оказании первичной, в том числе доврачебной, врачебной и специализированной,
+                        медико-санитарной помощи организуются и выполняются следующие работы (услуги):
+                    </work>
+                    <work>100.4. при оказании первичной специализированной медико-санитарной помощи в амбулаторных
+                        условиях по:
+                    </work>
+                    <work>100.4.68. стоматологии ортопедической</work>
+                </works>
+            </address_place>
+        </work_address_list>
+        <number>ЛО-22-01-005792</number>
+        <date>04.12.2020</date>
+        <number_orders>737 ОЛ</number_orders>
+        <date_order>04.12.2020</date_order>
+        <date_register>04.12.2020</date_register>
+        <number_duplicate></number_duplicate>
+        <date_duplicate></date_duplicate>
+        <termination></termination>
+        <date_termination></date_termination>
+        <information></information>
+        <information_regulations></information_regulations>
+        <information_suspension_resumption></information_suspension_resumption>
+        <information_cancellation></information_cancellation>
+        <information_reissuing></information_reissuing>
+    </licenses>
+    <licenses>
+        <name>Министерство здравоохранения Алтайского края</name>
+        <activity_type>Медицинская деятельность</activity_type>
+        <full_name_licensee>Общество с ограниченной ответственностью &quot;КЛИНИКА НОРМА&quot;</full_name_licensee>
+        <abbreviated_name_licensee>ООО &quot;КЛИНИКА НОРМА&quot;</abbreviated_name_licensee>
+        <brand_name_licensee>ООО &quot;КЛИНИКА НОРМА&quot;</brand_name_licensee>
+        <form>Общество с ограниченной ответственностью</form>
+        <address_region>Алтайский край</address_region>
+        <address>656039, Россия, Алтайский край, г. Барнаул, ул. Телефонная, д. 165</address>
+        <ogrn>1192225008568</ogrn>
+        <inn>2221243213</inn>
+        <work_address_list>
+            <address_place>
+                <address>656039, Алтайский край, г. Барнаул, ул. Телефонная, д. 165</address>
+                <index>656039</index>
+                <region>Алтайский край</region>
+                <city>Барнаул</city>
+                <street>ул. Телефонная, д. 165</street>
+                <code_fias>59f905bf-7d31-4ef6-8bfc-cb5b28046408</code_fias>
+                <works>
+                    <work>100. При оказании первичной, в том числе доврачебной, врачебной и специализированной,
+                        медико-санитарной помощи организуются и выполняются следующие работы (услуги):
+                    </work>
+                    <work>100.1. при оказании первичной доврачебной медико-санитарной помощи в амбулаторных условиях
+                        по:
+                    </work>
+                    <work>100.1.2. анестезиологии и реаниматологии</work>
+                    <work>100.1.19. операционному делу</work>
+                    <work>100.1.24. сестринскому делу</work>
+                    <work>100.4. при оказании первичной специализированной медико-санитарной помощи в амбулаторных
+                        условиях по:
+                    </work>
+                    <work>100.4.2. акушерству и гинекологии (за исключением использования вспомогательных репродуктивных
+                        технологий и искусственного прерывания беременности)
+                    </work>
+                    <work>100.4.4. акушерству и гинекологии (искусственному прерыванию беременности)</work>
+                    <work>100.4.7. анестезиологии и реаниматологии</work>
+                    <work>100.4.32. колопроктологии</work>
+                    <work>100.4.33. косметологии</work>
+                    <work>100.4.45. онкологии</work>
+                    <work>100.4.46. организации здравоохранения и общественному здоровью</work>
+                    <work>100.4.49. оториноларингологии (за исключением кохлеарной имплантации)</work>
+                    <work>100.4.53. пластической хирургии</work>
+                    <work>100.4.65. сердечно-сосудистой хирургии</work>
+                    <work>100.4.76. ультразвуковой диагностике</work>
+                    <work>100.4.78. урологии</work>
+                    <work>100.4.82. хирургии</work>
+                    <work>100.5. при оказании первичной специализированной медико-санитарной помощи в условиях дневного
+                        стационара по:
+                    </work>
+                    <work>100.5.2. акушерству и гинекологии (за исключением использования вспомогательных репродуктивных
+                        технологий и искусственного прерывания беременности)
+                    </work>
+                    <work>100.5.4. акушерству и гинекологии (искусственному прерыванию беременности)</work>
+                    <work>100.5.7. анестезиологии и реаниматологии</work>
+                    <work>100.5.30. колопроктологии</work>
+                    <work>100.5.42. онкологии</work>
+                    <work>100.5.43. организации здравоохранения и общественному здоровью</work>
+                    <work>100.5.45. оториноларингологии (за исключением кохлеарной имплантации)</work>
+                    <work>100.5.56. сердечно-сосудистой хирургии</work>
+                    <work>100.5.65. ультразвуковой диагностике</work>
+                    <work>100.5.67. урологии</work>
+                    <work>100.5.71. хирургии</work>
+                    <work>105. При проведении медицинских осмотров, медицинских освидетельствований и медицинских
+                        экспертиз организуются и выполняются следующие работы (услуги):
+                    </work>
+                    <work>105.3. при проведении медицинских экспертиз по:</work>
+                    <work>105.3.9. экспертизе качества медицинской помощи</work>
+                    <work>105.3.11. экспертизе временной нетрудоспособности</work>
+                </works>
+            </address_place>
+        </work_address_list>
+        <number>ЛО-22-01-005791</number>
+        <date>04.12.2020</date>
+        <number_orders>737 ОЛ</number_orders>
+        <date_order>04.12.2020</date_order>
+        <date_register>04.12.2020</date_register>
+        <number_duplicate></number_duplicate>
+        <date_duplicate></date_duplicate>
+        <termination></termination>
+        <date_termination></date_termination>
+        <information></information>
+        <information_regulations></information_regulations>
+        <information_suspension_resumption></information_suspension_resumption>
+        <information_cancellation></information_cancellation>
+        <information_reissuing></information_reissuing>
+    </licenses>
+    <licenses>
+        <name>Министерство здравоохранения Алтайского края</name>
+        <activity_type>Медицинская деятельность</activity_type>
+        <full_name_licensee>Общество с ограниченной ответственностью &quot;СТОМАТОЛОГИЧЕСКАЯ КЛИНИКА ПОЛАРНО&quot;
+        </full_name_licensee>
+        <abbreviated_name_licensee>ООО &quot;СТОМАТОЛОГИЧЕСКАЯ КЛИНИКА ПОЛАРНО&quot;</abbreviated_name_licensee>
+        <brand_name_licensee>ООО &quot;СТОМАТОЛОГИЧЕСКАЯ КЛИНИКА ПОЛАРНО&quot;</brand_name_licensee>
+        <form>Общество с ограниченной ответственностью</form>
+        <address_region>Алтайский край</address_region>
+        <address>656067, Россия, Алтайский край, г. Барнаул, тракт Павловский, д. 299, пом. Н4</address>
+        <ogrn>1202200024487</ogrn>
+        <inn>2222886810</inn>
+        <work_address_list>
+            <address_place>
+                <address>656067, Алтайский край, г. Барнаул, тракт Павловский, д. 299, пом. Н4</address>
+                <index>656067</index>
+                <region>Алтайский край</region>
+                <city>Барнаул</city>
+                <street>тракт Павловский, д. 299, пом. Н4</street>
+                <code_fias>aaffa55d-d75d-4a3c-a236-c700d6c608e5</code_fias>
+                <works>
+                    <work>100. При оказании первичной, в том числе доврачебной, врачебной и специализированной,
+                        медико-санитарной помощи организуются и выполняются следующие работы (услуги):
+                    </work>
+                    <work>100.1. при оказании первичной доврачебной медико-санитарной помощи в амбулаторных условиях
+                        по:
+                    </work>
+                    <work>100.1.24. сестринскому делу</work>
+                    <work>100.4. при оказании первичной специализированной медико-санитарной помощи в амбулаторных
+                        условиях по:
+                    </work>
+                    <work>100.4.46. организации здравоохранения и общественному здоровью</work>
+                    <work>100.4.47. ортодонтии</work>
+                    <work>100.4.66. стоматологии детской</work>
+                    <work>100.4.67. стоматологии общей практики</work>
+                    <work>100.4.68. стоматологии ортопедической</work>
+                    <work>100.4.69. стоматологии терапевтической</work>
+                    <work>100.4.70. стоматологии хирургической</work>
+                </works>
+            </address_place>
+        </work_address_list>
+        <number>ЛО-22-01-005789</number>
+        <date>04.12.2020</date>
+        <number_orders>736 ОЛ</number_orders>
+        <date_order>04.12.2020</date_order>
+        <date_register>04.12.2020</date_register>
+        <number_duplicate></number_duplicate>
+        <date_duplicate></date_duplicate>
+        <termination></termination>
+        <date_termination></date_termination>
+        <information></information>
+        <information_regulations></information_regulations>
+        <information_suspension_resumption></information_suspension_resumption>
+        <information_cancellation></information_cancellation>
+        <information_reissuing></information_reissuing>
+    </licenses>
+    <licenses>
+        <name>Министерство здравоохранения Алтайского края</name>
+        <activity_type>Медицинская деятельность</activity_type>
+        <full_name_licensee>Общество с ограниченной ответственностью Стоматологическая клиника &quot;Диамант&quot;
+        </full_name_licensee>
+        <abbreviated_name_licensee>ООО &quot;Диамант&quot;</abbreviated_name_licensee>
+        <brand_name_licensee>ООО &quot;Диамант&quot;</brand_name_licensee>
+        <form>Общество с ограниченной ответственностью</form>
+        <address_region>Алтайский край</address_region>
+        <address>659322, Россия, Алтайский край, г. Бийск, ул. Александра Радищева, д. 6, кв. 27</address>
+        <ogrn>1202200025840</ogrn>
+        <inn>2204092405</inn>
+        <work_address_list>
+            <address_place>
+                <address>659316, Алтайский край, г. Бийск, ул. Ленинградская, д. 36, пом. Н-7</address>
+                <index>659316</index>
+                <region>Алтайский край</region>
+                <city>Бийск</city>
+                <street>ул. Ленинградская, д. 36, пом. Н-7</street>
+                <code_fias>cafb7169-7616-4f73-9dd9-a5ae19233856</code_fias>
+                <works>
+                    <work>100. При оказании первичной, в том числе доврачебной, врачебной и специализированной,
+                        медико-санитарной помощи организуются и выполняются следующие работы (услуги):
+                    </work>
+                    <work>100.1. при оказании первичной доврачебной медико-санитарной помощи в амбулаторных условиях
+                        по:
+                    </work>
+                    <work>100.1.24. сестринскому делу</work>
+                    <work>100.1.27. стоматологии</work>
+                    <work>100.4. при оказании первичной специализированной медико-санитарной помощи в амбулаторных
+                        условиях по:
+                    </work>
+                    <work>100.4.46. организации здравоохранения и общественному здоровью</work>
+                    <work>100.4.67. стоматологии общей практики</work>
+                    <work>100.4.68. стоматологии ортопедической</work>
+                    <work>100.4.69. стоматологии терапевтической</work>
+                </works>
+            </address_place>
+        </work_address_list>
+        <number>ЛО-22-01-005788</number>
+        <date>04.12.2020</date>
+        <number_orders>736 ОЛ</number_orders>
+        <date_order>04.12.2020</date_order>
+        <date_register>04.12.2020</date_register>
+        <number_duplicate></number_duplicate>
+        <date_duplicate></date_duplicate>
+        <termination></termination>
+        <date_termination></date_termination>
+        <information></information>
+        <information_regulations></information_regulations>
+        <information_suspension_resumption></information_suspension_resumption>
+        <information_cancellation></information_cancellation>
+        <information_reissuing></information_reissuing>
+    </licenses>
+    <licenses>
+        <name>Территориальный орган Росздравнадзора по Владимирской области</name>
+        <activity_type>Медицинская деятельность</activity_type>
+        <full_name_licensee>Общество с ограниченной ответственностью &quot;Клиника медицинских экспертиз&quot;</full_name_licensee>
+        <abbreviated_name_licensee>ООО &quot;Клиника медицинских экспертиз&quot;</abbreviated_name_licensee>
+        <brand_name_licensee></brand_name_licensee>
+        <form>Общество с ограниченной ответственностью</form>
+        <address_region>Владимирская область</address_region>
+        <address>600020, Россия, Владимирская область, г. Владимир, ул. Большая Нижегородская, д. 71Г</address>
+        <ogrn>1093340002557</ogrn>
+        <inn>3329056612</inn>
+        <work_address_list>
+            <address_place>
+                <address>600020, Владимирская область, г. Владимир, ул. Большая Московская, д. 79</address>
+                <index>600020</index>
+                <region>Владимирская область</region>
+                <city>Владимир</city>
+                <street>ул. Большая Московская, д. 79</street>
+                <code_fias>09aa15fd-02ad-4625-a2a8-15e9cbe3b3ed</code_fias>
+                <works>
+                    <work>101. При оказании специализированной, в том числе высокотехнологичной, медицинской помощи организуются и выполняются следующие работы (услуги):</work>
+                    <work>101.4. при оказании высокотехнологичной медицинской помощи в стационарных условиях по:</work>
+                    <work>101.4.27. травматологии и ортопедии</work>
+                    <work>101.4.33. челюстно-лицевой хирургии</work>
+                </works>
+            </address_place>
+        </work_address_list>
+        <number>ФС-33-01-001229</number>
+        <date>04.12.2020</date>
+        <number_orders>П33-160/20</number_orders>
+        <date_order>04.12.2020</date_order>
+        <date_register>04.12.2020</date_register>
+        <number_duplicate></number_duplicate>
+        <date_duplicate></date_duplicate>
+        <termination></termination>
+        <date_termination></date_termination>
+        <information></information>
+        <information_regulations></information_regulations>
+        <information_suspension_resumption></information_suspension_resumption>
+        <information_cancellation></information_cancellation>
+        <information_reissuing></information_reissuing>
+    </licenses>
+    <licenses>
+        <name>Министерство здравоохранения Калужской области</name>
+        <activity_type>Медицинская деятельность</activity_type>
+        <full_name_licensee>Общество с ограниченной ответственностью &quot;Эс класс клиник калуга&quot;</full_name_licensee>
+        <abbreviated_name_licensee>ООО «Эс Класс Клиник Калуга»</abbreviated_name_licensee>
+        <brand_name_licensee></brand_name_licensee>
+        <form>Общество с ограниченной ответственностью</form>
+        <address_region>Калужская область</address_region>
+        <address>248000, Россия, Калужская область, г. Калуга, ул. Кутузова, д. 15</address>
+        <ogrn>1144027002646</ogrn>
+        <inn>4027119949</inn>
+        <work_address_list>
+            <address_place>
+                <address>248000, Калужская область, г. Калуга, ул.Кутузова, д.19</address>
+                <index>248000</index>
+                <region>Калужская область</region>
+                <city>Калуга</city>
+                <street>ул.Кутузова, д.19</street>
+                <code_fias>10ea49fe-ff29-48ae-9208-31b0675ff846</code_fias>
+                <works>
+                    <work>100. При оказании первичной, в том числе доврачебной, врачебной и специализированной, медико-санитарной помощи организуются и выполняются следующие работы (услуги):</work>
+                    <work>100.1. при оказании первичной доврачебной медико-санитарной помощи в амбулаторных условиях по:</work>
+                    <work>100.1.2. анестезиологии и реаниматологии</work>
+                    <work>100.1.19. операционному делу</work>
+                    <work>100.1.24. сестринскому делу</work>
+                    <work>100.1.30. физиотерапии</work>
+                    <work>100.4. при оказании первичной специализированной медико-санитарной помощи в амбулаторных условиях по:</work>
+                    <work>100.4.2. акушерству и гинекологии (за исключением использования вспомогательных репродуктивных технологий и искусственного прерывания беременности)</work>
+                    <work>100.4.4. акушерству и гинекологии (искусственному прерыванию беременности)</work>
+                    <work>100.4.7. анестезиологии и реаниматологии</work>
+                    <work>100.4.32. колопроктологии</work>
+                    <work>100.4.46. организации здравоохранения и общественному здоровью</work>
+                    <work>100.4.76. ультразвуковой диагностике</work>
+                    <work>100.4.78. урологии</work>
+                    <work>100.4.82. хирургии</work>
+                    <work>100.4.85. эндоскопии</work>
+                    <work>100.5. при оказании первичной специализированной медико-санитарной помощи в условиях дневного стационара по:</work>
+                    <work>100.5.2. акушерству и гинекологии (за исключением использования вспомогательных репродуктивных технологий и искусственного прерывания беременности)</work>
+                    <work>100.5.4. акушерству и гинекологии (искусственному прерыванию беременности)</work>
+                    <work>100.5.7. анестезиологии и реаниматологии</work>
+                    <work>100.5.30. колопроктологии</work>
+                    <work>100.5.43. организации здравоохранения и общественному здоровью</work>
+                    <work>100.5.65. ультразвуковой диагностике</work>
+                    <work>100.5.67. урологии</work>
+                    <work>100.5.71. хирургии</work>
+                    <work>100.5.75. эндоскопии</work>
+                    <work>105. При проведении медицинских осмотров, медицинских освидетельствований и медицинских экспертиз организуются и выполняются следующие работы (услуги):</work>
+                    <work>105.3. при проведении медицинских экспертиз по:</work>
+                    <work>105.3.11. экспертизе временной нетрудоспособности</work>
+                </works>
+            </address_place>
+            <address_place>
+                <address>248000, Калужская область, г. Калуга, ул. Кутузова, д. 15</address>
+                <index>248000</index>
+                <region>Калужская область</region>
+                <city>Калуга</city>
+                <street>ул. Кутузова, д. 15</street>
+                <code_fias>39f124ea-922b-4343-b01d-810cc46efa6c</code_fias>
+                <works>
+                    <work>100. При оказании первичной, в том числе доврачебной, врачебной и специализированной, медико-санитарной помощи организуются и выполняются следующие работы (услуги):</work>
+                    <work>100.1. при оказании первичной доврачебной медико-санитарной помощи в амбулаторных условиях по:</work>
+                    <work>100.1.2. анестезиологии и реаниматологии</work>
+                    <work>100.1.12. лечебному делу</work>
+                    <work>100.1.21. организации сестринского дела</work>
+                    <work>100.1.24. сестринскому делу</work>
+                    <work>100.1.30. физиотерапии</work>
+                    <work>100.4. при оказании первичной специализированной медико-санитарной помощи в амбулаторных условиях по:</work>
+                    <work>100.4.2. акушерству и гинекологии (за исключением использования вспомогательных репродуктивных технологий и искусственного прерывания беременности)</work>
+                    <work>100.4.4. акушерству и гинекологии (искусственному прерыванию беременности)</work>
+                    <work>100.4.7. анестезиологии и реаниматологии</work>
+                    <work>100.4.32. колопроктологии</work>
+                    <work>100.4.46. организации здравоохранения и общественному здоровью</work>
+                    <work>100.4.76. ультразвуковой диагностике</work>
+                    <work>100.4.78. урологии</work>
+                    <work>100.4.82. хирургии</work>
+                    <work>100.4.85. эндоскопии</work>
+                    <work>100.5. при оказании первичной специализированной медико-санитарной помощи в условиях дневного стационара по:</work>
+                    <work>100.5.2. акушерству и гинекологии (за исключением использования вспомогательных репродуктивных технологий и искусственного прерывания беременности)</work>
+                    <work>100.5.4. акушерству и гинекологии (искусственному прерыванию беременности)</work>
+                    <work>100.5.7. анестезиологии и реаниматологии</work>
+                    <work>100.5.30. колопроктологии</work>
+                    <work>100.5.43. организации здравоохранения и общественному здоровью</work>
+                    <work>100.5.65. ультразвуковой диагностике</work>
+                    <work>100.5.67. урологии</work>
+                    <work>100.5.71. хирургии</work>
+                    <work>100.5.75. эндоскопии</work>
+                    <work>105. При проведении медицинских осмотров, медицинских освидетельствований и медицинских экспертиз организуются и выполняются следующие работы (услуги):</work>
+                    <work>105.3. при проведении медицинских экспертиз по:</work>
+                    <work>105.3.9. экспертизе качества медицинской помощи</work>
+                </works>
+            </address_place>
+        </work_address_list>
+        <number>ЛО-40-01-001898</number>
+        <date>01.12.2020</date>
+        <number_orders>1433</number_orders>
+        <date_order>01.12.2020</date_order>
+        <date_register>01.12.2020</date_register>
+        <number_duplicate></number_duplicate>
+        <date_duplicate></date_duplicate>
+        <termination></termination>
+        <date_termination></date_termination>
+        <information></information>
+        <information_regulations></information_regulations>
+        <information_suspension_resumption></information_suspension_resumption>
+        <information_cancellation></information_cancellation>
+        <information_reissuing></information_reissuing>
+    </licenses>
+    <licenses>
+        <name>Территориальный орган Росздравнадзора по г. Москве и Московской области</name>
+        <activity_type>Медицинская деятельность</activity_type>
+        <full_name_licensee>Федеральное казенное учреждение здравоохранения &quot;Санаторий &quot;Зеленая роща&quot; Министерства внутренних дел Российской Федерации&quot;</full_name_licensee>
+        <abbreviated_name_licensee>ФКУЗ &quot;Санаторий &quot;Зеленая роща&quot; МВД России&quot;</abbreviated_name_licensee>
+        <brand_name_licensee></brand_name_licensee>
+        <form>Федеральное казенное учреждение</form>
+        <address_region>Московская область</address_region>
+        <address>142046, Россия, Московская область, г. Домодедово, территория &quot;Зеленая роща-Сонино&quot;</address>
+        <ogrn>1025001280754</ogrn>
+        <inn>5009004418</inn>
+        <work_address_list>
+            <address_place>
+                <address>142046, Московская область, г.о. Домодедово, территория &quot;Зеленая роща-Сонино&quot;, стр. 1</address>
+                <index>142046</index>
+                <region>Московская область</region>
+                <city>г.о. Домодедово</city>
+                <street>территория &quot;Зеленая роща-Сонино&quot;, стр. 1</street>
+                <code_fias></code_fias>
+                <works>
+                    <work>104. При оказании медицинской помощи при санаторно-курортном лечении организуются и выполняются работы (услуги) по:</work>
+                    <work>104.15. диетологии</work>
+                    <work>104.22. лечебной физкультуре и спортивной медицине</work>
+                    <work>104.26. медицинскому массажу</work>
+                    <work>104.27. неврологии</work>
+                    <work>104.30. организации здравоохранения и общественному здоровью</work>
+                    <work>104.43. стоматологии</work>
+                    <work>104.49. терапии</work>
+                    <work>104.54. физиотерапии</work>
+                    <work>104.56. функциональной диагностике</work>
+                    <work>105. При проведении медицинских осмотров, медицинских освидетельствований и медицинских экспертиз организуются и выполняются следующие работы (услуги):</work>
+                    <work>105.1. при проведении медицинских осмотров по:</work>
+                    <work>105.1.3. медицинским осмотрам (предрейсовым, послерейсовым)</work>
+                    <work>105.3. при проведении медицинских экспертиз по:</work>
+                    <work>105.3.11. экспертизе временной нетрудоспособности</work>
+                </works>
+            </address_place>
+        </work_address_list>
+        <number>ФС-50-01-002470</number>
+        <date>04.12.2020</date>
+        <number_orders>1556/20</number_orders>
+        <date_order>04.12.2020</date_order>
+        <date_register>04.12.2020</date_register>
+        <number_duplicate></number_duplicate>
+        <date_duplicate></date_duplicate>
+        <termination></termination>
+        <date_termination></date_termination>
+        <information></information>
+        <information_regulations></information_regulations>
+        <information_suspension_resumption></information_suspension_resumption>
+        <information_cancellation></information_cancellation>
+        <information_reissuing></information_reissuing>
+    </licenses>
+    <licenses>
+        <name>Министерство здравоохранения Алтайского края</name>
+        <activity_type>Медицинская деятельность</activity_type>
+        <full_name_licensee>Индивидуальный предприниматель &quot;Шипунов Сергей Александрович&quot;</full_name_licensee>
+        <abbreviated_name_licensee></abbreviated_name_licensee>
+        <brand_name_licensee></brand_name_licensee>
+        <form>Индивидуальный предприниматель</form>
+        <address_region></address_region>
+        <address></address>
+        <ogrn>313220917600024</ogrn>
+        <inn>225101660498</inn>
+        <work_address_list>
+            <address_place>
+                <address>658340, Алтайский край, Краснощековский район, с. Краснощеково, ул. Ленина, д. 66</address>
+                <index>658340</index>
+                <region>Алтайский край</region>
+                <city>Краснощеково</city>
+                <street>ул. Ленина, д. 66</street>
+                <code_fias>8c4a07ae-09bd-4249-8b3a-287d0f45978f</code_fias>
+                <works>
+                    <work>100. При оказании первичной, в том числе доврачебной, врачебной и специализированной, медико-санитарной помощи организуются и выполняются следующие работы (услуги):</work>
+                    <work>100.4. при оказании первичной специализированной медико-санитарной помощи в амбулаторных условиях по:</work>
+                    <work>100.4.68. стоматологии ортопедической</work>
+                </works>
+            </address_place>
+        </work_address_list>
+        <number>ЛО-22-01-005792</number>
+        <date>04.12.2020</date>
+        <number_orders>737 ОЛ</number_orders>
+        <date_order>04.12.2020</date_order>
+        <date_register>04.12.2020</date_register>
+        <number_duplicate></number_duplicate>
+        <date_duplicate></date_duplicate>
+        <termination></termination>
+        <date_termination></date_termination>
+        <information></information>
+        <information_regulations></information_regulations>
+        <information_suspension_resumption></information_suspension_resumption>
+        <information_cancellation></information_cancellation>
+        <information_reissuing></information_reissuing>
+    </licenses>
+    <licenses>
+        <name>Министерство здравоохранения Алтайского края</name>
+        <activity_type>Медицинская деятельность</activity_type>
+        <full_name_licensee>Общество с ограниченной ответственностью &quot;КЛИНИКА НОРМА&quot;</full_name_licensee>
+        <abbreviated_name_licensee>ООО &quot;КЛИНИКА НОРМА&quot;</abbreviated_name_licensee>
+        <brand_name_licensee>ООО &quot;КЛИНИКА НОРМА&quot;</brand_name_licensee>
+        <form>Общество с ограниченной ответственностью</form>
+        <address_region>Алтайский край</address_region>
+        <address>656039, Россия, Алтайский край, г. Барнаул, ул. Телефонная, д. 165</address>
+        <ogrn>1192225008568</ogrn>
+        <inn>2221243213</inn>
+        <work_address_list>
+            <address_place>
+                <address>656039, Алтайский край, г. Барнаул, ул. Телефонная, д. 165</address>
+                <index>656039</index>
+                <region>Алтайский край</region>
+                <city>Барнаул</city>
+                <street>ул. Телефонная, д. 165</street>
+                <code_fias>59f905bf-7d31-4ef6-8bfc-cb5b28046408</code_fias>
+                <works>
+                    <work>100. При оказании первичной, в том числе доврачебной, врачебной и специализированной, медико-санитарной помощи организуются и выполняются следующие работы (услуги):</work>
+                    <work>100.1. при оказании первичной доврачебной медико-санитарной помощи в амбулаторных условиях по:</work>
+                    <work>100.1.2. анестезиологии и реаниматологии</work>
+                    <work>100.1.19. операционному делу</work>
+                    <work>100.1.24. сестринскому делу</work>
+                    <work>100.4. при оказании первичной специализированной медико-санитарной помощи в амбулаторных условиях по:</work>
+                    <work>100.4.2. акушерству и гинекологии (за исключением использования вспомогательных репродуктивных технологий и искусственного прерывания беременности)</work>
+                    <work>100.4.4. акушерству и гинекологии (искусственному прерыванию беременности)</work>
+                    <work>100.4.7. анестезиологии и реаниматологии</work>
+                    <work>100.4.32. колопроктологии</work>
+                    <work>100.4.33. косметологии</work>
+                    <work>100.4.45. онкологии</work>
+                    <work>100.4.46. организации здравоохранения и общественному здоровью</work>
+                    <work>100.4.49. оториноларингологии (за исключением кохлеарной имплантации)</work>
+                    <work>100.4.53. пластической хирургии</work>
+                    <work>100.4.65. сердечно-сосудистой хирургии</work>
+                    <work>100.4.76. ультразвуковой диагностике</work>
+                    <work>100.4.78. урологии</work>
+                    <work>100.4.82. хирургии</work>
+                    <work>100.5. при оказании первичной специализированной медико-санитарной помощи в условиях дневного стационара по:</work>
+                    <work>100.5.2. акушерству и гинекологии (за исключением использования вспомогательных репродуктивных технологий и искусственного прерывания беременности)</work>
+                    <work>100.5.4. акушерству и гинекологии (искусственному прерыванию беременности)</work>
+                    <work>100.5.7. анестезиологии и реаниматологии</work>
+                    <work>100.5.30. колопроктологии</work>
+                    <work>100.5.42. онкологии</work>
+                    <work>100.5.43. организации здравоохранения и общественному здоровью</work>
+                    <work>100.5.45. оториноларингологии (за исключением кохлеарной имплантации)</work>
+                    <work>100.5.56. сердечно-сосудистой хирургии</work>
+                    <work>100.5.65. ультразвуковой диагностике</work>
+                    <work>100.5.67. урологии</work>
+                    <work>100.5.71. хирургии</work>
+                    <work>105. При проведении медицинских осмотров, медицинских освидетельствований и медицинских экспертиз организуются и выполняются следующие работы (услуги):</work>
+                    <work>105.3. при проведении медицинских экспертиз по:</work>
+                    <work>105.3.9. экспертизе качества медицинской помощи</work>
+                    <work>105.3.11. экспертизе временной нетрудоспособности</work>
+                </works>
+            </address_place>
+        </work_address_list>
+        <number>ЛО-22-01-005791</number>
+        <date>04.12.2020</date>
+        <number_orders>737 ОЛ</number_orders>
+        <date_order>04.12.2020</date_order>
+        <date_register>04.12.2020</date_register>
+        <number_duplicate></number_duplicate>
+        <date_duplicate></date_duplicate>
+        <termination></termination>
+        <date_termination></date_termination>
+        <information></information>
+        <information_regulations></information_regulations>
+        <information_suspension_resumption></information_suspension_resumption>
+        <information_cancellation></information_cancellation>
+        <information_reissuing></information_reissuing>
+    </licenses>
+    <licenses>
+        <name>Министерство здравоохранения Алтайского края</name>
+        <activity_type>Медицинская деятельность</activity_type>
+        <full_name_licensee>Общество с ограниченной ответственностью &quot;СТОМАТОЛОГИЧЕСКАЯ КЛИНИКА ПОЛАРНО&quot;</full_name_licensee>
+        <abbreviated_name_licensee>ООО &quot;СТОМАТОЛОГИЧЕСКАЯ КЛИНИКА ПОЛАРНО&quot;</abbreviated_name_licensee>
+        <brand_name_licensee>ООО &quot;СТОМАТОЛОГИЧЕСКАЯ КЛИНИКА ПОЛАРНО&quot;</brand_name_licensee>
+        <form>Общество с ограниченной ответственностью</form>
+        <address_region>Алтайский край</address_region>
+        <address>656067, Россия, Алтайский край, г. Барнаул, тракт Павловский, д. 299, пом. Н4</address>
+        <ogrn>1202200024487</ogrn>
+        <inn>2222886810</inn>
+        <work_address_list>
+            <address_place>
+                <address>656067, Алтайский край, г. Барнаул, тракт Павловский, д. 299, пом. Н4</address>
+                <index>656067</index>
+                <region>Алтайский край</region>
+                <city>Барнаул</city>
+                <street>тракт Павловский, д. 299, пом. Н4</street>
+                <code_fias>aaffa55d-d75d-4a3c-a236-c700d6c608e5</code_fias>
+                <works>
+                    <work>100. При оказании первичной, в том числе доврачебной, врачебной и специализированной, медико-санитарной помощи организуются и выполняются следующие работы (услуги):</work>
+                    <work>100.1. при оказании первичной доврачебной медико-санитарной помощи в амбулаторных условиях по:</work>
+                    <work>100.1.24. сестринскому делу</work>
+                    <work>100.4. при оказании первичной специализированной медико-санитарной помощи в амбулаторных условиях по:</work>
+                    <work>100.4.46. организации здравоохранения и общественному здоровью</work>
+                    <work>100.4.47. ортодонтии</work>
+                    <work>100.4.66. стоматологии детской</work>
+                    <work>100.4.67. стоматологии общей практики</work>
+                    <work>100.4.68. стоматологии ортопедической</work>
+                    <work>100.4.69. стоматологии терапевтической</work>
+                    <work>100.4.70. стоматологии хирургической</work>
+                </works>
+            </address_place>
+        </work_address_list>
+        <number>ЛО-22-01-005789</number>
+        <date>04.12.2020</date>
+        <number_orders>736 ОЛ</number_orders>
+        <date_order>04.12.2020</date_order>
+        <date_register>04.12.2020</date_register>
+        <number_duplicate></number_duplicate>
+        <date_duplicate></date_duplicate>
+        <termination></termination>
+        <date_termination></date_termination>
+        <information></information>
+        <information_regulations></information_regulations>
+        <information_suspension_resumption></information_suspension_resumption>
+        <information_cancellation></information_cancellation>
+        <information_reissuing></information_reissuing>
+    </licenses>
+    <licenses>
+        <name>Министерство здравоохранения Алтайского края</name>
+        <activity_type>Медицинская деятельность</activity_type>
+        <full_name_licensee>Общество с ограниченной ответственностью Стоматологическая клиника &quot;Диамант&quot;</full_name_licensee>
+        <abbreviated_name_licensee>ООО &quot;Диамант&quot;</abbreviated_name_licensee>
+        <brand_name_licensee>ООО &quot;Диамант&quot;</brand_name_licensee>
+        <form>Общество с ограниченной ответственностью</form>
+        <address_region>Алтайский край</address_region>
+        <address>659322, Россия, Алтайский край, г. Бийск, ул. Александра Радищева, д. 6, кв. 27</address>
+        <ogrn>1202200025840</ogrn>
+        <inn>2204092405</inn>
+        <work_address_list>
+            <address_place>
+                <address>659316, Алтайский край, г. Бийск, ул. Ленинградская, д. 36, пом. Н-7</address>
+                <index>659316</index>
+                <region>Алтайский край</region>
+                <city>Бийск</city>
+                <street>ул. Ленинградская, д. 36, пом. Н-7</street>
+                <code_fias>cafb7169-7616-4f73-9dd9-a5ae19233856</code_fias>
+                <works>
+                    <work>100. При оказании первичной, в том числе доврачебной, врачебной и специализированной, медико-санитарной помощи организуются и выполняются следующие работы (услуги):</work>
+                    <work>100.1. при оказании первичной доврачебной медико-санитарной помощи в амбулаторных условиях по:</work>
+                    <work>100.1.24. сестринскому делу</work>
+                    <work>100.1.27. стоматологии</work>
+                    <work>100.4. при оказании первичной специализированной медико-санитарной помощи в амбулаторных условиях по:</work>
+                    <work>100.4.46. организации здравоохранения и общественному здоровью</work>
+                    <work>100.4.67. стоматологии общей практики</work>
+                    <work>100.4.68. стоматологии ортопедической</work>
+                    <work>100.4.69. стоматологии терапевтической</work>
+                </works>
+            </address_place>
+        </work_address_list>
+        <number>ЛО-22-01-005788</number>
+        <date>04.12.2020</date>
+        <number_orders>736 ОЛ</number_orders>
+        <date_order>04.12.2020</date_order>
+        <date_register>04.12.2020</date_register>
+        <number_duplicate></number_duplicate>
+        <date_duplicate></date_duplicate>
+        <termination></termination>
+        <date_termination></date_termination>
+        <information></information>
+        <information_regulations></information_regulations>
+        <information_suspension_resumption></information_suspension_resumption>
+        <information_cancellation></information_cancellation>
+        <information_reissuing></information_reissuing>
+    </licenses>
+</licenses_list>

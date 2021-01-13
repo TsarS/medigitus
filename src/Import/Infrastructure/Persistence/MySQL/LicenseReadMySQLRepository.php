@@ -8,6 +8,8 @@ use DateTimeImmutable;
 use Import\Domain\Entity\License;
 use Import\Domain\Repository\LicenseReadRepository;
 use Import\Domain\VO\Id;
+use Import\Domain\VO\Work;
+use Import\Domain\VO\Works;
 use Import\Infrastructure\Persistence\Exception\NotFoundLicenseException;
 use Import\Infrastructure\Persistence\Exception\NotFoundLicenseWorksException;
 use PDO;
@@ -51,7 +53,14 @@ final class LicenseReadMySQLRepository implements LicenseReadRepository
             'id' => new Id($clinic['id']),
             'inn' => $clinic['inn'],
             'post_address' => $clinic['address'],
-            'works' => $clinic_works,
+            'works' => new Works(array_map(function ($work) {
+                return new Work(
+                    $work['work'],
+                    $work['number'],
+                    $work['date'],
+                    $work['activity_type']
+                );
+            },$clinic_works)),
             'created_date' => new DateTimeImmutable($clinic['created_date']),
         ]);
 
