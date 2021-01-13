@@ -30,9 +30,9 @@ final class ImportXMLController
     public function importXML()
     {
         $this->statement->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $sql_table_legal = $this->statement->prepare("INSERT INTO licences (inn, ogrn, full_name_licensee, form, address,number, date, termination, date_termination, information_suspension_resumption, information_cancellation, activity_type) VALUES (:inn, :ogrn, :full_name_licensee,:form, :address, :number, :date, :termination, :date_termination, :information_suspension_resumption, :information_cancellation, :activity_type)");
-        $sql_table_address = $this->statement->prepare("INSERT INTO licences_post_address (inn, address) VALUES (:inn, :address)");
-        $sql_table_works = $this->statement->prepare("INSERT INTO licences_works (address_id, work) VALUES (:address_id, :work)");
+        $sql_table_legal = $this->statement->prepare("INSERT INTO import_legal (inn, ogrn, full_name_licensee, form, address) VALUES (:inn, :ogrn, :full_name_licensee,:form, :address)");
+        $sql_table_address = $this->statement->prepare("INSERT INTO import_post_address (inn, address) VALUES (:inn, :address)");
+        $sql_table_works = $this->statement->prepare("INSERT INTO import_works (address_id, work,number, date, termination, date_termination, information_suspension_resumption, information_cancellation, activity_type) VALUES (:address_id, :work, :number, :date, :termination, :date_termination, :information_suspension_resumption, :information_cancellation, :activity_type)");
         $doc = new DOMDocument;
         $reader = new XMLReader();
 
@@ -49,14 +49,7 @@ final class ImportXMLController
                             ':ogrn' => $node->ogrn,
                             ':full_name_licensee' => $node->full_name_licensee,
                             ':form' => $node->form,
-                            ':address' => $node->address,
-                            ':number' => $node->number,
-                            ':date' => $node->date,
-                            ':activity_type' => $node->activity_type,
-                            ':termination' => $node->termination,
-                            ':date_termination' => $node->date_termination,
-                            ':information_suspension_resumption' => $node->information_suspension_resumption,
-                            ':information_cancellation' => $node->information_cancellation
+                            ':address' => $node->address
                         ]);
 
                         foreach ($node->work_address_list->address_place as $item) {
@@ -66,6 +59,7 @@ final class ImportXMLController
                                     'address' => (string)$item->address
                                 ]);
                                 $last_id = $this->connection->lastInsertId();
+                                print_r('last_id='.$last_id.'/n');
                             } catch (Exception $e) {
                                 echo $e->getMessage();
                             }
@@ -74,7 +68,14 @@ final class ImportXMLController
                                 try {
                                     $sql_table_works->execute([
                                         ':address_id' => $last_id,
-                                        ':work' => (string)$value
+                                        ':work' => (string)$value,
+                                        ':number' => $node->number,
+                                        ':date' => $node->date,
+                                        ':activity_type' => $node->activity_type,
+                                        ':termination' => $node->termination,
+                                        ':date_termination' => $node->date_termination,
+                                        ':information_suspension_resumption' => $node->information_suspension_resumption,
+                                        ':information_cancellation' => $node->information_cancellation
                                     ]);
                                 } catch (Exception $e) {
                                     echo $e->getMessage();

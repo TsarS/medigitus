@@ -6,6 +6,7 @@ namespace Direction\Infrastructure\Persistence\MySQL;
 
 use Direction\Domain\Entity\Direction;
 use Direction\Domain\Repository\DirectionRepository;
+use Direction\Domain\VO\Id;
 use Exception;
 use PDO;
 
@@ -47,6 +48,11 @@ final class DirectionMySQLRepository implements DirectionRepository
             echo $e->getMessage();
         }
     }
+
+
+
+
+
     private static function getExtractedData(Direction $direction) : array {
         return [
             ':id' => $direction->getId()->getId(),
@@ -55,4 +61,18 @@ final class DirectionMySQLRepository implements DirectionRepository
         ];
     }
 
+    public function delete(string $id): void
+    {
+        try {
+            $this->statement->beginTransaction();
+            $direction_table = $this->statement->prepare("DELETE FROM direction WHERE id =:id");
+            $direction_table->execute(
+                [':id' => $id]
+            );
+            $this->statement->commit();
+        } catch (Exception $e) {
+            $this->statement->rollback();
+            echo $e->getMessage();
+        }
+    }
 }

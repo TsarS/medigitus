@@ -72,6 +72,21 @@ abstract class BaseDirectionRepository extends TestCase
         $this->assertNotNull($renamed);
         $this->assertEquals($renamedName, $renamed->getName());
     }
+    public function testRemoveInRepository(): void
+    {
+        $direction = new Direction(
+            $id = Id::next(),
+            $name = 'Офтальмология',
+            $date = new DateTimeImmutable()
+        );
+        $this->repository->add($direction);
+        $found = $this->readRepository->get($direction->getId());
+        $this->assertNotNull($found);
+        $this->repository->delete($direction->getId()->getId());
+        $this->expectException(NotFoundDirectionException::class);
+        $this->readRepository->get($found->getId());
+
+    }
 
 
-}
+    }

@@ -4,6 +4,7 @@ declare(strict_types=1);
 namespace Import\Infrastructure\Web;
 
 
+use Exception;
 use Legal\Application\Command\CreateLegal\CreateLegalCommand;
 use Legal\Application\Command\CreateLegal\CreateLegalHandler;
 use Legal\Infrastructure\Persistence\Hydrator;
@@ -23,10 +24,22 @@ final class LicenseController
         $this->statement->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     }
 
-    public function showClinicWithLicence() {
-        $sql_table = $this->statement->prepare(" ");
-        $sql_table->execute();
-        $clinics = $sql_table->fetchAll();
+    public function showClinicsWithLicence() {
+        $sql_clinic = $this->statement->prepare("SELECT  il.inn, il.full_name_licensee,ipa.id, ipa.address FROM `import_legal` il JOIN `import_post_address` ipa WHERE ipa.inn = il.inn GROUP BY ipa.address");
+        $sql_clinic->execute();
+        return $sql_clinic->fetchAll();
+    }
+    public function getWorksByAddress($id) {
+        try {
+            $sql_works = $this->statement->prepare("SELECT  iw.work,iw.number,iw.date,iw.activity_type FROM `import_works` iw  WHERE iw.address_id = :address_id");
+            $sql_works->execute([
+                ':address_id' => $id
+            ]);
+            return $sql_works->fetchAll();
+        } catch (Exception $e) {
+            echo $e->getMessage();
+        }
+
     }
 
 

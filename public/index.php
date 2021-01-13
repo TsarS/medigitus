@@ -1,7 +1,11 @@
 <?php
 declare(strict_types=1);
 
-use Import\Infrastructure\Console\ImportXMLController;
+use Import\Application\Command\CreateLicense\CreateLicenseCommand;
+use Import\Application\Command\CreateLicense\CreateLicenseHandler;
+use Import\Infrastructure\Persistence\MySQL\Hydrator;
+use Import\Infrastructure\Persistence\MySQL\LicenseMySQLRepository;
+use Import\Infrastructure\Persistence\MySQL\LicenseReadMySQLRepository;
 use Import\Infrastructure\Web\LicenseController;
 
 require __DIR__ . '/../vendor/autoload.php';
@@ -18,9 +22,40 @@ try {
     die();
 }
 $clinics = new LicenseController($connection);
-$data = $clinics->showClinics();
+$data = $clinics->showClinicsWithLicence();
 
-print_r($data);
+$hydrator = new Hydrator();
+$repository = new LicenseMySQLRepository($connection);
+$readRepository = new LicenseReadMySQLRepository($connection, $hydrator);
+
+
+foreach ($data as $item) {
+
+    $handler = new CreateLicenseHandler($repository, $readRepository);
+    $works = $clinics->getWorksByAddress($item["id"]);
+    $handler->__invoke(new CreateLicenseCommand(
+        $item["inn"],
+        $item["address"],
+        $works
+    ));
+}
+/*
+ * foreach ($clinics as $clinic) {
+            $sql_works->execute([':address_id'=> $clinic["id"]]);
+            $works = $sql_works->fetchAll();
+            echo '</br>';
+            echo 'ИНН= '.$clinic["inn"].'</br>'.'Название= '.$clinic["full_name_licensee"].'</br>'.'Почтовый адрес = '.$clinic["address"].'</br>';
+            foreach ($works as $work) {
+            //    print_r($works);
+                echo $work["work"]." ".$work["number"]." ".$work["date"];
+                echo '</br>';
+            }
+            echo '__________________________________________________';
+        }
+ */
+
+
+//print_r($data);
 /*
 foreach ($data as $item) {
     echo '<p class = "login">', $item['full_name_licensee'] , '</p>';
