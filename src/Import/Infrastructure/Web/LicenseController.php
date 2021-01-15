@@ -24,10 +24,10 @@ final class LicenseController
         $this->statement->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     }
 
-    public function showClinicsWithLicence() {
-        $sql_clinic = $this->statement->prepare("SELECT  il.inn, il.full_name_licensee,ipa.id, ipa.address FROM `import_legal` il JOIN `import_post_address` ipa WHERE ipa.inn = il.inn GROUP BY ipa.address");
+    public function showClinicsWithLicense() {
+        $sql_clinic = $this->statement->prepare("SELECT  il.inn, il.full_name_licensee,ipa.id, ipa.address,ipa.country,ipa.region,ipa.city,ipa.street,ipa.house FROM `import_legal` il JOIN `import_post_address` ipa WHERE ipa.inn = il.inn GROUP BY ipa.address");
         $sql_clinic->execute();
-        return $sql_clinic->fetchAll();
+        return $sql_clinic->fetchAll(PDO::FETCH_ASSOC);
     }
     public function getWorksByAddress($id) {
         try {
@@ -39,7 +39,6 @@ final class LicenseController
         } catch (Exception $e) {
             echo $e->getMessage();
         }
-
     }
 
 
@@ -47,7 +46,8 @@ final class LicenseController
 
     public function createLegal() {
 
-        $sql_table = $this->statement->prepare("SELECT id, inn, ogrn, full_name_licensee, form, address from `licences` ");        $sql_table->execute();
+        $sql_table = $this->statement->prepare("SELECT id, inn, ogrn, full_name_licensee, form, address from `import_legal` ");
+        $sql_table->execute();
         $legals = $sql_table->fetchAll();
         $hydrator = new Hydrator();
         $repository = new LegalMySQLRepository($this->connection);

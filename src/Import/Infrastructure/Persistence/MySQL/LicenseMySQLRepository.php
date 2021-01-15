@@ -25,7 +25,7 @@ final class LicenseMySQLRepository implements LicenseRepository
     {
         $this->statement->beginTransaction();
         try {
-            $legal_table = $this->statement->prepare("INSERT INTO `license_address` (`id`, `inn`, `address`,`created_date`) VALUES (:id, :inn, :address, :created_date)");
+            $legal_table = $this->statement->prepare("INSERT INTO `license_address` (`id`, `inn`,`name`, `address`,`country`,`region`,`city`,`street`,`house`,`lat`,`lon`,`created_date`) VALUES (:id, :inn,:name, :address,:country,:region,:city,:street,:city,:lat,:lon, :created_date)");
             $legal_works_table = $this->statement->prepare("INSERT INTO `license_works` (`address_id`, `work`, `number`, `date`,`activity_type`) VALUES (:address_id, :work, :number,:date, :activity_type)");
             $legal_table->execute(self::getExtractLegalData($license));
             foreach ($license->getWorks() as $work) {
@@ -98,7 +98,15 @@ final class LicenseMySQLRepository implements LicenseRepository
         return [
             ':id' => $license->getId()->getId(),
             ':inn' => $license->getInn(),
+            ':name' => $license->getName(),
             ':address' => $license->getPostAddress(),
+            ':country' => $license->getAddress()->getCountry(),
+            ':region' => $license->getAddress()->getRegion(),
+            ':city' => $license->getAddress()->getCity(),
+            ':street' => $license->getAddress()->getStreet(),
+            ':house' => $license->getAddress()->getHouse(),
+            ':lat' => $license->getAddress()->getLat(),
+            ':lon' => $license->getAddress()->getLon(),
             ':created_date' => $license->getCreatedDate()->format('Y-m-d H:i:s')
         ];
     }

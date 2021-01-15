@@ -31,7 +31,7 @@ final class ImportXMLController
     {
         $this->statement->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $sql_table_legal = $this->statement->prepare("INSERT INTO import_legal (inn, ogrn, full_name_licensee, form, address) VALUES (:inn, :ogrn, :full_name_licensee,:form, :address)");
-        $sql_table_address = $this->statement->prepare("INSERT INTO import_post_address (inn, address) VALUES (:inn, :address)");
+        $sql_table_address = $this->statement->prepare("INSERT INTO import_post_address (inn, address,country,region,city,street, house) VALUES (:inn, :address,:country,:region,:city,:street,:house)");
         $sql_table_works = $this->statement->prepare("INSERT INTO import_works (address_id, work,number, date, termination, date_termination, information_suspension_resumption, information_cancellation, activity_type) VALUES (:address_id, :work, :number, :date, :termination, :date_termination, :information_suspension_resumption, :information_cancellation, :activity_type)");
         $doc = new DOMDocument;
         $reader = new XMLReader();
@@ -55,8 +55,13 @@ final class ImportXMLController
                         foreach ($node->work_address_list->address_place as $item) {
                             try {
                                 $sql_table_address->execute([
-                                    'inn' => $inn,
-                                    'address' => (string)$item->address
+                                    ':inn' => $inn,
+                                    ':address' => (string)$item->address,
+                                    ':country' => (string)$item->country,
+                                    ':region' => (string)$item->region,
+                                    ':city' => (string)$item->city,
+                                    ':street' => (string)$item->street,
+                                    ':house' => (string)$item->house
                                 ]);
                                 $last_id = $this->connection->lastInsertId();
                             } catch (Exception $e) {

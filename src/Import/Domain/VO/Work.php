@@ -58,7 +58,8 @@ final class Work
 
     public function isEqualTo(self $work): bool
     {
-        return $this === $work;
-
+        return $this->getWork() === $work->getWork();
     }
+
+
 }

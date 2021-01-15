@@ -1,70 +1,39 @@
 <?php
 declare(strict_types=1);
 
-namespace Import\Application\Command\CreateLicense;
+namespace Import\Domain\VO;
 
 
-use Import\Application\Command\CommandInterface;
-
-final class CreateLicenseCommand implements CommandInterface
+final class Address
 {
-    private string $inn;
-    private string $post_address;
-    private array $works;
-    private string $country;
+    private string $country = "Российская Федерация";
+    private string $post_code;
     private string $region;
     private string $city;
     private string $street;
     private string $house;
-    private string $name;
+    private ?string $lat;
+    private ?string $lon;
 
 
     public function __construct(
-        string $inn,
-        string $name,
-        string $post_address,
         string $country,
         string $region,
         string $city,
         string $street,
         string $house,
-        array $works
+        ?string $lat = '0',
+        ?string $lon = '0'
     )
     {
 
-        $this->inn = $inn;
-        $this->post_address = $post_address;
-        $this->works = $works;
         $this->country = $country;
         $this->region = $region;
         $this->city = $city;
         $this->street = $street;
         $this->house = $house;
-        $this->name = $name;
-    }
-
-    /**
-     * @return string
-     */
-    public function getInn(): string
-    {
-        return $this->inn;
-    }
-
-    /**
-     * @return string
-     */
-    public function getPostAddress(): string
-    {
-        return $this->post_address;
-    }
-
-    /**
-     * @return array
-     */
-    public function getWorks(): array
-    {
-        return $this->works;
+        $this->lat = $lat;
+        $this->lon = $lon;
     }
 
     /**
@@ -73,6 +42,14 @@ final class CreateLicenseCommand implements CommandInterface
     public function getCountry(): string
     {
         return $this->country;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPostCode(): string
+    {
+        return $this->post_code;
     }
 
     /**
@@ -108,11 +85,19 @@ final class CreateLicenseCommand implements CommandInterface
     }
 
     /**
-     * @return string
+     * @return int
      */
-    public function getName(): string
+    public function getLat()
     {
-        return $this->name;
+        return $this->lat;
+    }
+
+    /**
+     * @return int
+     */
+    public function getLon()
+    {
+        return $this->lon;
     }
 
 
