@@ -35,7 +35,7 @@ final class LicenseController
             $sql_works->execute([
                 ':address_id' => $id
             ]);
-            return $sql_works->fetchAll();
+            return $sql_works->fetchAll(PDO::FETCH_NUM);
         } catch (Exception $e) {
             echo $e->getMessage();
         }

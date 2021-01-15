@@ -8,6 +8,7 @@ use Clinic\Domain\Entity\Clinic;
 use Clinic\Domain\Repository\ClinicRepository;
 use Exception;
 use PDO;
+use PDOException;
 
 final class ClinicMySQLRepository implements ClinicRepository
 {
@@ -23,9 +24,8 @@ final class ClinicMySQLRepository implements ClinicRepository
 
     public function add($clinic): void
     {
-
+        $this->statement->beginTransaction();
         try {
-            $this->statement->beginTransaction();
             $clinic_table = $this->statement->prepare("INSERT INTO `clinic` (`id`, `inn`, `name`,`legalForm`,`country`, `post_code`, `region`, `city`, `street`,`building`, `lat`,`lon`,`date`) VALUES (:id, :inn, :name, :legalForm,:country, :post_code, :region, :city, :street, :building,:lat, :lon, :date)");
             $directions_table = $this->statement->prepare("INSERT INTO `clinic_directions` (`clinic_id`,`name`,`ambulance`,`surgery`,`date`) VALUES (:clinic_id, :direction_name, :ambulance,:surgery,  :date)");
             $clinic_table->execute(self::getExtractedData($clinic));
@@ -40,16 +40,17 @@ final class ClinicMySQLRepository implements ClinicRepository
                 ]);
             }
             $this->statement->commit();
-        } catch (Exception $e) {
+        } catch (PDOException $e) {
             $this->statement->rollback();
+            throw $e;
         }
 
     }
 
     public function save(Clinic $clinic): void
     {
+        $this->statement->beginTransaction();
         try {
-            $this->statement->beginTransaction();
             $clinic_table = $this->statement->prepare("UPDATE `clinic` SET  inn=:inn, name=:name, legalForm =:legalForm, country=:country, post_code=:post_code, region=:region, city=:city, street=:street,building=:building, lat=:lat, lon=:lon, date=:date WHERE id=:id");
             $directions_table = $this->statement->prepare("UPDATE `clinic_directions` SET name=:direction_name, ambulance=:ambulance, surgery=:surgery,date=:date WHERE clinic_id= :clinic_id");
 
@@ -65,10 +66,9 @@ final class ClinicMySQLRepository implements ClinicRepository
                 ]);
             }
             $this->statement->commit();
-        } catch (Exception $e) {
-            echo $e->getMessage();
+        } catch (PDOException $e) {
             $this->statement->rollback();
-
+            throw $e;
         }
     }
 

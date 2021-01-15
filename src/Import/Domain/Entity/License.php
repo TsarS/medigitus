@@ -28,6 +28,7 @@ final class License
         DateTimeImmutable $created_date
     )
     {
+        //var_dump($works);
         $this->inn = $inn;
         $this->post_address = $post_address;
         $this->works = new Works($works);
@@ -35,7 +36,7 @@ final class License
         $this->created_date = $created_date;
     }
 
-    public function addWork(Work $work)
+    public function addWork(Work $work): void
     {
        $this->works->add($work);
     }
@@ -59,9 +60,10 @@ final class License
     /**
      * @return Works
      */
-    public function getWorks(): Works
+    public function getWorks(): array
     {
-        return $this->works;
+
+        return $this->works->getAll();
     }
 
 

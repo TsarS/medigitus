@@ -19,6 +19,7 @@ final class CreateLicenseCommand implements CommandInterface
         array $works
     )
     {
+
         $this->inn = $inn;
         $this->post_address = $post_address;
         $this->works = $works;

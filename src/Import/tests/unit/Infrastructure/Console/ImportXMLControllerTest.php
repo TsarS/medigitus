@@ -14,13 +14,19 @@ final class ImportXMLControllerTest extends TestCase
 {
     protected $connection;
     protected $file;
+    protected $file_one;
+    protected $file_short;
+    protected $file_test;
+    protected $file_long;
     protected $import;
     protected $found;
     protected $inn;
+    protected $path;
     protected static $address_id;
 
     protected function setUp(): void
     {
+        /** Подключение и очистка базы данных */
         try {
             $this->connection = new PDO('mysql:host=localhost;dbname=rating_test', 'root', 'root');
         } catch (PDOException $e) {
@@ -29,12 +35,23 @@ final class ImportXMLControllerTest extends TestCase
         }
         $truncate = $this->connection->prepare("DELETE FROM import_legal");
         $truncate->execute();
-        $this->file = dirname(__DIR__) . '/../../_fixtures/licences_import_test_long.xml';
+
+        /**
+         * Подключение файла для тестов. В зависимости от файла = разные результаты
+         */
+
+        $this->path = dirname(__DIR__) . '/../../_fixtures/';
+        $this->file_one = 'licences_import_test_one.xml';
+        $this->file_short = 'licences_import_test_short.xml';
+        $this->file_test = 'licences_import_test.xml';
+        $this->file_long = 'licences_import_test_long.xml';
+
+        $this->file = $this->path.$this->file_one;
+
+
         $this->import = new ImportXMLController($this->connection, $this->file);
         $this->import->importXML();
         $this->inn = '2221243213';
-
-
     }
 
     public function testImportXML(): void
@@ -59,9 +76,6 @@ final class ImportXMLControllerTest extends TestCase
         $data = $this->found->fetch();
         $address_count = $this->connection->query("SELECT COUNT(id) FROM  import_post_address")->fetchColumn();;
         $this->assertEquals('5', $address_count);
-        self::$address_id = $data['id'];
-        print_r('data["id"]='. $data["id"]);
-        print_r('$address_id='.  self::$address_id );
         $this->assertEquals($this->inn, $data['inn']);
         $this->assertEquals('656039, Алтайский край, г. Барнаул, ул. Телефонная, д. 165', $data['address']);
     }

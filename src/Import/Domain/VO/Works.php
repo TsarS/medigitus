@@ -16,6 +16,7 @@ final class Works
     {
         if (!$works) throw new WorkCantBeEmptyException($works);
         foreach ($works as $work) {
+
             $this->add($work);
         }
     }

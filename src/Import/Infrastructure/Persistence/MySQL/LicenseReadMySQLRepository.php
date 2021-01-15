@@ -67,7 +67,7 @@ final class LicenseReadMySQLRepository implements LicenseReadRepository
 
     }
 
-    public function getByAddress(string $address)
+    public function getByAddress(string $address): License
     {
         $statement = $this->connection->prepare('SELECT id, inn, address FROM license_address WHERE address = ?');
         $statement->bindValue(1, $address);
@@ -76,7 +76,7 @@ final class LicenseReadMySQLRepository implements LicenseReadRepository
         return $this->get(new Id($result["id"]));
     }
 
-    public function addressExist(string $address)
+    public function addressExist(string $address): bool
     {
         $statement = $this->connection->prepare("SELECT address FROM license_address WHERE (address=:address)");
         $statement->execute(

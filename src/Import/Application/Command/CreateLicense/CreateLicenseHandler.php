@@ -36,26 +36,36 @@ final class CreateLicenseHandler implements CommandHandlerInterface
 
     public function __invoke(CommandInterface $command)
     {
-
-       if ($this->readRepository->addressExist($command->getPostAddress())) {
-           $this->addWorksToExistAddress($command->getPostAddress(), $command->getWorks());
+       if ($this->clinicExist($command)) {
+           $this->addWorksToExistClinic($command->getPostAddress(), $command->getWorks());
        } else {
-           $license = new License(
+         $license = new License(
                Id::next(),
                $command->getInn(),
                $command->getPostAddress(),
-               $command->getWorks(),
+             array_map(static function ($work) {
+                 return new Work(
+                     $work[0],
+                     $work[1],
+                     $work[2],
+                     $work[3]
+                 );
+             }, $command->getWorks()),
                new DateTimeImmutable()
            );
            $this->repository->add($license);
        }
     }
-    private function addWorksToExistAddress(string $address,array $works) {
-
+    private function addWorksToExistClinic(string $address,array $works) {
         $clinic = $this->readRepository->getByAddress($address);
         foreach ($works as $work) {
-            $clinic->addWork(new Work($work["work"],$work["number"],$work["date"],$work["activity_type"]));
+            $clinic->addWork(new Work($work[0],$work[1],$work[2],$work[3]));
+            $this->repository->updateWorks($clinic);
         }
-
     }
+     private function clinicExist($command): bool {
+         if ($this->readRepository->addressExist($command->getPostAddress())) {
+             return true;
+         } else return false;
+     }
 }

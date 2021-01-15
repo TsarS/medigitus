@@ -55,6 +55,7 @@ final class Work
     {
         return $this->activity_type;
     }
+
     public function isEqualTo(self $work): bool
     {
         return $this === $work;
