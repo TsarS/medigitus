@@ -7,6 +7,7 @@ namespace Import\Application\Command\CreateLicense;
 use DateTimeImmutable;
 use Import\Application\Command\CommandHandlerInterface;
 use Import\Application\Command\CommandInterface;
+use Import\Application\Event\Create\ImportEventDispatcher;
 use Import\Domain\Entity\License;
 use Import\Domain\Repository\LicenseReadRepository;
 use Import\Domain\Repository\LicenseRepository;
@@ -25,14 +26,21 @@ final class CreateLicenseHandler implements CommandHandlerInterface
      * @var LicenseReadRepository
      */
     private LicenseReadRepository $readRepository;
+    /**
+     * @var ImportEventDispatcher
+     */
+    private ImportEventDispatcher $dispatcher;
 
     public function __construct(
         LicenseRepository $repository,
-        LicenseReadRepository $readRepository
+        LicenseReadRepository $readRepository,
+        ImportEventDispatcher $dispatcher
+
     )
     {
         $this->repository = $repository;
         $this->readRepository = $readRepository;
+        $this->dispatcher = $dispatcher;
     }
 
     public function __invoke(CommandInterface $command)
@@ -66,6 +74,7 @@ final class CreateLicenseHandler implements CommandHandlerInterface
             );
 
             $this->repository->add($license);
+            $this->dispatcher->dispatch($license->releaseEvents());
         }
     }
 

@@ -4,14 +4,18 @@ declare(strict_types=1);
 namespace Import\Domain\Entity;
 
 
+use Import\Domain\Events\LicenseCreated;
 use DateTimeImmutable;
 use Import\Domain\VO\Address;
 use Import\Domain\VO\Id;
 use Import\Domain\VO\Work;
 use Import\Domain\VO\Works;
 
-final class License
+final class License implements AggregateRoot
 {
+
+    use EventTrait;
+
     const ADDRESS_UNCHECKED = 0;
     const ADDRESS_CHECKED = 1;
 
@@ -67,6 +71,7 @@ final class License
         $this->address = $address;
         $this->changeStatus(self::ADDRESS_UNCHECKED);
         $this->name = $name;
+        $this->recordEvent(new LicenseCreated($this->id));
     }
 
     public function changeAddress(Address $address) {

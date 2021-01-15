@@ -6,6 +6,7 @@ namespace Import\tests\unit\Application\Command\CreateLicense;
 
 use Import\Application\Command\CreateLicense\CreateLicenseCommand;
 use Import\Application\Command\CreateLicense\CreateLicenseHandler;
+use Import\Application\Event\Create\ImportEventDispatcher;
 use Import\Infrastructure\Persistence\MySQL\Hydrator;
 use Import\Infrastructure\Persistence\MySQL\LicenseReadMySQLRepository;
 use PDO;
@@ -38,7 +39,7 @@ final class CreateLicenseHandlerTest extends TestCase
 
     public function testCreateLicenseInHandler(): void
     {
-        $handler = new CreateLicenseHandler($this->repository, $this->readRepository);
+        $handler = new CreateLicenseHandler($this->repository, $this->readRepository, new ImportEventDispatcher());
         $command = new CreateLicenseCommand(
             $inn = '2221243213',
             $name = 'Госпиталь какой-то',
@@ -61,7 +62,7 @@ final class CreateLicenseHandlerTest extends TestCase
     }
     public function testCreateLicenseInHandlerIfClinicExist(): void
     {
-        $handler = new CreateLicenseHandler($this->repository, $this->readRepository);
+        $handler = new CreateLicenseHandler($this->repository, $this->readRepository, new ImportEventDispatcher());
         $command = new CreateLicenseCommand(
             $inn = '2221243213',
             $name = 'Госпиталь какой-то',
@@ -95,12 +96,12 @@ final class CreateLicenseHandlerTest extends TestCase
 
             ]
         );
-        $handler2 = new CreateLicenseHandler($this->repository, $this->readRepository);
+        $handler2 = new CreateLicenseHandler($this->repository, $this->readRepository, new ImportEventDispatcher());
         $handler2->__invoke($command2);
     }
     public function testAddWorksIfAlreadyExist(): void
     {
-        $handler = new CreateLicenseHandler($this->repository, $this->readRepository);
+        $handler = new CreateLicenseHandler($this->repository, $this->readRepository, new ImportEventDispatcher());
         $command = new CreateLicenseCommand(
             $inn = '2221243213',
             $name = 'Госпиталь какой-то',
@@ -133,7 +134,7 @@ final class CreateLicenseHandlerTest extends TestCase
                 ['100.1.24. сестринскому делу', 'ФС-50-01-002470', '04.12.2020', 'Медицинская лицензия']
             ]
         );
-        $handler = new CreateLicenseHandler($this->repository, $this->readRepository);
+        $handler = new CreateLicenseHandler($this->repository, $this->readRepository, new ImportEventDispatcher());
         $handler->__invoke($command);
         $result = $this->readRepository->getByAddress($post_address);
         $this->assertCount(4,$result->getWorks());

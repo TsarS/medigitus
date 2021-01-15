@@ -27,10 +27,8 @@ $clinics = new LicenseController($connection);
 $data = $clinics->showClinicsWithLicense();
 
 foreach ($data as $item) {
-    var_dump($item["id"]);
     $handler = new CreateLicenseHandler($repository, $readRepository);
     $works = $clinics->getWorksByAddress($item["id"]);
-    var_dump($works);
     $handler->__invoke(new CreateLicenseCommand(
         $item["inn"],
         $item["full_name_licensee"],

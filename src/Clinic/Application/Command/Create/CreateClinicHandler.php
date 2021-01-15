@@ -34,7 +34,7 @@ final class CreateClinicHandler implements CommandHandlerInterface
     public function __construct(
         ClinicRepository $repository,
         ClinicReadRepository $readRepository,
-        ClinicEventDispatcher $dispatcher
+        ClinicEventDispatcher  $dispatcher
     )
     {
         $this->repository = $repository;
