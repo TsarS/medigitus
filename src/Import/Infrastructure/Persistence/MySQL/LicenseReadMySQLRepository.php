@@ -7,6 +7,7 @@ namespace Import\Infrastructure\Persistence\MySQL;
 use DateTimeImmutable;
 use Import\Domain\Entity\License;
 use Import\Domain\Repository\LicenseReadRepository;
+use Import\Domain\VO\Address;
 use Import\Domain\VO\Id;
 use Import\Domain\VO\Work;
 use Import\Domain\VO\Works;
@@ -34,7 +35,7 @@ final class LicenseReadMySQLRepository implements LicenseReadRepository
 
     public function get(Id $id): License
     {
-        $statement = $this->connection->prepare('SELECT id, inn, address,created_date FROM license_address WHERE id = ?');
+        $statement = $this->connection->prepare('SELECT id, inn, name, address, country, region, city, street,house, lat, lon, created_date FROM license_address WHERE id = ?');
         $statement_works = $this->connection->prepare('SELECT work,number,date,activity_type FROM license_works WHERE address_id = ?');
         $statement->bindValue(1, $id->getId());
         $statement_works->bindValue(1, $id->getId());
@@ -52,7 +53,17 @@ final class LicenseReadMySQLRepository implements LicenseReadRepository
         return $this->hydrator->hydrate(License::class, [
             'id' => new Id($clinic['id']),
             'inn' => $clinic['inn'],
+            'name' => $clinic['name'],
             'post_address' => $clinic['address'],
+            new Address(
+                $clinic['country'],
+                $clinic['region'],
+                $clinic['city'],
+                $clinic['street'],
+                $clinic['house'],
+                $clinic['lat'],
+                $clinic['lon']
+            ),
             'works' => new Works(array_map(function ($work) {
                 return new Work(
                     $work['work'],
@@ -60,7 +71,7 @@ final class LicenseReadMySQLRepository implements LicenseReadRepository
                     $work['date'],
                     $work['activity_type']
                 );
-            },$clinic_works)),
+            }, $clinic_works)),
             'created_date' => new DateTimeImmutable($clinic['created_date']),
         ]);
 

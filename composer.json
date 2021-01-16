@@ -14,6 +14,7 @@
             "Clinic\\": "src/Clinic/",
             "Direction\\": "src/Direction/",
             "Legal\\": "src/Legal/",
+            "License\\": "src/License/",
             "Import\\": "src/Import/"
         }
     },
@@ -22,7 +23,8 @@
             "Clinic\\Tests\\Unit\\": "src/Clinic/tests/unit/",
             "Direction\\Tests\\Unit\\": "src/Direction/tests/unit/",
             "Legal\\Tests\\Unit\\": "src/Legal/tests/unit/",
-            "Import\\Tests\\Unit\\": "src/Import/tests/unit/"
+            "Import\\Tests\\Unit\\": "src/Import/tests/unit/",
+            "License\\Tests\\Unit\\": "src/License/tests/unit/"
 
         }
     },
@@ -32,7 +34,8 @@
         "ext-dom": "*",
         "ext-xmlreader": "*",
         "ext-simplexml": "*",
-        "ext-pdo": "*"
+        "ext-pdo": "*",
+        "hflabs/dadata": "dev-master"
 
     },
     "require-dev": {

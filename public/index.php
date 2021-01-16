@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 use Import\Application\Command\CreateLicense\CreateLicenseCommand;
 use Import\Application\Command\CreateLicense\CreateLicenseHandler;
+use Import\Application\Event\Create\ImportEventDispatcher;
 use Import\Infrastructure\Persistence\MySQL\Hydrator;
 use Import\Infrastructure\Persistence\MySQL\LicenseMySQLRepository;
 use Import\Infrastructure\Persistence\MySQL\LicenseReadMySQLRepository;
@@ -27,7 +28,7 @@ $clinics = new LicenseController($connection);
 $data = $clinics->showClinicsWithLicense();
 
 foreach ($data as $item) {
-    $handler = new CreateLicenseHandler($repository, $readRepository);
+    $handler = new CreateLicenseHandler($repository, $readRepository, new ImportEventDispatcher());
     $works = $clinics->getWorksByAddress($item["id"]);
     $handler->__invoke(new CreateLicenseCommand(
         $item["inn"],
@@ -38,6 +39,8 @@ foreach ($data as $item) {
         $item["city"],
         $item["street"],
         $item["house"],
+        $item["lat"],
+        $item["lon"],
         $works
     ));
 }
